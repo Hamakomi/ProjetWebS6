@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ma Page</title>
-
   <style>
 
     /*
@@ -22,7 +20,7 @@
     }
 
     header {
-      background-color: #333;
+      background-color: #012c10;
       color: white;
       padding: 10px 20px;
       display: flex;
@@ -48,14 +46,10 @@
     }
 
     @media screen and (min-width: 900px) {
-      .content {
+      #content {
         display: flex;
         margin-left: 3%;
       }
-    }
-    .page {
-      flex: 1;
-      padding: 20px;
     }
 
     /*
@@ -85,29 +79,31 @@
 <!-- DEBUT HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
 
 <header>
+
   <div>
     Mon Site
   </div>
+
   <nav>
     <a href="#" class="active">Accueil</a>
     <a href="#">Page 1</a>
     <a href="#">Page 2</a>
     <a href="#">Page 3</a>
   </nav>
+
 </header>
 
 <!-- FIN HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
 
-<!-- DEBUT HTML CONTENU - VOTRE SECTION -->
 
-<div class="content">
-  <div class="page">
-    <!-- Contenu de la page ici -->
-    <h1>Accueil</h1>
-  </div>
+
+<div id="content">
+  <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
+
+  <!-- FIN HTML CONTENU - VOTRE SECTION -->
 </div>
 
-<!-- FIN HTML CONTENU - VOTRE SECTION -->
+
 
 </body>
 </html>

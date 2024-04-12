@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.table{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+
+.table *{
+    border-collapse: collapse;
+    gap: 5px;
+}
+
+.table td{
+    width: 350px;
+    padding: 15px;
+}
+
+.table tr{
+    border-top: solid 1px #CCCCCC;
+    height: 50px;
+}
+
+.table thead{
+    background-color: #F4F4F4;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #F4F4F4;
+}
+
+.status{
+    padding: 2px 15px 4px 15px;
+    font-weight: 700;
+    border-radius: 60px;
+    width: fit-content;
+}
+
+.status--active{
+    background-color: #3DE35A;
+}
+
+.status--inactive{
+    background-color: #E70002;
+}
+
+.status--degraded{
+    background-color: #FFCD0B;
+}

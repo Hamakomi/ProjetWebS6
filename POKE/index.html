@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
+
+    <style>
+        /*
+
+    #############################################
+    DEBUT STYLE NAVBAR - PAS TOUCHER 
+    #############################################
+
+    */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #012c10;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #bottom-bar {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: darkgrey;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        @media screen and (min-width: 900px) {
+            #content {
+                display: flex;
+                margin-left: 3%;
+            }
+        }
+
+        /*
+    #############################################
+    FIN STYLE NAVBAR - PAS TOUCHER 
+    #############################################
+    */
+
+
+
+        /*
+    #############################################
+        DEBUT STYLE CONTENU - VOTRE SECTION
+    #############################################
+    */
+
+        /*
+    #############################################
+          FIN STYLE CONTENU - VOTRE SECTION
+    #############################################
+    */
+    </style>
+</head>
+
+<body>
+
+    <!-- DEBUT HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
+
+    <header>
+
+        <div id="top-bar">
+
+            <nav>
+                <a href="#" class="active">Accueil</a>
+                <a href="#">Page 1</a>
+                <a href="#">Page 2</a>
+                <a href="#">Page 3</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div id="bottom-bar">
+        <p> Home > Networking > Flexible </p>
+    </div>
+
+    <!-- FIN HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
+
+    <div id="content">
+        <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
+        <div class="container">
+            <div id="top">
+                <h2>Inventory</h2>
+                <div>
+                    <span>Name</span>
+                    <span>My Business</span>
+                </div>
+
+                <div id="info">
+                    <div>
+                        <h3>5</h3>
+                        <p>Regions</p>
+                    </div>
+                    <div>
+                        <h3>4</h3>
+                        <p>Gateways</p>
+                    </div>
+                    <div>
+                        <h3>15</h3>
+                        <p>Locations</p>
+                    </div>
+                    <div>
+                        <h3>30</h3>
+                        <p>Edges</p>
+                    </div>
+                </div>
+
+                <div id="navbar">
+                    <ul>
+                        <li><a>Locations</a></li>
+                        <li><a>Edges</a></li>
+                        <li><a>Gateways</a></li>
+                        <li><a>Location Map</a></li>
+                    </ul>
+                    <div></div> <!-- A voir pour l'espave en % entre ul et searchbar-->
+                    <div>
+                        <input type="text" placeholder="Search">
+                        <a>Search</a> <!-- Icon de loupe a la place du texte-->
+                    </div>
+                    <a>Filter</a> <!-- Icon de filtre et texte-->
+                </div>
+            </div>
+
+            <div id="bottom">
+                <h2>Locations inventory</h2>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Location Name</th>
+                                <th>Edges</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Location SOPHIA-ANTIPOLIS</td>
+                                <td>2</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        >
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Location PARIS</td>
+                                <td>4</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        >
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Location KUALA LUMPUR</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Degraded</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        >
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Location HONG-KONG</td>
+                                <td>2</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Degraded</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        >
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Location WASHINGTON D.C.</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Inactive</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        >
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Location LOS ANGELES</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Inactive</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        >
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <!-- Tableau-->
+                <div>
+                    <div>Entrées</div> <!-- nombre d'entrées-->
+                    <div>1 2 3 4</div> <!-- paginer-->
+                </div>
+            </div>
+        </div>
+
+        <!-- FIN HTML CONTENU - VOTRE SECTION -->
+    </div>
+
+</body>
+
+</html>

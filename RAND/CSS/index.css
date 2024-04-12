@@ -1,0 +1,39 @@
+.BlocRand{
+	
+margin-left:100px;
+
+}
+
+.block{
+	width: 100%;
+	height:800px;
+	background-color:lightgrey; 
+}
+td{
+	text-align:center;
+	border: 10px solid white;
+	background-color:#ffffff; 
+}
+table {
+	margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 90%;
+}
+tr{
+	text-align:center;
+	margin-left:200px;
+}
+li,p{
+    display: inline-block; 
+   
+}
+
+p{
+	margin-left:90%;
+	background-color:black;
+	
+}
+.menu2{
+	display-flex:  ;
+}

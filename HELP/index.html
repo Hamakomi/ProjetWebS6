@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma Page</title>
 
+  <style>
+
+    /*
+
+    #############################################
+    DEBUT STYLE NAVBAR - PAS TOUCHER SINON GOULAG
+    #############################################
+
+    */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    @media screen and (min-width: 900px) {
+      .content {
+        display: flex;
+        margin-left: 3%;
+      }
+    }
+    .page {
+      flex: 1;
+      padding: 20px;
+    }
+
+    /*
+    #############################################
+    FIN STYLE NAVBAR - PAS TOUCHER SINON GOULAG
+    #############################################
+    */
+
+
+
+    /*
+    #############################################
+        DEBUT STYLE CONTENU - VOTRE SECTION
+    #############################################
+    */
+
+    /*
+    #############################################
+          FIN STYLE CONTENU - VOTRE SECTION
+    #############################################
+    */
+
+  </style>
+</head>
+<body>
+
+<!-- DEBUT HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
+
+<header>
+  <div>
+    Mon Site
+  </div>
+  <nav>
+    <a href="#" class="active">Accueil</a>
+    <a href="#">Page 1</a>
+    <a href="#">Page 2</a>
+    <a href="#">Page 3</a>
+  </nav>
+</header>
+
+<!-- FIN HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
+
+<!-- DEBUT HTML CONTENU - VOTRE SECTION -->
+
+<div class="content">
+  <div class="page">
+    <!-- Contenu de la page ici -->
+    <h1>Accueil</h1>
+  </div>
+</div>
+
+<!-- FIN HTML CONTENU - VOTRE SECTION -->
+
+</body>
+</html>

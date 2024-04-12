@@ -1,41 +1,338 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Network</title>
-    <link href="content.css" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
+
+  <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
+  <link href="content.css" rel="stylesheet">
+  <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
+
+  <style>
+
+    /*
+
+    #############################################
+          DEBUT STYLE NAVBAR - PAS TOUCHER
+    #############################################
+
+    */
+
+    :root {
+      --primary-color: #012c10;
+      --white: #ffffff;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #top-bar {
+      background-color: #012c10;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #bottom-bar
+    {
+      padding: 10px 20px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      background-color: #F6F6F6;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    @media screen and (min-width: 400px) {
+      #content {
+        display: flex;
+        margin-left: 3%;
+      }
+    }
+
+    /* Navbar container */
+    .navbar {
+      overflow: hidden;
+    }
+
+    /* Links inside the navbar */
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* The dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    /* Add a golden background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: goldenrod;
+      color: black;
+    }
+
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .fa-caret-down {
+      color: goldenrod;
+    }
+
+    .dropdown:hover .fa-caret-down {
+      color: black;
+    }
+
+
+
+
+    /*
+    #############################################
+          FIN STYLE NAVBAR - NE PAS TOUCHER
+    #############################################
+    */
+
+
+
+    /*
+    #############################################
+        DEBUT STYLE CONTENU - VOTRE SECTION
+    #############################################
+    */
+
+
+
+    /*
+    #############################################
+          FIN STYLE CONTENU - VOTRE SECTION
+    #############################################
+    */
+
+  </style>
 </head>
 <body>
-    
-        <table>
-            <div class="entete">
-            <tr>
-                <th></th>
-                <th>Provisioning State</th>
-                <th>Operational status</th>
-                <th>Network name</th>
-                <th>Vendor</th>
-                <th>Regions</th>
-                <th>Gateway</th>
-                <th>Locations</th>
-                <th>Edges</th>
-            </tr>
-        </div>
-            <tr>
-                <td class="start"><input type="checkbox" id="horns" name="horns" /></td>
-                <td class="active">Active</td>
-                <td>Up</td>
-                <td>Network XX25N1</td>
-                <td>VMWare</td>
-                <td>5</td>
-                <td>4</td>
-                <td>15</td>
-                <td class="end">30</td>
-            </tr>
-            
-        </table>
+
+<!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
+
+<header>
+
+  <div id="top-bar">
+    <div class="navbar">
+    <a href="#home">My Network</a>
+    <a href="#news">Solutions</a>
+    <div class="dropdown">
+      <button class="dropbtn">Regions
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
     </div>
+      <div class="dropdown">
+        <button class="dropbtn">Locations
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+
+  </div>
+  </div>
+
+<div id="bottom-bar">
+  <p> Home   >   Networking   >   Flexible </p>
+</div>
+</header>
+
+<!-- FIN HTML NAVBAR - PAS TOUCHER -->
+
+<div id="content">
+  <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
+
+
+<!--
+
+  <div id="titlenav">
+    <h1>Flexible Inventory</h1>
+    <ul id="nav">
+        <li id="network">
+            Network
+            <div id="selected"></div>
+        </li>
+        <li id="region">
+            Region
+        </li>
+        <li id="site">
+            Site
+        </li>
+    </ul>
+</div>
+    <table id="actionTab">
+        <tr>
+          <td id="provision"><button><img src="image/play.svg"></img>Provision</button></th>
+          <td><button disabled><img src="image/trash.svg"></img>Delete</button></th>
+          <td><button><img src="image/turningarrow.svg"></img>Refresh</button></th>
+          <td id="flexible">         </td>
+          <td><input type="text" placeholder="Search For..." ></td>
+          <td><button><img src="image/filter.svg"></img>Filter</button></tr>
+        </tr>
+    </table>
+    
+
+    -->
+
+  <table>
+    <div class="entete">
+    <tr>
+        <th></th>
+        <th>Provisioning State <img src="images/tri.png" /></th>
+        <th>Operational status <img src="images/tri.png" /></th>
+        <th>Network name <img src="images/tri.png" /></th>
+        <th>Vendor <img src="images/tri.png" /></th>
+        <th>Regions <img src="images/tri.png" /></th>
+        <th>Gateway <img src="images/tri.png" /></th>
+        <th>Locations <img src="images/tri.png" /></th>
+        <th>Edges <img src="images/tri.png" /></th>
+        <th></th>
+    </tr>
+</div>
+    <tr>
+        <td class="start">
+
+            <label class="container">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+        </td>
+        <td class="active"><p>Active</p></td>
+        <td class="green"><img src="images/yess.png" />Up</td>
+        <td>Network XX25N1</td>
+        <td>VMWare</td>
+        <td>5</td>
+        <td>4</td>
+        <td>15</td>
+        <td>30</td>
+        <td class="end"><img src="images/plus.png" /></td>
+    </tr>
+
+
+    <tr>
+        <td class="start">
+
+            <label class="container">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+        </td>
+        <td class="active"><p>Active</p></td>
+        <td class="green"><img src="images/nope.png" />Down</td>
+        <td>Network XX25N1</td>
+        <td>VMWare</td>
+        <td>5</td>
+        <td>4</td>
+        <td>15</td>
+        <td>30</td>
+        <td class="end"><img src="images/plus.png" /></td>
+    </tr>
+
+
+    <tr>
+        <td class="start">
+
+            <label class="container">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+        </td>
+        <td><p>Unknow</p></td>
+        <td>Unknow</td>
+        <td>Network XX25N1</td>
+        <td>VMWare</td>
+        <td>5</td>
+        <td>4</td>
+        <td>15</td>
+        <td>30</td>
+        <td class="end"><img src="images/plus.png" /></td>
+    </tr>
+    
+</table>
+</div>
+
+
+  <!-- FIN HTML CONTENU - VOTRE SECTION -->
+</div>
+
 </body>
 </html>

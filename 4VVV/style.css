@@ -1,0 +1,188 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainSection {
+    overflow: auto;
+    display : grid;
+    grid-gap : 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    margin-right: 45px;
+    margin-left: 45px;
+}
+
+#gridInformation{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap : 30px;
+}
+
+#descriptionCase{
+    grid-column: span 5;
+}
+
+.caseInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid #cccccc;
+}
+
+.caseGauche{
+    display: flex;
+    flex-direction: column;
+}
+
+.labelInfo{
+    color: #555555;
+    font-size: 14px;
+}
+
+.textInfo{
+    font-size: 16px;
+}
+
+.littletextInfo{
+    font-size: 12px;
+}
+
+.case{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#gridInformationbis{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#provisioningstate, #operationalstatus{
+    border: solid #cccccc;
+}
+
+#opstatline{
+    display: flex;
+}
+
+#opstat{
+    margin-left: 5px;
+}
+
+#provstat{
+    background-color: #3DE35A;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+    border-radius: 3ch;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.mainSection {
+    overflow: auto;
+    display : grid;
+    grid-gap : 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#gridInformation{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap : 20px;
+}
+
+#descriptionCase{
+    grid-column: span 5;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.tablink {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.tablink:hover {
+  background-color: #ddd;
+}
+
+.tabs {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  border-width: 1px 1px 0;
+  background-color: #f7f7f7;
+}
+
+.content {
+  margin: 20px;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  outline: 1px solid #494a4f;
+  border-radius: 1px;
+  border: none;
+}
+
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.search{
+    float:right;
+  }
+   

@@ -1,1 +1,543 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
+
+  <style>
+
+    /*
+
+    #############################################
+    DEBUT STYLE NAVBAR - PAS TOUCHER SINON GOULAG
+    #############################################
+
+    */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #012c10;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #bottom-bar
+    {
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: darkgrey;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    @media screen and (min-width: 900px) {
+      #content {
+        display: flex;
+        margin-left: 3%;
+      }
+    }
+
+    /*
+    #############################################
+    FIN STYLE NAVBAR - PAS TOUCHER SINON GOULAG
+    #############################################
+    */
+
+
+
+    /*
+    #############################################
+        DEBUT STYLE CONTENU - VOTRE SECTION
+    #############################################
+    */
+
+    /*
+    #############################################
+          FIN STYLE CONTENU - VOTRE SECTION
+    #############################################
+    */
+
+  </style>
+</head>
+<body>
+
+<!-- DEBUT HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
+
+<header>
+
+  <div id="top-bar">
+
+  <nav>
+    <a href="#" class="active">Accueil</a>
+    <a href="#">Page 1</a>
+    <a href="#">Page 2</a>
+    <a href="#">Page 3</a>
+  </nav>
+
+  </div>
+
+</header>
+
+<div id="bottom-bar">
+  <p> Home > Networking > Flexible </p>
+</div>
+
+
+<!-- FIN HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
+
+<div id="content">
+  <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
+    <div class="mainSection">
+        <div id="entete">
+            <div id="TitreNClose">
+                <div id="titre"><h1>Network Name</h1></div>
+                <div id="CrossGroup"><img src="Icon left.svg" alt="Cross" id="Cross"> Close</div>
+            </div>
+            
+            <div><img src="Trash.svg" alt="Trash" id="Trash"> Delete</div>
+            <div><img src="Refresh.svg" alt="Refresh" id="Refresh"> Refresh</div>
+            
+        </div>
+
+        <div id="gridInformation">
+
+            <div id="vendor" class="case">
+                <div class="labelInfo">Vendor</div>
+                <div class="textInfo">VMWARE</div>
+            </div>
+            <div id="project" class="case">
+                <div class="labelInfo">Project</div>
+                <div class="textInfo">Name_Project</div>
+            </div>
+            <div id="emstype" class="case">
+                <div class="labelInfo">EMS Type</div>
+                <div class="textInfo">Dedicated</div>
+            </div>
+                <div id="emslocation" class="case">
+                <div class="labelInfo">EMS Location</div>
+            <div class="textInfo">EMEA</div>
+            </div>
+            <div id="provisioningstate" class="case">
+                <div class="labelInfo">Provisoning state</div>
+                <div id="provstatline">
+                    <span id="provstat" class="littletextInfo">Active</span>
+                </div>
+            </div>
+            <div id="operationalstatus" class="case">
+                <div class="labelInfo">Operational status</div>
+                <div id="opstatline">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.574 5.83676L7.47558 10.9441C7.44694 10.9799 7.41423 11.0124 7.37869 11.0412C7.10244 11.2643 6.69822 11.2208 6.47559 10.9441L4.42647 8.39025C4.22273 8.13654 4.24305 7.7695 4.4742 7.54017L4.73034 7.28484C4.96739 7.04901 5.34541 7.03439 5.59972 7.25173L6.84813 8.63014L10.6366 4.97247C10.7542 4.86237 10.9092 4.80062 11.0701 4.80001C11.4241 4.79778 11.7128 5.08358 11.7148 5.43823C11.7148 5.58326 11.665 5.72403 11.574 5.83676ZM8.00049 1.5C4.41066 1.5 1.50049 4.41017 1.50049 8C1.50049 11.5898 4.41066 14.5 8.00049 14.5C11.5903 14.5 14.5005 11.5898 14.5005 8C14.5005 4.41017 11.5903 1.5 8.00049 1.5Z" fill="#3DE35A"/>
+                    </svg>                        
+                    <span id="opstat"class="littletextInfo">Up</span>
+                </div>
+            </div>
+            <div id="buildpackage" class="case">
+                <div class="labelInfo">Build Package</div>
+                <div class="textInfo">Prenium</div>
+            </div>
+            <div id="runpackage" class="case">
+                <div class="labelInfo">Run Package</div>
+                <div class="textInfo">Prenium</div>
+            </div>
+            <div id="defaultlicense" class="case">
+                <div class="labelInfo">Default License Edition</div>
+                <div class="textInfo">Enterprise</div>
+            </div>
+            <div id="vendorsupport" class="case">
+                <div class="labelInfo">Vendor Support Level</div>
+                <div class="textInfo">Production</div>
+            </div>
+            <div id="versionems" class="case">
+                <div class="labelInfo">Version EMS</div>
+                <div class="textInfo">5.2</div>
+            </div>
+            <div id="descriptionCase" class="case">
+                <div class="labelInfo">Description</div>
+                <div class="textInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit 
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                    sint occaecat cupidatat non proident, sunt in culpa qui 
+                    officia deserunt mollit anim id est laborum.</div>
+            </div>
+
+        </div>
+        <div id="gridInformationbis">
+            <div id="caseRegion" class="caseInfo">
+                <div class="caseGauche">
+                    <div>5</div>
+                    <div>Regions</div>
+                </div>
+                <div class="caseDroite">
+                    <div>
+                        <ul>
+                            <li>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.611 7.25514L9.46337 14.9162C9.42041 14.9698 9.37135 15.0186 9.31803 15.0618C8.90366 15.3964 8.29733 15.3312 7.96339 14.9162L4.8897 11.0854C4.5841 10.7048 4.61457 10.1542 4.96131 9.81025L5.34552 9.42726C5.70109 9.07352 6.26811 9.05158 6.64958 9.3776L8.52219 11.4452L14.2049 5.9587C14.3813 5.79356 14.6138 5.70093 14.8551 5.70002C15.3862 5.69667 15.8191 6.12536 15.8222 6.65735C15.8222 6.87489 15.7475 7.08604 15.611 7.25514ZM10.2507 0.75C4.86599 0.75 0.500732 5.11526 0.500732 10.5C0.500732 15.8847 4.86599 20.25 10.2507 20.25C15.6355 20.25 20.0007 15.8847 20.0007 10.5C20.0007 5.11526 15.6355 0.75 10.2507 0.75Z" fill="#3DE35A"/>
+                                </svg>
+                                <span>3 Up</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3129 16.5114C11.0467 16.7286 10.7356 16.8375 10.3805 16.8375C10.0195 16.8375 9.70443 16.7301 9.43506 16.5153C9.16586 16.3007 9.03125 16.0006 9.03125 15.6148C9.03125 15.2778 9.15979 14.991 9.41718 14.7545C9.67468 14.5182 9.99013 14.4 10.3629 14.4C10.7356 14.4 11.0539 14.5182 11.3174 14.7545C11.5807 14.991 11.7125 15.2778 11.7125 15.6148C11.7125 15.9951 11.5793 16.2941 11.3129 16.5114ZM9.4172 4.54998C9.66135 4.30199 9.98129 4.17522 10.3719 4.1625C10.7622 4.17522 11.0822 4.30199 11.3263 4.54998C11.5835 4.81157 11.7125 5.17601 11.7125 5.64326C11.7125 5.98635 11.2063 12.2974 11.0822 12.5534C10.9577 12.8096 10.7357 12.9375 10.416 12.9375C10.4001 12.9375 10.3874 12.9331 10.3719 12.9323C10.3564 12.9331 10.3432 12.9375 10.3275 12.9375C10.0078 12.9375 9.78592 12.8096 9.66164 12.5534C9.53713 12.2974 9.03125 5.98635 9.03125 5.64326C9.03125 5.17601 9.15979 4.81157 9.4172 4.54998ZM10.25 0.75C4.86522 0.75 0.5 5.11525 0.5 10.5C0.5 15.8848 4.86522 20.25 10.25 20.25C15.6348 20.25 20 15.8848 20 10.5C20 5.11525 15.6348 0.75 10.25 0.75Z" fill="#FFCD0B"/>
+                                </svg>
+                                <span>1 Degrated</span>    
+                            </li>
+                            <li>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6014 14.6758C13.4273 14.8494 13.1991 14.9364 12.9711 14.9364C12.7431 14.9364 12.5149 14.8494 12.3409 14.6758L10.25 12.5881L8.15897 14.6758C7.98503 14.8494 7.75691 14.9364 7.52889 14.9364C7.30074 14.9364 7.07264 14.8494 6.89862 14.6757C6.55066 14.3282 6.55066 13.7648 6.89878 13.4173L8.98972 11.3298L6.97308 9.31645C6.62518 8.96892 6.62518 8.4056 6.97308 8.05799C7.32125 7.71072 7.88542 7.71072 8.23356 8.05799L10.2501 10.0714L12.2667 8.05799C12.6147 7.71072 13.1791 7.71072 13.5271 8.05799C13.8751 8.4056 13.8751 8.96902 13.527 9.31645L11.5104 11.3298L13.6014 13.4173C13.9493 13.7649 13.9493 14.3282 13.6014 14.6758ZM19.7046 14.9281L19.7049 14.928L12.1215 1.94828L12.1213 1.94841C11.7455 1.30652 11.0484 0.875 10.25 0.875C9.45157 0.875 8.75451 1.30652 8.37868 1.94841L8.37847 1.94828L0.813768 14.8961C0.813508 14.8965 0.813248 14.8969 0.812962 14.8975L0.795152 14.928L0.795334 14.9281C0.6079 15.2482 0.5 15.6204 0.5 16.018C0.5 17.2127 1.47003 18.1812 2.66668 18.1812H17.8333C19.0299 18.1812 20 17.2127 20 16.018C20 15.6204 19.8921 15.2482 19.7046 14.9281Z" fill="#E70002"/>
+                                </svg>                                    
+                                <span>1 Down</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="caseGateway" class="caseInfo">
+                <div class="caseGauche">
+                    <div>4</div>
+                    <div>Gateways</div>
+                </div>
+                <div class="caseDroite">
+                    <div>
+                        <ul>
+                            <li>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.611 7.25514L9.46337 14.9162C9.42041 14.9698 9.37135 15.0186 9.31803 15.0618C8.90366 15.3964 8.29733 15.3312 7.96339 14.9162L4.8897 11.0854C4.5841 10.7048 4.61457 10.1542 4.96131 9.81025L5.34552 9.42726C5.70109 9.07352 6.26811 9.05158 6.64958 9.3776L8.52219 11.4452L14.2049 5.9587C14.3813 5.79356 14.6138 5.70093 14.8551 5.70002C15.3862 5.69667 15.8191 6.12536 15.8222 6.65735C15.8222 6.87489 15.7475 7.08604 15.611 7.25514ZM10.2507 0.75C4.86599 0.75 0.500732 5.11526 0.500732 10.5C0.500732 15.8847 4.86599 20.25 10.2507 20.25C15.6355 20.25 20.0007 15.8847 20.0007 10.5C20.0007 5.11526 15.6355 0.75 10.2507 0.75Z" fill="#3DE35A"/>
+                                </svg>
+                                <span>3 Up</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3129 16.5114C11.0467 16.7286 10.7356 16.8375 10.3805 16.8375C10.0195 16.8375 9.70443 16.7301 9.43506 16.5153C9.16586 16.3007 9.03125 16.0006 9.03125 15.6148C9.03125 15.2778 9.15979 14.991 9.41718 14.7545C9.67468 14.5182 9.99013 14.4 10.3629 14.4C10.7356 14.4 11.0539 14.5182 11.3174 14.7545C11.5807 14.991 11.7125 15.2778 11.7125 15.6148C11.7125 15.9951 11.5793 16.2941 11.3129 16.5114ZM9.4172 4.54998C9.66135 4.30199 9.98129 4.17522 10.3719 4.1625C10.7622 4.17522 11.0822 4.30199 11.3263 4.54998C11.5835 4.81157 11.7125 5.17601 11.7125 5.64326C11.7125 5.98635 11.2063 12.2974 11.0822 12.5534C10.9577 12.8096 10.7357 12.9375 10.416 12.9375C10.4001 12.9375 10.3874 12.9331 10.3719 12.9323C10.3564 12.9331 10.3432 12.9375 10.3275 12.9375C10.0078 12.9375 9.78592 12.8096 9.66164 12.5534C9.53713 12.2974 9.03125 5.98635 9.03125 5.64326C9.03125 5.17601 9.15979 4.81157 9.4172 4.54998ZM10.25 0.75C4.86522 0.75 0.5 5.11525 0.5 10.5C0.5 15.8848 4.86522 20.25 10.25 20.25C15.6348 20.25 20 15.8848 20 10.5C20 5.11525 15.6348 0.75 10.25 0.75Z" fill="#FFCD0B"/>
+                                </svg>
+                                <span>1 Degrated</span>    
+                            </li>
+                            <li>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6014 14.6758C13.4273 14.8494 13.1991 14.9364 12.9711 14.9364C12.7431 14.9364 12.5149 14.8494 12.3409 14.6758L10.25 12.5881L8.15897 14.6758C7.98503 14.8494 7.75691 14.9364 7.52889 14.9364C7.30074 14.9364 7.07264 14.8494 6.89862 14.6757C6.55066 14.3282 6.55066 13.7648 6.89878 13.4173L8.98972 11.3298L6.97308 9.31645C6.62518 8.96892 6.62518 8.4056 6.97308 8.05799C7.32125 7.71072 7.88542 7.71072 8.23356 8.05799L10.2501 10.0714L12.2667 8.05799C12.6147 7.71072 13.1791 7.71072 13.5271 8.05799C13.8751 8.4056 13.8751 8.96902 13.527 9.31645L11.5104 11.3298L13.6014 13.4173C13.9493 13.7649 13.9493 14.3282 13.6014 14.6758ZM19.7046 14.9281L19.7049 14.928L12.1215 1.94828L12.1213 1.94841C11.7455 1.30652 11.0484 0.875 10.25 0.875C9.45157 0.875 8.75451 1.30652 8.37868 1.94841L8.37847 1.94828L0.813768 14.8961C0.813508 14.8965 0.813248 14.8969 0.812962 14.8975L0.795152 14.928L0.795334 14.9281C0.6079 15.2482 0.5 15.6204 0.5 16.018C0.5 17.2127 1.47003 18.1812 2.66668 18.1812H17.8333C19.0299 18.1812 20 17.2127 20 16.018C20 15.6204 19.8921 15.2482 19.7046 14.9281Z" fill="#E70002"/>
+                                </svg>                                    
+                                <span>1 Down</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="caseSite" class="caseInfo">
+                <div class="caseGauche">
+                    <div>15</div>
+                    <div>Sites</div>
+                </div>
+                <div class="caseDroite">
+                    <div>
+                        <ul>
+                            <li>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.611 7.25514L9.46337 14.9162C9.42041 14.9698 9.37135 15.0186 9.31803 15.0618C8.90366 15.3964 8.29733 15.3312 7.96339 14.9162L4.8897 11.0854C4.5841 10.7048 4.61457 10.1542 4.96131 9.81025L5.34552 9.42726C5.70109 9.07352 6.26811 9.05158 6.64958 9.3776L8.52219 11.4452L14.2049 5.9587C14.3813 5.79356 14.6138 5.70093 14.8551 5.70002C15.3862 5.69667 15.8191 6.12536 15.8222 6.65735C15.8222 6.87489 15.7475 7.08604 15.611 7.25514ZM10.2507 0.75C4.86599 0.75 0.500732 5.11526 0.500732 10.5C0.500732 15.8847 4.86599 20.25 10.2507 20.25C15.6355 20.25 20.0007 15.8847 20.0007 10.5C20.0007 5.11526 15.6355 0.75 10.2507 0.75Z" fill="#3DE35A"/>
+                                </svg>
+                                <span>3 Up</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3129 16.5114C11.0467 16.7286 10.7356 16.8375 10.3805 16.8375C10.0195 16.8375 9.70443 16.7301 9.43506 16.5153C9.16586 16.3007 9.03125 16.0006 9.03125 15.6148C9.03125 15.2778 9.15979 14.991 9.41718 14.7545C9.67468 14.5182 9.99013 14.4 10.3629 14.4C10.7356 14.4 11.0539 14.5182 11.3174 14.7545C11.5807 14.991 11.7125 15.2778 11.7125 15.6148C11.7125 15.9951 11.5793 16.2941 11.3129 16.5114ZM9.4172 4.54998C9.66135 4.30199 9.98129 4.17522 10.3719 4.1625C10.7622 4.17522 11.0822 4.30199 11.3263 4.54998C11.5835 4.81157 11.7125 5.17601 11.7125 5.64326C11.7125 5.98635 11.2063 12.2974 11.0822 12.5534C10.9577 12.8096 10.7357 12.9375 10.416 12.9375C10.4001 12.9375 10.3874 12.9331 10.3719 12.9323C10.3564 12.9331 10.3432 12.9375 10.3275 12.9375C10.0078 12.9375 9.78592 12.8096 9.66164 12.5534C9.53713 12.2974 9.03125 5.98635 9.03125 5.64326C9.03125 5.17601 9.15979 4.81157 9.4172 4.54998ZM10.25 0.75C4.86522 0.75 0.5 5.11525 0.5 10.5C0.5 15.8848 4.86522 20.25 10.25 20.25C15.6348 20.25 20 15.8848 20 10.5C20 5.11525 15.6348 0.75 10.25 0.75Z" fill="#FFCD0B"/>
+                                </svg>
+                                <span>1 Degrated</span>    
+                            </li>
+                            <li>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6014 14.6758C13.4273 14.8494 13.1991 14.9364 12.9711 14.9364C12.7431 14.9364 12.5149 14.8494 12.3409 14.6758L10.25 12.5881L8.15897 14.6758C7.98503 14.8494 7.75691 14.9364 7.52889 14.9364C7.30074 14.9364 7.07264 14.8494 6.89862 14.6757C6.55066 14.3282 6.55066 13.7648 6.89878 13.4173L8.98972 11.3298L6.97308 9.31645C6.62518 8.96892 6.62518 8.4056 6.97308 8.05799C7.32125 7.71072 7.88542 7.71072 8.23356 8.05799L10.2501 10.0714L12.2667 8.05799C12.6147 7.71072 13.1791 7.71072 13.5271 8.05799C13.8751 8.4056 13.8751 8.96902 13.527 9.31645L11.5104 11.3298L13.6014 13.4173C13.9493 13.7649 13.9493 14.3282 13.6014 14.6758ZM19.7046 14.9281L19.7049 14.928L12.1215 1.94828L12.1213 1.94841C11.7455 1.30652 11.0484 0.875 10.25 0.875C9.45157 0.875 8.75451 1.30652 8.37868 1.94841L8.37847 1.94828L0.813768 14.8961C0.813508 14.8965 0.813248 14.8969 0.812962 14.8975L0.795152 14.928L0.795334 14.9281C0.6079 15.2482 0.5 15.6204 0.5 16.018C0.5 17.2127 1.47003 18.1812 2.66668 18.1812H17.8333C19.0299 18.1812 20 17.2127 20 16.018C20 15.6204 19.8921 15.2482 19.7046 14.9281Z" fill="#E70002"/>
+                                </svg>                                    
+                                <span>1 Down</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="caseEdge" class="caseInfo">
+                <div class="caseGauche">
+                    <div>30</div>
+                    <div>Edges</div>
+                </div>
+                <div class="caseDroite">
+                    <div>
+                        <ul>
+                            <li>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.611 7.25514L9.46337 14.9162C9.42041 14.9698 9.37135 15.0186 9.31803 15.0618C8.90366 15.3964 8.29733 15.3312 7.96339 14.9162L4.8897 11.0854C4.5841 10.7048 4.61457 10.1542 4.96131 9.81025L5.34552 9.42726C5.70109 9.07352 6.26811 9.05158 6.64958 9.3776L8.52219 11.4452L14.2049 5.9587C14.3813 5.79356 14.6138 5.70093 14.8551 5.70002C15.3862 5.69667 15.8191 6.12536 15.8222 6.65735C15.8222 6.87489 15.7475 7.08604 15.611 7.25514ZM10.2507 0.75C4.86599 0.75 0.500732 5.11526 0.500732 10.5C0.500732 15.8847 4.86599 20.25 10.2507 20.25C15.6355 20.25 20.0007 15.8847 20.0007 10.5C20.0007 5.11526 15.6355 0.75 10.2507 0.75Z" fill="#3DE35A"/>
+                                </svg>
+                                <span>3 Up</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3129 16.5114C11.0467 16.7286 10.7356 16.8375 10.3805 16.8375C10.0195 16.8375 9.70443 16.7301 9.43506 16.5153C9.16586 16.3007 9.03125 16.0006 9.03125 15.6148C9.03125 15.2778 9.15979 14.991 9.41718 14.7545C9.67468 14.5182 9.99013 14.4 10.3629 14.4C10.7356 14.4 11.0539 14.5182 11.3174 14.7545C11.5807 14.991 11.7125 15.2778 11.7125 15.6148C11.7125 15.9951 11.5793 16.2941 11.3129 16.5114ZM9.4172 4.54998C9.66135 4.30199 9.98129 4.17522 10.3719 4.1625C10.7622 4.17522 11.0822 4.30199 11.3263 4.54998C11.5835 4.81157 11.7125 5.17601 11.7125 5.64326C11.7125 5.98635 11.2063 12.2974 11.0822 12.5534C10.9577 12.8096 10.7357 12.9375 10.416 12.9375C10.4001 12.9375 10.3874 12.9331 10.3719 12.9323C10.3564 12.9331 10.3432 12.9375 10.3275 12.9375C10.0078 12.9375 9.78592 12.8096 9.66164 12.5534C9.53713 12.2974 9.03125 5.98635 9.03125 5.64326C9.03125 5.17601 9.15979 4.81157 9.4172 4.54998ZM10.25 0.75C4.86522 0.75 0.5 5.11525 0.5 10.5C0.5 15.8848 4.86522 20.25 10.25 20.25C15.6348 20.25 20 15.8848 20 10.5C20 5.11525 15.6348 0.75 10.25 0.75Z" fill="#FFCD0B"/>
+                                </svg>
+                                <span>1 Degrated</span>    
+                            </li>
+                                <li>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6014 14.6758C13.4273 14.8494 13.1991 14.9364 12.9711 14.9364C12.7431 14.9364 12.5149 14.8494 12.3409 14.6758L10.25 12.5881L8.15897 14.6758C7.98503 14.8494 7.75691 14.9364 7.52889 14.9364C7.30074 14.9364 7.07264 14.8494 6.89862 14.6757C6.55066 14.3282 6.55066 13.7648 6.89878 13.4173L8.98972 11.3298L6.97308 9.31645C6.62518 8.96892 6.62518 8.4056 6.97308 8.05799C7.32125 7.71072 7.88542 7.71072 8.23356 8.05799L10.2501 10.0714L12.2667 8.05799C12.6147 7.71072 13.1791 7.71072 13.5271 8.05799C13.8751 8.4056 13.8751 8.96902 13.527 9.31645L11.5104 11.3298L13.6014 13.4173C13.9493 13.7649 13.9493 14.3282 13.6014 14.6758ZM19.7046 14.9281L19.7049 14.928L12.1215 1.94828L12.1213 1.94841C11.7455 1.30652 11.0484 0.875 10.25 0.875C9.45157 0.875 8.75451 1.30652 8.37868 1.94841L8.37847 1.94828L0.813768 14.8961C0.813508 14.8965 0.813248 14.8969 0.812962 14.8975L0.795152 14.928L0.795334 14.9281C0.6079 15.2482 0.5 15.6204 0.5 16.018C0.5 17.2127 1.47003 18.1812 2.66668 18.1812H17.8333C19.0299 18.1812 20 17.2127 20 16.018C20 15.6204 19.8921 15.2482 19.7046 14.9281Z" fill="#E70002"/>
+                                </svg>                                    
+                                <span>1 Down</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="list">
+            <div class="tabs">
+                <button class="tablink" onclick="openTab('tab1')">Regions</button>
+                <button class="tablink" onclick="openTab('tab2')">Gateways</button>
+                <button class="tablink" onclick="openTab('tab3')">Sites</button>
+                <button class="tablink" onclick="openTab('tab4')">Edges</button>
+                <button class="tablink" onclick="openTab('tab5')">Map</button>
+                <button class="search" onclick="filterResults()">Filter</button>
+                <input class="search" type="text" id="searchBar" placeholder="Search for a product...">
+            </div>
+
+
+            <div id="tab2" class="tabcontent">
+                <h3>Gateways inventory</h3>
+                <article class="content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Gateway Name</th>
+                                <th>Region</th>
+                                <th>Type</th>
+                                <th>Operational Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gateway USA</td>
+                                <td>AMER</td>
+                                <td>Service</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Gateway USA</td>
+                                <td>AMER</td>
+                                <td>Service</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Gateway USA</td>
+                                <td>AMER</td>
+                                <td>Service</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Gateway USA</td>
+                                <td>AMER</td>
+                                <td>Service</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Gateway USA</td>
+                                <td>AMER</td>
+                                <td>Service</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Gateway USA</td>
+                                <td>AMER</td>
+                                <td>Service</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Gateway USA</td>
+                                <td>AMER</td>
+                                <td>Service</td>
+                                <td>Up</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+
+
+            <div id="tab3" class="tabcontent">
+                <h3>Sites inventory</h3>
+                <article class="content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Site Name</th>
+                                <th>Edges</th>
+                                <th>Operational Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>2</td>
+                                <td>Up</td>
+                                <td>Site monitoring</td>
+                            </tr>
+                            <tr>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>2</td>
+                                <td>Up</td>
+                                <td>Site monitoring</td>
+                            </tr>
+                            <tr>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>2</td>
+                                <td>Up</td>
+                                <td>Site monitoring</td>
+                            </tr>
+                            <tr>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>2</td>
+                                <td>Up</td>
+                                <td>Site monitoring</td>
+                            </tr>
+                            <tr>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>2</td>
+                                <td>Up</td>
+                                <td>Site monitoring</td>
+                            </tr>
+                            <tr>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>2</td>
+                                <td>Up</td>
+                                <td>Site monitoring</td>
+                            </tr>
+                            <tr>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>2</td>
+                                <td>Up</td>
+                                <td>Site monitoring</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+
+            
+            <div id="tab4" class="tabcontent">
+                <h3>Edge inventory</h3>
+                <article class="content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Edge Name</th>
+                                <th>Hostname</th>
+                                <th>Serial Number</th>
+                                <th>Site</th>
+                                <th>Operational Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Edge SOPHIA-ANTIPOLIS-1</td>
+                                <td>edge-sophia-antipolis-1</td>
+                                <td>1245-4875-5263</td>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Edge SOPHIA-ANTIPOLIS-1</td>
+                                <td>edge-sophia-antipolis-1</td>
+                                <td>1245-4875-5263</td>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Edge SOPHIA-ANTIPOLIS-1</td>
+                                <td>edge-sophia-antipolis-1</td>
+                                <td>1245-4875-5263</td>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Edge SOPHIA-ANTIPOLIS-1</td>
+                                <td>edge-sophia-antipolis-1</td>
+                                <td>1245-4875-5263</td>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Edge SOPHIA-ANTIPOLIS-1</td>
+                                <td>edge-sophia-antipolis-1</td>
+                                <td>1245-4875-5263</td>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Edge SOPHIA-ANTIPOLIS-1</td>
+                                <td>edge-sophia-antipolis-1</td>
+                                <td>1245-4875-5263</td>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Edge SOPHIA-ANTIPOLIS-1</td>
+                                <td>edge-sophia-antipolis-1</td>
+                                <td>1245-4875-5263</td>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Edge SOPHIA-ANTIPOLIS-1</td>
+                                <td>edge-sophia-antipolis-1</td>
+                                <td>1245-4875-5263</td>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>Edge SOPHIA-ANTIPOLIS-1</td>
+                                <td>edge-sophia-antipolis-1</td>
+                                <td>1245-4875-5263</td>
+                                <td>Site SOPHIA-ANTIPOLIS</td>
+                                <td>Up</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+            
+        </div>
+    </div>
+  <!-- FIN HTML CONTENU - VOTRE SECTION -->
+</div>
+
+</body>
+</html>

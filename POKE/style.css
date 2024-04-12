@@ -5,7 +5,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-
+    max-width: 1320px;
 }
 
 .table *{
@@ -13,9 +13,14 @@
     gap: 5px;
 }
 
-.table td{
-    width: 350px;
+th svg{
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+td, th{
     padding: 15px;
+    width: 350px;
 }
 
 .table tr{
@@ -29,7 +34,7 @@
 }
 
 tr:nth-child(even) {
-  background-color: #F4F4F4;
+    background-color: #F4F4F4;
 }
 
 .status{
@@ -49,4 +54,16 @@ tr:nth-child(even) {
 
 .status--degraded{
     background-color: #FFCD0B;
+}
+
+td:has(.button), #button-col{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button svg{
+    padding: 0;
+    vertical-align: middle;
 }

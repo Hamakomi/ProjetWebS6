@@ -13,7 +13,7 @@
     /*
 
     #############################################
-    DEBUT STYLE NAVBAR - PAS TOUCHER SINON GOULAG
+          DEBUT STYLE NAVBAR - PAS TOUCHER
     #############################################
 
     */
@@ -24,7 +24,7 @@
       padding: 0;
     }
 
-    header {
+    #top-bar {
       background-color: #012c10;
       color: white;
       padding: 10px 20px;
@@ -36,10 +36,10 @@
     #bottom-bar
     {
       padding: 10px 20px;
+      font-size: 14px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      background-color: darkgrey;
+      background-color: #F6F6F6;
     }
 
     nav {
@@ -56,19 +56,77 @@
     }
 
     nav a:hover {
-      background-color: #555;
+
     }
 
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 400px) {
       #content {
         display: flex;
         margin-left: 3%;
       }
     }
+    .navbar {
+      overflow: hidden;
+    }
 
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: goldenrod;
+      color: black;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
     /*
     #############################################
-    FIN STYLE NAVBAR - PAS TOUCHER SINON GOULAG
+          FIN STYLE NAVBAR - NE PAS TOUCHER
     #############################################
     */
 
@@ -90,29 +148,44 @@
 </head>
 <body>
 
-<!-- DEBUT HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
+<!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
 
 <header>
 
   <div id="top-bar">
-
-  <nav>
-    <a href="#" class="active">Accueil</a>
-    <a href="#">Page 1</a>
-    <a href="#">Page 2</a>
-    <a href="#">Page 3</a>
-  </nav>
+    <div class="navbar">
+    <a href="#home">My Network</a>
+    <a href="#news">Solutions</a>
+    <div class="dropdown">
+      <button class="dropbtn">Regions
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+      <div class="dropdown">
+        <button class="dropbtn">Locations
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
 
   </div>
-
-</header>
+  </div>
 
 <div id="bottom-bar">
-  <p> Home > Networking > Flexible </p>
+  <p> Home   >   Networking   >   Flexible </p>
 </div>
+</header>
 
-
-<!-- FIN HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
+<!-- FIN HTML NAVBAR - PAS TOUCHER -->
 
 <div id="content">
   <!-- DEBUT HTML CONTENU - VOTRE SECTION -->

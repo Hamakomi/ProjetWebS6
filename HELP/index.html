@@ -33,6 +33,15 @@
       align-items: center;
     }
 
+    #bottom-bar
+    {
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: darkgrey;
+    }
+
     nav {
       display: flex;
       gap: 20px;
@@ -85,9 +94,7 @@
 
 <header>
 
-  <div>
-    Mon Site
-  </div>
+  <div id="top-bar">
 
   <nav>
     <a href="#" class="active">Accueil</a>
@@ -96,19 +103,22 @@
     <a href="#">Page 3</a>
   </nav>
 
+  </div>
+
 </header>
 
+<div id="bottom-bar">
+  <p> Home > Networking > Flexible </p>
+</div>
+
+
 <!-- FIN HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
-
-
 
 <div id="content">
   <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
 
   <!-- FIN HTML CONTENU - VOTRE SECTION -->
 </div>
-
-
 
 </body>
 </html>

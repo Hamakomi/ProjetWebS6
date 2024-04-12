@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
+
   <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
 
   <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
@@ -18,6 +23,10 @@
 
     */
 
+    :root {
+      --primary-color: #012c10;
+      --white: #ffffff;
+    }
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -55,20 +64,19 @@
       transition: background-color 0.3s;
     }
 
-    nav a:hover {
-
-    }
-
     @media screen and (min-width: 400px) {
       #content {
         display: flex;
         margin-left: 3%;
       }
     }
+
+    /* Navbar container */
     .navbar {
       overflow: hidden;
     }
 
+    /* Links inside the navbar */
     .navbar a {
       float: left;
       font-size: 16px;
@@ -78,11 +86,13 @@
       text-decoration: none;
     }
 
+    /* The dropdown container */
     .dropdown {
       float: left;
       overflow: hidden;
     }
 
+    /* Dropdown button */
     .dropdown .dropbtn {
       font-size: 16px;
       border: none;
@@ -94,11 +104,14 @@
       margin: 0;
     }
 
+    /* Add a golden background color to navbar links on hover */
     .navbar a:hover, .dropdown:hover .dropbtn {
       background-color: goldenrod;
       color: black;
     }
 
+
+    /* Dropdown content (hidden by default) */
     .dropdown-content {
       display: none;
       position: absolute;
@@ -108,6 +121,7 @@
       z-index: 1;
     }
 
+    /* Links inside the dropdown */
     .dropdown-content a {
       float: none;
       color: black;
@@ -117,13 +131,28 @@
       text-align: left;
     }
 
+    /* Add a grey background color to dropdown links on hover */
     .dropdown-content a:hover {
       background-color: #ddd;
+
     }
 
+    /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {
       display: block;
     }
+
+    .fa-caret-down {
+      color: goldenrod;
+    }
+
+    .dropdown:hover .fa-caret-down {
+      color: black;
+    }
+
+
+
+
     /*
     #############################################
           FIN STYLE NAVBAR - NE PAS TOUCHER
@@ -138,11 +167,8 @@
     #############################################
     */
 
-    :root {
-      --primary-color: #1e90ff;
-      --white: #ffffff;
-    }
-    
+
+
     /*
     #############################################
           FIN STYLE CONTENU - VOTRE SECTION

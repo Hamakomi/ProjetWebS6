@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regions Details</title>
+    <link rel="stylesheet" type="text/css" href="CSS/regions_details.css">
+    <style>
+        /*
+
+    #############################################
+    DEBUT STYLE NAVBAR - PAS TOUCHER SINON GOULAG
+    #############################################
+
+    */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #bottom-bar {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: darkgrey;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        @media screen and (min-width: 900px) {
+            .content {
+                display: flex;
+                margin-left: 3%;
+            }
+        }
+
+        .page {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /*
+    #############################################
+    FIN STYLE NAVBAR - PAS TOUCHER SINON GOULAG
+    #############################################
+    */
+
+
+
+        /*
+    #############################################
+        DEBUT STYLE CONTENU - VOTRE SECTION
+    #############################################
+    */
+
+        /*
+    #############################################
+          FIN STYLE CONTENU - VOTRE SECTION
+    #############################################
+    */
+    </style>
+</head>
+
+<body>
+
+    <!-- DEBUT HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
+
+    <header>
+        <div id="top-bar">
+            <nav>
+                <a href="#" class="active">Accueil</a>
+                <a href="#">Page 1</a>
+                <a href="#">Page 2</a>
+                <a href="#">Page 3</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="bottom-bar">
+        <p> Home > Networking > Flexible </p>
+    </div>
+
+    <!-- FIN HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
+
+    <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
+
+    <div class="content">
+        <div class="page">
+            <!-- Contenu de la page ici -->
+            <div id="header">
+                <h1 id="region_name">
+                    Region Name
+                </h1>
+                <div id="close_button">
+                    Close
+                </div>
+            </div>
+            <div id="region_option">
+                <div id="delete_button">
+                    Delete
+                </div>
+                <div id="refresh_button">
+                    Refresh
+                </div>
+            </div>
+            <div id="region_info_wrapper">
+                <div id="region_info_subwrapper">
+                    <dl class="region_info">
+                        <dt class="region_info_title">Vendor:</dt>
+                        <dd class="region_info_text">
+                            VMWARE
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title">Project:</dt>
+                        <dd class="region_info_text">
+                            Name_Project
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title">Network:</dt>
+                        <dd class="region_info_text">
+                            Network Name
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title">Service Management:</dt>
+                        <dd class="region_info_text">
+                            Premium
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title">Location Gateway:</dt>
+                        <dd class="region_info_text">
+                            London / Amsterdam
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title">Gateway version:</dt>
+                        <dd class="region_info_text">
+                            5.0
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title">Orchestrator:</dt>
+                        <dd class="region_info_text">
+                            Go to VM-Ware
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title"></dt>
+                        <dd class="region_info_text">
+
+                        </dd>
+                    </dl>
+                </div>
+                <div id="region_info_special_wrapper">
+                    <dl class="region_info_special">
+                        <dt class="region_info_title">Provisioning state:</dt>
+                        <dd class="region_info_text">
+                            Active
+                        </dd>
+                    </dl>
+                    <dl class="region_info_special">
+                        <dt class="region_info_title">Operationnal status:</dt>
+                        <dd class="region_info_text">
+                            Up
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <dl id="region_description">
+                <dt>Description:</dt>
+                <dd id="region_description_text"> Lorem ipsum</dd>
+            </dl>
+            <div id="region_info_values_wrapper">
+                <div class="info_values">
+                    <div class="info_spec">
+                        <div class="info_spec_number">
+                            4
+                        </div>
+                        <div class="info_spec_name">
+                            Gateways
+                        </div>
+                    </div>
+                    <div class="info_state">
+                        <div id="info_gateway_up">3 Up</div>
+                        <div id="info_gateway_degraded">1 Degraded</div>
+                        <div id="info_gateway_down">1 D</div>
+                    </div>
+                </div>
+                <div class="info_values">
+                    <div class="info_spec">
+                        <div class="info_spec_number">
+                            15
+                        </div>
+                        <div class="info_spec_name">
+                            Sites
+                        </div>
+                    </div>
+                    <div class="info_state">
+                        <div id="info_sites_up">3 Up</div>
+                        <div id="info_sites_degraded">1 Degraded</div>
+                        <div id="info_sites_down">1 D</div>
+                    </div>
+                </div>
+                <div class="info_values">
+                    <div class="info_spec">
+                        <div class="info_spec_number">
+                            30
+                        </div>
+                        <div class="info_spec_name">
+                            Edges
+                        </div>
+                    </div>
+                    <div class="info_state">
+                        <div id="info_edges_up">3 Up</div>
+                        <div id="info_edges_degraded">1 Degraded</div>
+                        <div id="info_edges_down">1 D</div>
+                    </div>
+                </div>
+            </div>
+            <div id="inventory_navbar_wrapper">
+                <div id="gateway_navbar">
+                    Gateways
+                </div>
+                <div id="sites_navbar">
+                    Sites
+                </div>
+                <div id="edges_navbar">
+                    Edges
+                </div>
+                <div id="map_navbar">
+                    Map
+                </div>
+                <div id="search_navbar">
+                    Search for a product
+                </div>
+                <div id="filter_navbar">
+                    Filter
+                </div>
+            </div>
+            <div id="inventory_wrapper">
+                <div id="inventory_name">
+                    Gateway Inventory
+                </div>
+                <table>
+                    <tr>
+                        <th>Gateway Name</th>
+                        <th>Region</th>
+                        <th>Type</th>
+                        <th>Operational status</th>
+                    </tr>
+                </table>
+
+            </div>
+            <div id="pager_wrapper">
+                <div id="pager">
+                    <div id="previous_button">
+                        Previous
+                    </div>
+                    <div id="page_number">
+                        Page 1 of 1
+                    </div>
+                    <div id="next_button">
+                        Next
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- FIN HTML CONTENU - VOTRE SECTION -->
+
+</body>
+
+</html>

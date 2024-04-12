@@ -1,0 +1,139 @@
+.page{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    margin-left: 3%;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#region_option{
+    display: flex;
+    justify-content: column;
+    align-items: center;
+}
+/*
+Section pour les différentes informations des regions
+*/
+
+
+#region_info_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+#region_info_subwrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#region_info_special_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 50%;
+}
+#region_description{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+}
+
+/*
+Section pour les différentes valeurs relatives a la region
+*/
+#region_info_values_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20%;
+}
+
+
+/*
+Section pour les id de la navbar de l'inventaire
+*/
+
+#inventory_navbar_wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+/*
+Section pour les id de l'inventaire
+*/
+#inventory_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+#inventory_name{
+    display: flex;
+    align-items: center;
+}
+#pager_wrapper{
+    display: flex;
+    justify-content: right;
+}
+#pager{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+Section pour la navbar de l'inventaire
+*/
+.region_info{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    width: 20%;
+}
+.region_info_special{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(204, 204, 204);
+    padding:10px;
+    margin: 10px;
+}
+
+.region_info_text{
+    margin-top: 12px;
+    margin-left: 0px;
+}
+
+.region_info_title{
+    font-size: 0.85em;
+    color: rgb(85, 85, 85);
+}
+
+.info_values{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    width: 33%;
+}
+.info_spec{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    justify-content: center;
+
+}
+
+.info_state{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}

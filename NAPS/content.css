@@ -6,7 +6,7 @@
 
 
 table {
-    width: 100%;
+    width: 97%;
     border-collapse:separate;
     border-spacing: 0px 8px;
 }
@@ -17,7 +17,9 @@ td{
     border: 1px solid #ddd;
     border-left: none;
     border-right: none;
+    height: 50px;
 }
+
 
 
 .start{
@@ -61,6 +63,46 @@ th {
 
 
 
+.div_loading{
+  color: black;
+  background-color:#ecfdef;
+  
+  border-radius: 12px;
+  width: 120px;
+  height: 20px;
+  padding-left: 8px;
+  padding-top: 1px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.div_loading img{
+  padding-top: 4px;
+  padding-right: 8px;
+}
+
+
+.draft p {
+  color: black;
+  background-color:#f4f4f4;
+  
+  border-radius: 12px;
+  width: 50px;
+  height: 18px;
+  padding-left: 16px;
+  padding-top: 1px;
+}
+
+.inactive p {
+  color: white;
+  background-color:black;
+  
+  border-radius: 12px;
+  width: 75px;
+  height: 18px;
+  padding-left: 18px;
+  padding-top: 1px;
+}
 
 
 /*BOUTON RECUP SUR OPENCLASSROOM*/
@@ -136,12 +178,3 @@ th {
     transform: rotate(45deg);
   }
 
-
-
-
-
-
-
-
-
-  

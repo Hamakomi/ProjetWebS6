@@ -219,20 +219,31 @@
  
 <div id="content">
   <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
- 
+
+
   <h1>Flexible Inventory</h1>
-  <div id="titlenav">
-    <a href="#">Network</a>
+  <div class="titlenav">
+    <div class="nobutton">
+    <a class="bold_network" href="#">Network</a>
     <a href="#">Region</a>
     <a href="#">Site</a>
+    </div>
+    <button>Add a new network</button>
+    
   </div>
-  <div id="actionBar">
-    <button>Provision</button>
-    <button>Delete</button>
-    <button>Refresh</button>
-    <div id ="spacing"></div>
-    <input class="zone_saisie" type="text" id="prenom_zone_saisie" name="prenom" placeholder="votre prénom" required>
-    <button>Filter</button>
+
+
+  <div class="actionBar">
+    <table>
+      <tr>
+        <th class="first"><button>Provision</button></th>
+        <th><button>Delete</button></th>
+        <th><button>Refresh</button></th>
+        <th></th>
+        <th><input class="zone_saisie" type="text" id="prenom_zone_saisie" name="prenom" placeholder="votre prénom" required></th>
+        <th class="last"><button>Filter</button></th>
+      </tr>
+  </table>
   </div>
  
  

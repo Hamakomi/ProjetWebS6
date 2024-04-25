@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ 
   <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+ 
   <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
-
+ 
   <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
   <link href="content.css" rel="stylesheet">
   <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
-
+ 
   <style>
-
+ 
     /*
-
+ 
     #############################################
           DEBUT STYLE NAVBAR - PAS TOUCHER
     #############################################
-
+ 
     */
-
+ 
     :root {
       --primary-color: #012c10;
       --white: #ffffff;
@@ -32,7 +32,7 @@
       margin: 0;
       padding: 0;
     }
-
+ 
     #top-bar {
       background-color: #012c10;
       color: white;
@@ -41,7 +41,7 @@
       justify-content: space-between;
       align-items: center;
     }
-
+ 
     #bottom-bar
     {
       padding: 10px 20px;
@@ -50,12 +50,12 @@
       align-items: center;
       background-color: #F6F6F6;
     }
-
+ 
     nav {
       display: flex;
       gap: 20px;
     }
-
+ 
     nav a {
       color: white;
       text-decoration: none;
@@ -63,19 +63,18 @@
       border-radius: 5px;
       transition: background-color 0.3s;
     }
-
+ 
     @media screen and (min-width: 400px) {
       #content {
-        display: flex;
         margin-left: 3%;
       }
     }
-
+ 
     /* Navbar container */
     .navbar {
       overflow: hidden;
     }
-
+ 
     /* Links inside the navbar */
     .navbar a {
       float: left;
@@ -85,13 +84,13 @@
       padding: 14px 16px;
       text-decoration: none;
     }
-
+ 
     /* The dropdown container */
     .dropdown {
       float: left;
       overflow: hidden;
     }
-
+ 
     /* Dropdown button */
     .dropdown .dropbtn {
       font-size: 16px;
@@ -103,14 +102,14 @@
       font-family: inherit;
       margin: 0;
     }
-
+ 
     /* Add a golden background color to navbar links on hover */
     .navbar a:hover, .dropdown:hover .dropbtn {
       background-color: goldenrod;
       color: black;
     }
-
-
+ 
+ 
     /* Dropdown content (hidden by default) */
     .dropdown-content {
       display: none;
@@ -120,7 +119,7 @@
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
     }
-
+ 
     /* Links inside the dropdown */
     .dropdown-content a {
       float: none;
@@ -130,59 +129,59 @@
       display: block;
       text-align: left;
     }
-
+ 
     /* Add a grey background color to dropdown links on hover */
     .dropdown-content a:hover {
       background-color: #ddd;
-
+ 
     }
-
+ 
     /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {
       display: block;
     }
-
+ 
     .fa-caret-down {
       color: goldenrod;
     }
-
+ 
     .dropdown:hover .fa-caret-down {
       color: black;
     }
-
-
-
-
+ 
+ 
+ 
+ 
     /*
     #############################################
           FIN STYLE NAVBAR - NE PAS TOUCHER
     #############################################
     */
-
-
-
+ 
+ 
+ 
     /*
     #############################################
         DEBUT STYLE CONTENU - VOTRE SECTION
     #############################################
     */
-
-
-
+ 
+ 
+ 
     /*
     #############################################
           FIN STYLE CONTENU - VOTRE SECTION
     #############################################
     */
-
+ 
   </style>
 </head>
 <body>
-
+ 
 <!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
-
+ 
 <header>
-
+ 
   <div id="top-bar">
     <div class="navbar">
     <a href="#home">My Network</a>
@@ -207,53 +206,39 @@
           <a href="#">Link 3</a>
         </div>
       </div>
-
+ 
   </div>
   </div>
-
+ 
 <div id="bottom-bar">
   <p> Home   >   Networking   >   Flexible </p>
 </div>
 </header>
-
+ 
 <!-- FIN HTML NAVBAR - PAS TOUCHER -->
-
+ 
 <div id="content">
   <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
-
-
-<!--
-
+ 
+  <h1>Flexible Inventory</h1>
   <div id="titlenav">
-    <h1>Flexible Inventory</h1>
-    <ul id="nav">
-        <li id="network">
-            Network
-            <div id="selected"></div>
-        </li>
-        <li id="region">
-            Region
-        </li>
-        <li id="site">
-            Site
-        </li>
-    </ul>
-</div>
-    <table id="actionTab">
-        <tr>
-          <td id="provision"><button><img src="image/play.svg"></img>Provision</button></th>
-          <td><button disabled><img src="image/trash.svg"></img>Delete</button></th>
-          <td><button><img src="image/turningarrow.svg"></img>Refresh</button></th>
-          <td id="flexible">         </td>
-          <td><input type="text" placeholder="Search For..." ></td>
-          <td><button><img src="image/filter.svg"></img>Filter</button></tr>
-        </tr>
-    </table>
-    
+    <a href="#">Network</a>
+    <a href="#">Region</a>
+    <a href="#">Site</a>
+  </div>
+  <div id="actionBar">
+    <button>Provision</button>
+    <button>Delete</button>
+    <button>Refresh</button>
+    <div id ="spacing"></div>
+    <input class="zone_saisie" type="text" id="prenom_zone_saisie" name="prenom" placeholder="votre prénom" required>
+    <button>Filter</button>
+  </div>
+ 
+ 
+  <table id="tableau">
 
-    -->
-
-  <table>
+  
     <div class="entete">
     <tr>
         <th></th>

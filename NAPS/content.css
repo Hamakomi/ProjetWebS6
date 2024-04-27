@@ -6,7 +6,7 @@
 
    
   h1{
-  padding: 15px 0px 5px 50px;
+  padding: 15px 0px 0px 50px;
    
   font-family: Arial, Helvetica, sans-serif;
   }
@@ -14,8 +14,8 @@
 
   .titlenav{
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 0px;
   }
 
   .titlenav a{
@@ -27,10 +27,25 @@
     margin-right: 40px;
   }
 
-
-  .titlenav button{
-    margin-left: 71%;
+  .nobutton{
+    margin-top: 10px;
   }
+
+
+
+  .add_network{
+    margin-left: 60%;
+    background: black;
+    border-radius: 0px;
+    color: white;
+    font-size: large;
+    width: 250px;
+    height: 50px;
+    
+    
+    
+  }
+
 
   .bold_network{
     font-weight:bold;
@@ -45,21 +60,23 @@
     border-top: none;
     border-width:thick;
     padding-bottom: 8px;
-
     
     
   }
-
 
   .actionBar table{
     width: 100%;
     border-collapse:separate;
-    border-spacing: 0px 8px;
+    border-spacing: 0px 0px;
+    
   }
 
 
-  .actionBar th{
+
+  .actionBar td{
+    
     border: 1px solid #ddd;
+    
   }
 
   .actionBar .first{
@@ -69,7 +86,55 @@
   .actionBar .last{
     border-right: none;
   }
+
+  .actionBar .empty{
+    width: 35%;
+  }
+
+
+  .actionBar button {
+    width: 100%;
+    height: 100%;
+    
+    font-size: large;
+    padding: 0; /* Supprimer le remplissage */
+    border: none; /* Supprimer la bordure */
+    background: none; /* Supprimer l'arrière-plan */
+    letter-spacing: 0.5px;
+  }
+
+
+  .actionBar button p{
+    
+    font-size:small;
+    margin : 0.5em 0;
+    
+  }
+
+  .actionBar .delete{
+    color: #dcdcdc;
+  }
+
+
+  .actionBar .refresh{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    
+  }
   
+  .actionBar input.zone_saisie {
+    width: 80%;
+    height: 100%;
+    padding: 0; /* Supprimer le remplissage */
+    border: none; /* Supprimer la bordure */
+    padding-left: 10px;
+    font-size: large;
+  }
+
+  .actionBar img{
+    margin-right: 10px;
+  }
 
 
 /*MA PARTIE*/
@@ -85,7 +150,7 @@
 }
 
 
-td{
+#tableau td{
     background-color: #ffff;
     border: 1px solid #ddd;
     border-left: none;
@@ -95,26 +160,27 @@ td{
 
 
 
-.start{
+#tableau .start{
     border-left: 1px solid #ddd;
 } 
 
-.end{
+#tableau .end{
     border-right:1px solid #ddd;
 }
 
 
-th, td {
+#tableau th, #tableau td {
     
     padding: 15px;
     text-align: left;
 }
-th {
-    font-size:14px;
+#tableau th {
+    font-size:15px;
     color: #333333;
     font-weight: lighter;
     border: none;
 }
+
 .active p {
     color: black;
     background-color:#3DE35A;
@@ -136,7 +202,7 @@ th {
 
 
 
-.div_loading{
+#tableau .div_loading{
   color: black;
   background-color:#ecfdef;
   

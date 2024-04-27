@@ -228,7 +228,7 @@
     <a href="#">Region</a>
     <a href="#">Site</a>
     </div>
-    <button>Add a new network</button>
+    <button class="add_network">+ Add a new Network</button>
     
   </div>
 
@@ -236,12 +236,12 @@
   <div class="actionBar">
     <table>
       <tr>
-        <th class="first"><button>Provision</button></th>
-        <th><button>Delete</button></th>
-        <th><button>Refresh</button></th>
-        <th></th>
-        <th><input class="zone_saisie" type="text" id="prenom_zone_saisie" name="prenom" placeholder="votre prénom" required></th>
-        <th class="last"><button>Filter</button></th>
+        <td class="first"><button class="provision"><img src="images/play.svg" />Provision</button></td>
+        <td><button class="delete"><img src="images/trash.svg" />Delete</button></td>
+        <td><button class="refresh"><img src="images/turningarrow.svg" />Refresh<p>DD/MM/YYYY at hh:mm:ss</p></button></td>
+        <td class="empty"></td>
+        <td><input class="zone_saisie" type="text" id="prenom_zone_saisie" name="prenom" placeholder="Search for..." required></td>
+        <td class="last"><button><img src="images/filter.svg" />Filter</button></td>
       </tr>
   </table>
   </div>
@@ -258,7 +258,7 @@
         <th>Network name <img src="images/tri.png" /></th>
         <th>Vendor <img src="images/tri.png" /></th>
         <th>Regions <img src="images/tri.png" /></th>
-        <th>Gateway <img src="images/tri.png" /></th>
+        <th>Gateways <img src="images/tri.png" /></th>
         <th>Locations <img src="images/tri.png" /></th>
         <th>Edges <img src="images/tri.png" /></th>
         <th></th>

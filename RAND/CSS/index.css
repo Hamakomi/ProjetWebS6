@@ -1,17 +1,36 @@
 
+
+
 .btadd {
     background-color: black;
     color: white; 
-	 position: fixed;
-    right: 50px;
-    top: 8%; /* Pour le positionner au milieu verticalement */
+	padding:10px;
+	display: inline-block;
     
 }
 
+
+
 .action{
 	    display: inline-block;
+		width:10%
 }
-
+.ref{
+	display: inline-block;
+	width:10%;
+}
+.void{
+	display:inline-block;
+	width:50%;
+}
+.se{
+	display: inline-block;
+	width:20%;
+}
+.fi{
+	display: inline-block;
+	
+}
 .blocrand{
 	
 margin-left:100px;
@@ -49,6 +68,4 @@ a{
 }
 	
 }
-.menu2{
-	display-flex:  ;
-}
+

@@ -7,6 +7,7 @@
 
     <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../HELP/css/style.css">
 
     <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
 
@@ -15,168 +16,6 @@
 
     <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
 
-    <style>
-        /*
-
-    #############################################
-          DEBUT STYLE NAVBAR - PAS TOUCHER
-    #############################################
-
-    */
-
-        :root {
-            --primary-color: #012c10;
-            --white: #ffffff;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        #top-bar {
-            background-color: #012c10;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #bottom-bar {
-            padding: 10px 20px;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            background-color: #F6F6F6;
-        }
-
-        nav {
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        @media screen and (min-width: 400px) {
-            #content {
-                display: flex;
-                margin-left: 3%;
-            }
-        }
-
-        /* Navbar container */
-        .navbar {
-            overflow: hidden;
-        }
-
-        /* Links inside the navbar */
-        .navbar a {
-            float: left;
-            font-size: 16px;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        /* The dropdown container */
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        /* Dropdown button */
-        .dropdown .dropbtn {
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-
-        /* Add a golden background color to navbar links on hover */
-        .navbar a:hover,
-        .dropdown:hover .dropbtn {
-            background-color: goldenrod;
-            color: black;
-        }
-
-
-        /* Dropdown content (hidden by default) */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        /* Links inside the dropdown */
-        .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        /* Add a grey background color to dropdown links on hover */
-        .dropdown-content a:hover {
-            background-color: #ddd;
-
-        }
-
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .fa-caret-down {
-            color: goldenrod;
-        }
-
-        .dropdown:hover .fa-caret-down {
-            color: black;
-        }
-
-
-
-
-        /*
-    #############################################
-          FIN STYLE NAVBAR - NE PAS TOUCHER
-    #############################################
-    */
-
-
-
-        /*
-    #############################################
-        DEBUT STYLE CONTENU - VOTRE SECTION
-    #############################################
-    */
-
-
-
-        /*
-    #############################################
-          FIN STYLE CONTENU - VOTRE SECTION
-    #############################################
-    */
-    </style>
 </head>
 
 <body>
@@ -273,45 +112,15 @@
                         <tr>
                             <th>
                                 Location Name
-                                <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.12859 12.8101C8.12859 13.2256 7.78369 13.5625 7.35825 13.5625H6.88862C6.46317 13.5625 6.1183 13.2256 6.1183 12.8101L6.12031 3.84667H3.28082L6.56633 0.639859C6.84286 0.370047 7.2909 0.370047 7.56742 0.639859L10.8529 3.84667L8.12823 3.84667L8.12859 12.8101Z" fill="#CCCCCC"/>
-                                    <g clip-path="url(#clip0_112_6307)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8714 1.18985C14.8714 0.774356 15.2163 0.4375 15.6418 0.4375L16.1114 0.4375C16.5368 0.4375 16.8817 0.774357 16.8817 1.18985L16.8797 10.1533L19.7192 10.1533L16.4337 13.3601C16.1571 13.63 15.7091 13.63 15.4326 13.3601L12.1471 10.1533L14.8718 10.1533L14.8714 1.18985Z" fill="#CCCCCC"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_112_6307">
-                                            <rect x="23" y="14" width="14" height="14" transform="rotate(-180 23 14)" fill="white"/>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
+                                <img src="../HELP/icone/fleche_tri.svg" alt="sort">
                             </th>
                             <th>
                                 Edges
-                                <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.12859 12.8101C8.12859 13.2256 7.78369 13.5625 7.35825 13.5625H6.88862C6.46317 13.5625 6.1183 13.2256 6.1183 12.8101L6.12031 3.84667H3.28082L6.56633 0.639859C6.84286 0.370047 7.2909 0.370047 7.56742 0.639859L10.8529 3.84667L8.12823 3.84667L8.12859 12.8101Z" fill="#CCCCCC"/>
-                                    <g clip-path="url(#clip0_112_6307)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8714 1.18985C14.8714 0.774356 15.2163 0.4375 15.6418 0.4375L16.1114 0.4375C16.5368 0.4375 16.8817 0.774357 16.8817 1.18985L16.8797 10.1533L19.7192 10.1533L16.4337 13.3601C16.1571 13.63 15.7091 13.63 15.4326 13.3601L12.1471 10.1533L14.8718 10.1533L14.8714 1.18985Z" fill="#CCCCCC"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_112_6307">
-                                            <rect x="23" y="14" width="14" height="14" transform="rotate(-180 23 14)" fill="white"/>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
+                                <img src="../HELP/icone/fleche_tri.svg" alt="sort">
                             </th>
                             <th>
                                 Status
-                                <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.12859 12.8101C8.12859 13.2256 7.78369 13.5625 7.35825 13.5625H6.88862C6.46317 13.5625 6.1183 13.2256 6.1183 12.8101L6.12031 3.84667H3.28082L6.56633 0.639859C6.84286 0.370047 7.2909 0.370047 7.56742 0.639859L10.8529 3.84667L8.12823 3.84667L8.12859 12.8101Z" fill="#CCCCCC"/>
-                                    <g clip-path="url(#clip0_112_6307)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8714 1.18985C14.8714 0.774356 15.2163 0.4375 15.6418 0.4375L16.1114 0.4375C16.5368 0.4375 16.8817 0.774357 16.8817 1.18985L16.8797 10.1533L19.7192 10.1533L16.4337 13.3601C16.1571 13.63 15.7091 13.63 15.4326 13.3601L12.1471 10.1533L14.8718 10.1533L14.8714 1.18985Z" fill="#CCCCCC"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_112_6307">
-                                            <rect x="23" y="14" width="14" height="14" transform="rotate(-180 23 14)" fill="white"/>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
+                                <img src="../HELP/icone/fleche_tri.svg" alt="sort">
                             </th>
                             <th id="button-col"></th>
                         </tr>
@@ -327,9 +136,7 @@
                             </td>
                             <td>
                                 <div class="button">
-                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2.64718 11.9375L8.70837 6L2.64718 0.0625L0.915405 1.75808L5.2457 6L0.915405 10.2402L2.64718 11.9375Z" fill="#FF7900"/>
-                                    </svg>
+                                    <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
                                 </div>
                             </td>
                         </tr>
@@ -343,9 +150,7 @@
                             </td>
                             <td>
                                 <div class="button">
-                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2.64718 11.9375L8.70837 6L2.64718 0.0625L0.915405 1.75808L5.2457 6L0.915405 10.2402L2.64718 11.9375Z" fill="#FF7900"/>
-                                    </svg>
+                                    <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
                                 </div>
                             </td>
                         </tr>
@@ -359,9 +164,7 @@
                             </td>
                             <td>
                                 <div class="button">
-                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2.64718 11.9375L8.70837 6L2.64718 0.0625L0.915405 1.75808L5.2457 6L0.915405 10.2402L2.64718 11.9375Z" fill="#FF7900"/>
-                                    </svg>
+                                    <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
             
                                 </div>
                             </td>
@@ -376,10 +179,7 @@
                             </td>
                             <td>
                                 <div class="button">
-                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2.64718 11.9375L8.70837 6L2.64718 0.0625L0.915405 1.75808L5.2457 6L0.915405 10.2402L2.64718 11.9375Z" fill="#FF7900"/>
-                                    </svg>
-            
+                                    <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
                                 </div>
                             </td>
                         </tr>
@@ -393,10 +193,7 @@
                             </td>
                             <td>
                                 <div class="button">
-                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2.64718 11.9375L8.70837 6L2.64718 0.0625L0.915405 1.75808L5.2457 6L0.915405 10.2402L2.64718 11.9375Z" fill="#FF7900"/>
-                                    </svg>
-            
+                                    <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
                                 </div>
                             </td>
                         </tr>
@@ -410,9 +207,7 @@
                             </td>
                             <td>
                                 <div class="button">
-                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2.64718 11.9375L8.70837 6L2.64718 0.0625L0.915405 1.75808L5.2457 6L0.915405 10.2402L2.64718 11.9375Z" fill="#FF7900"/>
-                                    </svg>
+                                    <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
                                 </div>
                             </td>
                         </tr>
@@ -420,6 +215,14 @@
                     </table>
                 </div>
                 <div>
+                    <div class="select">
+                        <select>
+                            <option value="10">Show 10 entries</option>
+                            <option value="25">Show 25 entries</option>
+                            <option value="50">Show 50 entries</option>
+                            <option value="100">Show 100 entries</option>
+                        </select>
+                    </div>
                     <div>Entrées</div> <!-- nombre d'entrées-->
                     <div>1 2 3 4</div> <!-- paginer-->
                 </div>

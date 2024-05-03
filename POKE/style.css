@@ -1,6 +1,6 @@
 
 body {
-    font-family: var(--primary-font);
+    font-family: var(--primary-font) !important;
 }
 
 .table {
@@ -24,6 +24,7 @@ body {
 #bottom{
     width: 100%;
     margin-right: 6%;
+    margin-bottom: 20px;
 }
 
 * {
@@ -51,7 +52,7 @@ td, th{
 }
 
 .table tr{
-    border-top: solid 1px #CCCCCC;
+    border-top: solid 1px var(--grey);
     height: 50px;
 }
 
@@ -161,4 +162,73 @@ td:has(.button), #button-col{
 
 #navbar li a:hover {
     background-color: var(--grey);
+}
+
+.table-navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.select-entries {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-right: 17px;
+}
+
+.select-entries select {
+    font-family: var(--primary-font) !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    appearance: none;
+    width: 180px;
+    background: url(../HELP/icone/fleche_verticale.svg) no-repeat right 10px center;
+    border: none;
+}
+
+.select-entries {
+    position: relative;
+}
+
+.select-entries::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.pager {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    height: 38px;
+}
+
+.pager a {
+    font-family: var(--primary-font) !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+
+}
+
+.pager a img {
+    padding: 0;
+    vertical-align: middle;
+    height: 12px;
 }

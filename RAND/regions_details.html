@@ -1,117 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regions Details</title>
-    <link rel="stylesheet" type="text/css" href="CSS/regions_details.css">
-    <style>
-        /*
 
-    #############################################
-    DEBUT STYLE NAVBAR - PAS TOUCHER SINON GOULAG
-    #############################################
+    <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../HELP/css/style.css">
+    <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
 
-    */
+    <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
+    <link rel="stylesheet" href="css/regions_details.css">
+    <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #bottom-bar {
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: darkgrey;
-        }
-
-        nav {
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        @media screen and (min-width: 900px) {
-            .content {
-                display: flex;
-                margin-left: 3%;
-            }
-        }
-
-        .page {
-            flex: 1;
-            padding: 20px;
-        }
-
-        /*
-    #############################################
-    FIN STYLE NAVBAR - PAS TOUCHER SINON GOULAG
-    #############################################
-    */
-
-
-
-        /*
-    #############################################
-        DEBUT STYLE CONTENU - VOTRE SECTION
-    #############################################
-    */
-
-        /*
-    #############################################
-          FIN STYLE CONTENU - VOTRE SECTION
-    #############################################
-    */
-    </style>
 </head>
-
 <body>
 
-    <!-- DEBUT HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
+<!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
 
-    <header>
-        <div id="top-bar">
-            <nav>
-                <a href="#" class="active">Accueil</a>
-                <a href="#">Page 1</a>
-                <a href="#">Page 2</a>
-                <a href="#">Page 3</a>
-            </nav>
+<header>
+
+    <div id="top-bar">
+        <div class="navbar">
+            <a href="#home">My Network</a>
+            <a href="#news">Solutions</a>
+            <div class="dropdown">
+                <button class="dropbtn">Regions
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Locations
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
         </div>
-    </header>
-
-    <div id="bottom-bar">
-        <p> Home > Networking > Flexible </p>
     </div>
 
-    <!-- FIN HTML NAVBAR - PAS TOUCHER SINON GOULAG -->
+    <div id="bottom-bar">
+        <p> Home   >   Networking   >   Flexible   >   Region Name </p>
+    </div>
+</header>
 
+<!-- FIN HTML NAVBAR - PAS TOUCHER -->
+
+<div id="content">
     <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
-
     <div class="content">
         <div class="page">
             <!-- Contenu de la page ici -->
@@ -120,15 +65,22 @@
                     Region Name
                 </h1>
                 <div id="close_button">
-                    Close
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6257 1.98183L10.0184 0.374512L6.00012 4.39281L1.98183 0.374512L0.374512 1.98183L4.39281 6.00012L0.374512 10.0184L1.98183 11.6257L6.00012 7.60744L10.0184 11.6257L11.6257 10.0184L7.60744 6.00012L11.6257 1.98183Z" fill="#F16E00"/>
+                    </svg>
+                    <button>Close</button>
                 </div>
             </div>
             <div id="region_option">
                 <div id="delete_button">
-                    Delete
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.30135 0.904679C4.96643 0.996339 4.69682 1.26802 4.6089 1.60445C4.58984 1.67325 4.58019 1.80909 4.58019 2.0079V2.31005H3.31752C1.93618 2.31005 1.89603 2.31208 1.63201 2.42279C1.23586 2.5891 0.924065 2.94279 0.799806 3.37087C0.773124 3.46634 0.765246 3.59076 0.759656 4.09146L0.75 4.69931H13.1912L13.1891 4.1392C13.1871 3.66515 13.1815 3.558 13.1508 3.428C13.0494 2.99408 12.7777 2.65003 12.3836 2.45884C12.3724 2.45329 12.3617 2.44796 12.3514 2.44285C12.3051 2.41981 12.2675 2.40113 12.2286 2.38593C12.0613 2.32062 11.8688 2.31989 10.8486 2.316C10.7974 2.31581 10.744 2.3156 10.6885 2.31538L9.36252 2.30777V2.00765C9.36252 1.80884 9.35286 1.673 9.33381 1.60419C9.24385 1.26396 8.97424 0.994308 8.63348 0.904425C8.4861 0.864308 5.44035 0.866085 5.30084 0.904425L5.30135 0.904679ZM8.40653 2.07089V2.30982H5.53688V1.83197H8.40653V2.07089ZM1.71056 11.1511V11.1514V17.125H12.233V5.17744H1.71056V11.1511ZM4.32383 6.67024C4.42903 6.72381 4.53042 6.84416 4.56116 6.95131C4.57463 6.99905 4.58022 8.36583 4.58022 11.153C4.58022 14.8003 4.57641 15.2954 4.55151 15.3681C4.51136 15.4828 4.44427 15.5631 4.33729 15.626C4.25877 15.6738 4.22625 15.6814 4.10199 15.6814C3.97951 15.6814 3.9452 15.6738 3.86846 15.6278C3.81866 15.5991 3.75564 15.5476 3.73074 15.513C3.72381 15.5041 3.71733 15.4967 3.71126 15.4898L3.71124 15.4898C3.70706 15.485 3.70308 15.4805 3.69929 15.4758C3.62306 15.3818 3.62307 15.226 3.62345 11.9432V11.9431V11.9431L3.6235 11.1527L3.62334 10.1384C3.62256 7.06687 3.62252 6.8813 3.71479 6.79805C3.72071 6.79271 3.72701 6.78779 3.73372 6.78255L3.73375 6.78252L3.73377 6.78252C3.74391 6.77459 3.75499 6.76595 3.76707 6.75403C3.91446 6.60676 4.13629 6.57248 4.32383 6.66998V6.67024ZM7.41738 6.92646C7.37723 6.80611 7.25475 6.68373 7.1343 6.64361V6.64387C6.9084 6.56744 6.68656 6.64767 6.56027 6.85029L6.50284 6.94195L6.49699 11.1111L6.49607 12.0762C6.49283 15.2334 6.49265 15.4106 6.58106 15.495C6.58632 15.5 6.59188 15.5047 6.59778 15.5097L6.59779 15.5097L6.5978 15.5097C6.60678 15.5172 6.61652 15.5254 6.6271 15.5364C6.74195 15.655 6.80701 15.6817 6.97141 15.6817C7.09389 15.6817 7.13023 15.672 7.20494 15.6281C7.25475 15.5994 7.31777 15.5479 7.34267 15.5133C7.3496 15.5043 7.35609 15.497 7.36216 15.4901C7.36634 15.4853 7.37033 15.4808 7.37413 15.4761C7.45035 15.3822 7.45033 15.2264 7.44996 11.9434L7.4499 11.153C7.4499 7.35455 7.44787 7.01254 7.41738 6.92646ZM10.0786 6.67604C10.1782 6.73342 10.2547 6.82711 10.2928 6.9302C10.3139 6.98936 10.3177 7.73508 10.3195 11.1435C10.3195 11.4785 10.3196 11.7873 10.3196 12.0719C10.3202 15.2381 10.3203 15.4179 10.2308 15.4997C10.2254 15.5046 10.2196 15.5092 10.2136 15.514C10.2044 15.5214 10.1944 15.5294 10.1836 15.5402C10.0707 15.6529 10.0057 15.6798 9.84103 15.6798C9.71677 15.6819 9.68424 15.674 9.60572 15.6283C9.49849 15.5653 9.41641 15.4582 9.38389 15.3434C9.36661 15.2822 9.3628 14.246 9.36661 11.1131L9.37245 6.96295L9.42022 6.87129C9.47384 6.76618 9.57142 6.67832 9.68043 6.63795C9.79148 6.59581 9.97317 6.61307 10.0784 6.67629L10.0786 6.67604Z" fill="#CCCCCC"/>
+                    </svg>
+                    <button>Delete</button>
                 </div>
                 <div id="refresh_button">
-                    Refresh
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#000000" d="M463.5 224H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1c-87.5 87.5-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5z"/></svg>
+                    <button>Refresh</button>
                 </div>
             </div>
             <div id="region_info_wrapper">
@@ -186,19 +138,24 @@
                     <dl class="region_info_special">
                         <dt class="region_info_title">Provisioning state:</dt>
                         <dd class="region_info_text">
-                            Active
+                            <svg width="66" height="18" viewBox="0 0 66 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="66" height="18" rx="9" fill="#3DE35A"/>
+                                <path d="M16.4148 12H15.3068L18.5114 3.27273H19.6023L22.8068 12H21.6989L19.0909 4.65341H19.0227L16.4148 12ZM16.8239 8.59091H21.2898V9.52841H16.8239V8.59091ZM26.6889 12.1364C26.0753 12.1364 25.5469 11.9915 25.1037 11.7017C24.6605 11.4119 24.3196 11.0128 24.081 10.5043C23.8423 9.99574 23.723 9.41477 23.723 8.76136C23.723 8.09659 23.8452 7.50994 24.0895 7.00142C24.3366 6.49006 24.6804 6.09091 25.1207 5.80398C25.5639 5.5142 26.081 5.36932 26.6719 5.36932C27.1321 5.36932 27.5469 5.45455 27.9162 5.625C28.2855 5.79545 28.5881 6.03409 28.8239 6.34091C29.0597 6.64773 29.206 7.00568 29.2628 7.41477H28.2571C28.1804 7.11648 28.0099 6.85227 27.7457 6.62216C27.4844 6.3892 27.1321 6.27273 26.6889 6.27273C26.2969 6.27273 25.9531 6.375 25.6577 6.57955C25.3651 6.78125 25.1364 7.06676 24.9716 7.43608C24.8097 7.80256 24.7287 8.23295 24.7287 8.72727C24.7287 9.23295 24.8082 9.6733 24.9673 10.0483C25.1293 10.4233 25.3565 10.7145 25.6491 10.9219C25.9446 11.1293 26.2912 11.233 26.6889 11.233C26.9503 11.233 27.1875 11.1875 27.4006 11.0966C27.6136 11.0057 27.794 10.875 27.9418 10.7045C28.0895 10.5341 28.1946 10.3295 28.2571 10.0909H29.2628C29.206 10.4773 29.0653 10.8253 28.8409 11.1349C28.6193 11.4418 28.3253 11.6861 27.9588 11.8679C27.5952 12.0469 27.1719 12.1364 26.6889 12.1364ZM33.5795 5.45455V6.30682H30.1875V5.45455H33.5795ZM31.1761 3.88636H32.1818V10.125C32.1818 10.4091 32.223 10.6222 32.3054 10.7642C32.3906 10.9034 32.4986 10.9972 32.6293 11.0455C32.7628 11.0909 32.9034 11.1136 33.0511 11.1136C33.1619 11.1136 33.2528 11.108 33.3239 11.0966C33.3949 11.0824 33.4517 11.071 33.4943 11.0625L33.6989 11.9659C33.6307 11.9915 33.5355 12.017 33.4134 12.0426C33.2912 12.071 33.1364 12.0852 32.9489 12.0852C32.6648 12.0852 32.3864 12.0241 32.1136 11.902C31.8438 11.7798 31.6193 11.5938 31.4403 11.3438C31.2642 11.0938 31.1761 10.7784 31.1761 10.3977V3.88636ZM35.0923 12V5.45455H36.098V12H35.0923ZM35.6037 4.36364C35.4077 4.36364 35.2386 4.29688 35.0966 4.16335C34.9574 4.02983 34.8878 3.86932 34.8878 3.68182C34.8878 3.49432 34.9574 3.33381 35.0966 3.20028C35.2386 3.06676 35.4077 3 35.6037 3C35.7997 3 35.9673 3.06676 36.1065 3.20028C36.2486 3.33381 36.3196 3.49432 36.3196 3.68182C36.3196 3.86932 36.2486 4.02983 36.1065 4.16335C35.9673 4.29688 35.7997 4.36364 35.6037 4.36364ZM43.2923 5.45455L40.8718 12H39.8491L37.4286 5.45455H38.5195L40.3263 10.6705H40.3945L42.2013 5.45455H43.2923ZM47.1296 12.1364C46.4989 12.1364 45.9549 11.9972 45.4975 11.7188C45.043 11.4375 44.6921 11.0455 44.445 10.5426C44.2006 10.0369 44.0785 9.44886 44.0785 8.77841C44.0785 8.10795 44.2006 7.51705 44.445 7.00568C44.6921 6.49148 45.0359 6.09091 45.4762 5.80398C45.9194 5.5142 46.4364 5.36932 47.0273 5.36932C47.3683 5.36932 47.7049 5.42614 48.0373 5.53977C48.3697 5.65341 48.6722 5.83807 48.945 6.09375C49.2177 6.34659 49.435 6.68182 49.5969 7.09943C49.7589 7.51705 49.8398 8.03125 49.8398 8.64205V9.06818H44.7944V8.19886H48.8171C48.8171 7.82955 48.7433 7.5 48.5955 7.21023C48.4506 6.92045 48.2433 6.69176 47.9734 6.52415C47.7063 6.35653 47.391 6.27273 47.0273 6.27273C46.6268 6.27273 46.2802 6.37216 45.9876 6.57102C45.6978 6.76705 45.4748 7.02273 45.3185 7.33807C45.1623 7.65341 45.0842 7.99148 45.0842 8.35227V8.93182C45.0842 9.42614 45.1694 9.84517 45.3398 10.1889C45.5131 10.5298 45.7532 10.7898 46.06 10.9688C46.3668 11.1449 46.7234 11.233 47.1296 11.233C47.3938 11.233 47.6325 11.196 47.8455 11.1222C48.0614 11.0455 48.2475 10.9318 48.4038 10.7812C48.56 10.6278 48.6808 10.4375 48.766 10.2102L49.7376 10.483C49.6353 10.8125 49.4634 11.1023 49.2219 11.3523C48.9805 11.5994 48.6822 11.7926 48.3271 11.9318C47.9719 12.0682 47.5728 12.1364 47.1296 12.1364Z" fill="black"/>
+                            </svg>
                         </dd>
                     </dl>
                     <dl class="region_info_special">
                         <dt class="region_info_title">Operationnal status:</dt>
                         <dd class="region_info_text">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="check_operationnal"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#3de35a" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+
                             Up
                         </dd>
                     </dl>
                 </div>
             </div>
             <dl id="region_description">
-                <dt>Description:</dt>
+                <dt>Description: </dt>
                 <dd id="region_description_text"> Lorem ipsum</dd>
             </dl>
             <div id="region_info_values_wrapper">
@@ -212,9 +169,18 @@
                         </div>
                     </div>
                     <div class="info_state">
-                        <div id="info_gateway_up">3 Up</div>
-                        <div id="info_gateway_degraded">1 Degraded</div>
-                        <div id="info_gateway_down">1 D</div>
+                        <div id="info_gateway_up">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#3de35a" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                            3 Up
+                        </div>
+                        <div id="info_gateway_degraded">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffcd0b" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                            1 Degraded
+                        </div>
+                        <div id="info_gateway_down">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#e70002" d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+                            1 Down
+                        </div>
                     </div>
                 </div>
                 <div class="info_values">
@@ -227,9 +193,15 @@
                         </div>
                     </div>
                     <div class="info_state">
-                        <div id="info_sites_up">3 Up</div>
-                        <div id="info_sites_degraded">1 Degraded</div>
-                        <div id="info_sites_down">1 D</div>
+                        <div id="info_sites_up">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#3de35a" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                            3 Up</div>
+                        <div id="info_sites_degraded">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffcd0b" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                            1 Degraded</div>
+                        <div id="info_sites_down">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#e70002" d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+                            1 Down</div>
                     </div>
                 </div>
                 <div class="info_values">
@@ -242,9 +214,15 @@
                         </div>
                     </div>
                     <div class="info_state">
-                        <div id="info_edges_up">3 Up</div>
-                        <div id="info_edges_degraded">1 Degraded</div>
-                        <div id="info_edges_down">1 D</div>
+                        <div id="info_edges_up">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#3de35a" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                            3 Up</div>
+                        <div id="info_edges_degraded">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffcd0b" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                            1 Degraded</div>
+                        <div id="info_edges_down">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#e70002" d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+                            1 Down</div>
                     </div>
                 </div>
             </div>
@@ -270,7 +248,7 @@
             </div>
             <div id="inventory_wrapper">
                 <div id="inventory_name">
-                    Gateway Inventory
+                    Gateways Inventory
                 </div>
                 <table>
                     <tr>
@@ -278,6 +256,30 @@
                         <th>Region</th>
                         <th>Type</th>
                         <th>Operational status</th>
+                    </tr>
+                    <tr>
+                        <td>Gateway USA</td>
+                        <td>AMER</td>
+                        <td>Service</td>
+                        <td>Up</td>
+                    </tr>
+                    <tr>
+                        <td>Gateway MALAYSIA</td>
+                        <td>APAC</td>
+                        <td>Management</td>
+                        <td>Up</td>
+                    </tr>
+                    <tr>
+                        <td>Gateway CHINA</td>
+                        <td>APAC</td>
+                        <td>Management</td>
+                        <td>Up</td>
+                    </tr>
+                    <tr>
+                        <td>Gateway SOPHIA</td>
+                        <td>EMEA</td>
+                        <td>Service</td>
+                        <td>down</td>
                     </tr>
                 </table>
 
@@ -299,9 +301,8 @@
 
         </div>
     </div>
-
     <!-- FIN HTML CONTENU - VOTRE SECTION -->
+</div>
 
 </body>
-
 </html>

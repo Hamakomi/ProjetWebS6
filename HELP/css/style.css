@@ -3,15 +3,19 @@
      DEBUT STYLE COMMUN - A UTILISER
 #############################################
 */
+
 :root
 {
   --primary-color: #012c10; /* Le vert pour la navbar et les décors */
   --light-grey: #F4F4F4; /* couleur gris clair alternative pour certains backgrounds */
   --white: #ffffff;
+  --grey: #CCCCCC; /* Gris foncé pour les bordures */
   --primary-font: Inter, sans-serif; /* la font utilisée partout */
   --text-color: #000000;
   --header-color: #CFA40B; /* pour certains éléments de texte importants */
   --orange: #F16E00; /* en décoration pour certains éléments interractifs */
+  --light-red: #FDE5E6; /* background notification 'inactif' */
+  --light-yellow: #FFFAE7; /* background notification 'deliveries' */
 
   /* A  UTILISER POUR LES STATUTS */
   --active: #3DE35A;
@@ -20,19 +24,15 @@
 }
 
 /*
-
 #############################################
       FIN STYLE COMMUN - A UTILISER
 #############################################
-
 */
 
 /*
-
 #############################################
       DEBUT STYLE NAVBAR - PAS TOUCHER
 #############################################
-
 */
 
 
@@ -155,8 +155,8 @@ nav a {
   color: var(--orange);
 }
 
-.dropdown:hover .fa-caret-down {
-  color: var(--text-color);
+.dropdown:hover .img .fa-caret-down {
+
 }
 
 /*

@@ -90,19 +90,33 @@
                 <div id="navbar">
                     <ul>
                         <li>
-                            <a>Locations</a>
-
+                            <a id="locations">Locations</a>
+                            <div class="line_select"></div>
                         </li>
-                        <li><a>Edges</a></li>
-                        <li><a>Gateways</a></li>
-                        <li><a>Location Map</a></li>
+                        <li>
+                            <a id="edges">Edges</a>
+                            <div class="line_select"></div>
+                        </li>
+                        <li>
+                            <a id="gateways">Gateways</a>
+                            <div class="line_select"></div>
+                        </li>
+                        <li>
+                            <a id="location_map">Location Map</a>
+                            <div class="line_select"></div>
+                        </li>
                     </ul>
-                    <div></div> <!-- A voir pour l'espave en % entre ul et searchbar-->
-                    <div>
-                        <input type="text" placeholder="Search">
-                        <a>Search</a> <!-- Icon de loupe a la place du texte-->
+                    <div id="search_container">
+                        <div id="search">
+                            <input id="search_bar" type="text" placeholder="Search for a product, resour...">
+                            <span><img src="../HELP/icone/loupe.svg" alt="sort"></span>
+                        </div>
+                        <div id="filtre">
+                            <img src="../HELP/icone/filtre.svg" alt="sort">
+                            Filter <!-- Icon de filtre et texte-->
+                        </div>
+
                     </div>
-                    <a>Filter</a> <!-- Icon de filtre et texte-->
                 </div>
             </div>
 
@@ -111,108 +125,108 @@
                 <div class="table">
                     <table>
                         <thead>
-                        <tr>
-                            <th>
-                                Location Name
-                                <img src="../HELP/icone/fleche_tri.svg" alt="sort">
-                            </th>
-                            <th>
-                                Edges
-                                <img src="../HELP/icone/fleche_tri.svg" alt="sort">
-                            </th>
-                            <th>
-                                Status
-                                <img src="../HELP/icone/fleche_tri.svg" alt="sort">
-                            </th>
-                            <th id="button-col"></th>
-                        </tr>
+                            <tr>
+                                <th>
+                                    Location Name
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                                <th>
+                                    Edges
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                                <th>
+                                    Status
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                                <th id="button-col"></th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>Location SOPHIA-ANTIPOLIS</td>
-                            <td>2</td>
-                            <td>
-                                <div class="status">
-                                    <span>Active</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="button">
-                                    <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Location PARIS</td>
-                            <td>4</td>
-                            <td>
-                                <div class="status">
-                                    <span>Active</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="button">
-                                    <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Location KUALA LUMPUR</td>
-                            <td>1</td>
-                            <td>
-                                <div class="status">
-                                    <span>Degraded</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="button">
-                                    <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
-            
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Location HONG-KONG</td>
-                            <td>2</td>
-                            <td>
-                                <div class="status">
-                                    <span>Degraded</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="button">
-                                    <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Location WASHINGTON D.C.</td>
-                            <td>1</td>
-                            <td>
-                                <div class="status">
-                                    <span>Inactive</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="button">
-                                    <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Location LOS ANGELES</td>
-                            <td>1</td>
-                            <td>
-                                <div class="status">
-                                    <span>Inactive</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="button">
-                                    <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
-                                </div>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td>Location SOPHIA-ANTIPOLIS</td>
+                                <td>2</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Location PARIS</td>
+                                <td>4</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Location KUALA LUMPUR</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Degraded</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Location HONG-KONG</td>
+                                <td>2</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Degraded</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Location WASHINGTON D.C.</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Inactive</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Location LOS ANGELES</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Inactive</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
+                                    </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

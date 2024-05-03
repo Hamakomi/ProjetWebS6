@@ -138,6 +138,10 @@ td:has(.button), #button-col{
     margin: 15px 0;
 }
 
+#navbar {
+    overflow: hidden;
+    margin-top : 40px;
+}
 #navbar a:hover {
     cursor: pointer;
 }
@@ -147,6 +151,7 @@ td:has(.button), #button-col{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: inline-block;
 }
 
 #navbar li {
@@ -158,10 +163,12 @@ td:has(.button), #button-col{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: 700;
+    font-size: 16 px;
 }
 
 #navbar li a:hover {
-    background-color: var(--grey);
+    background-color: var(--light-grey);
 }
 
 .table-navigation {
@@ -231,4 +238,65 @@ td:has(.button), #button-col{
     padding: 0;
     vertical-align: middle;
     height: 12px;
+}
+.line_select {
+    height: 5px;
+}
+.line--active {
+    background-color: var(--header-color);
+}
+
+#search_container {
+    float: right;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+}
+
+#search_container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color : #555555;
+}
+
+#search_bar {
+    font-weight: 400;
+    font-size: 16px;
+    color : #555555;
+    height: 24px;
+    width : 230px;
+    border : none;
+}
+
+#search_bar:focus {
+    outline: none;
+}
+
+#search_container #search_bar {
+    margin-right: 18px;
+}
+
+#search {
+    border-bottom: solid 2px #555555;
+    margin-right: 25px;
+}
+
+#search span {
+    cursor: pointer;
+}
+
+#filtre {
+    cursor: pointer;
+}
+#filtre img {
+    margin-right: 4px;
 }

@@ -64,38 +64,40 @@
         <div class="container">
             <div id="top">
                 <h2>Inventory</h2>
-                <div> <!-- avoir si on laisse en span ou une autre balise-->
+                <div id="inventory">
                     <span>Name</span>
-                    <span>My Business</span>
+                    <span id="inventory_name">My Business</span>
                 </div>
-
-                <div id="info">
-                    <div>
-                        <h3>5</h3>
-                        <p>Regions</p>
+                <div class="info">
+                    <div class="rect">
+                        <p class="ininfonum">5</p>
+                        <p class="ininfo">Regions</p>
                     </div>
-                    <div>
-                        <h3>4</h3>
-                        <p>Gateways</p>
+                    <div class="rect">
+                        <p class="ininfonum">4</p>
+                        <p class="ininfo">Gateways</p>
                     </div>
-                    <div>
-                        <h3>15</h3>
-                        <p>Locations</p>
+                    <div class="rect">
+                        <p class="ininfonum">15</p>
+                        <p class="ininfo">Locations</p>
                     </div>
-                    <div>
-                        <h3>30</h3>
-                        <p>Edges</p>
+                    <div class=" rect">
+                        <p class="ininfonum">30</p>
+                        <p class="ininfo">Edges</p>
                     </div>
                 </div>
 
                 <div id="navbar">
                     <ul>
-                        <li><a onclick="choixNavbar('locations')">Locations</a></li>
-                        <li><a onclick="choixNavbar('edges')">Edges</a></li>
-                        <li><a onclick="choixNavbar('gateways')">Gateways</a></li>
-                        <li><a onclick="choixNavbar('locationMap')">Location Map</a></li>
+                        <li>
+                            <a>Locations</a>
+
+                        </li>
+                        <li><a>Edges</a></li>
+                        <li><a>Gateways</a></li>
+                        <li><a>Location Map</a></li>
                     </ul>
-                    <div></div> <!-- A voir pour l'espace en % entre ul et searchbar-->
+                    <div></div> <!-- A voir pour l'espave en % entre ul et searchbar-->
                     <div>
                         <input type="text" placeholder="Search">
                         <a>Search</a> <!-- Icon de loupe a la place du texte-->

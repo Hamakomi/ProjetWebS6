@@ -57,180 +57,189 @@
 <!-- FIN HTML NAVBAR - PAS TOUCHER -->
 
 <div id="content">
+
+
+  <div id="top">
   <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
-  <h1>Flexible Inventory</h1>
-  <div  id="titlenav">
-    <div id="nobutton">
-    <a class="buttonlist" id="bold_network" href="#">Network</a>
-    <a class="buttonlist" href="#">Region</a>
-    <a class="buttonlist" href="#">Site</a>
+    <h1>Flexible Inventory</h1>
+    <div  id="titlenav">
+      <div id="nobutton">
+      <a class="buttonlist" id="bold_network" href="#">Network</a>
+      <a class="buttonlist" href="#">Region</a>
+      <a class="buttonlist" href="#">Site</a>
+      </div>
+      <button id="add_network"><img src="../HELP/icone/plus.svg" /> Add a new Network</button>
     </div>
-    <button id="add_network"><img src="../HELP/icone/plus.svg" /> Add a new Network</button>
-  </div>
- 
- 
-  <div id="actionBar">
-        <button class="buttons" id="provision"><img src="../HELP/icone/triangle_horizontal.svg" />Provision</button>
-        <button class="buttons" id="delete" disabled ><img src="../HELP/icone/poubelle.svg" />Delete</button>
-        <button class="buttons" id="refresh"><img src="../HELP/icone/refresh.svg" />Refresh<p>DD/MM/YYYY at hh:mm:ss</p></button>
-        <div class="buttons" id="empty"></div>
-        <input class="buttons" id="zone_saisie" type="text" id="prenom_zone_saisie" name="prenom" placeholder="Search for..." required>
-        <button class="buttons" id="filter"><img src="../HELP/icone/tri.svg" />Filter</button>
-  </div>
- 
- 
-  <table id="tableau">
-
   
-    <div class="entete">
-    <tr>
-        <th></th>
-        <th>Provisioning State <img src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Operational status <img src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Network name <img src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Vendor <img src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Regions <img src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Gateways <img src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Locations <img src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Edges <img src="../HELP/icone/fleche_tri.svg" /></th>
-        <th></th>
-    </tr>
-</div>
-    <tr>
-        <td class="start">
+  
+    <div id="actionBar">
+          <button class="buttons" id="provision"><img src="../HELP/icone/triangle_horizontal.svg" />Provision</button>
+          <button class="buttons" id="delete" disabled ><img src="../HELP/icone/poubelle.svg" />Delete</button>
+          <button class="buttons" id="refresh"><img src="../HELP/icone/refresh.svg" />Refresh<p>DD/MM/YYYY at hh:mm:ss</p></button>
+          <div class="buttons" id="empty"></div>
+          <input class="buttons" id="zone_saisie" type="text" id="prenom_zone_saisie" name="prenom" placeholder="Search for..." required>
+          <button class="buttons" id="filter"><img src="../HELP/icone/tri.svg" />Filter</button>
+    </div>
+ 
+  </div>
+ 
 
-            <label class="container">
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label>
-        </td>
-        <td class="active"><p>Active</p></td>
-        <td class="green"><img src="../HELP/icone/rond_vert.svg" />Up</td>
-        <td>Network XX25N1</td>
-        <td>VMWare</td>
-        <td>5</td>
-        <td>4</td>
-        <td>15</td>
-        <td>30</td>
-        <td class="end"><a href="#" id="action_button1" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
-    </tr>
+  <div id="bottom">
 
+    <table id="tableau">
 
-    <tr>
-        <td class="start">
-
-            <label class="container">
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label>
-        </td>
-        <td class="active"><p>Active</p></td>
-        <td class="green"><img src="../HELP/icone/triangle_rouge.svg" />Down</td>
-        <td>Network XX25N1</td>
-        <td>VMWare</td>
-        <td>5</td>
-        <td>4</td>
-        <td>15</td>
-        <td>30</td>
-        <td class="end"><a href="#" id="action_button2" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
-    </tr>
-
-
-    <tr>
-        <td class="start">
-
-            <label class="container">
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label>
-        </td>
-        <td><p>Unknow</p></td>
-        <td>Unknow</td>
-        <td>Network XX25N1</td>
-        <td>VMWare</td>
-        <td>5</td>
-        <td>4</td>
-        <td>15</td>
-        <td>30</td>
-        <td class="end"><a href="#" id="action_button3" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
-    </tr>
-
-
-    <tr>
-      <td class="start">
-
-          <label class="container">
-              <input type="checkbox" checked="checked">
-              <span class="checkmark"></span>
-          </label>
-      </td>
-      <td class="loading">
-        <div class="div_loading">
-          <img src="../HELP/icone/chargement.svg" />Provisioning
-        </div>
-      </td>
     
+      <div class="entete">
+      <tr>
+          <th></th>
+          <th>Provisioning State <img src="../HELP/icone/fleche_tri.svg" /></th>
+          <th>Operational status <img src="../HELP/icone/fleche_tri.svg" /></th>
+          <th>Network name <img src="../HELP/icone/fleche_tri.svg" /></th>
+          <th>Vendor <img src="../HELP/icone/fleche_tri.svg" /></th>
+          <th>Regions <img src="../HELP/icone/fleche_tri.svg" /></th>
+          <th>Gateways <img src="../HELP/icone/fleche_tri.svg" /></th>
+          <th>Locations <img src="../HELP/icone/fleche_tri.svg" /></th>
+          <th>Edges <img src="../HELP/icone/fleche_tri.svg" /></th>
+          <th></th>
+      </tr>
+  </div>
+      <tr>
+          <td class="start">
+
+              <label class="container">
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+              </label>
+          </td>
+          <td class="active"><p>Active</p></td>
+          <td class="green"><img src="../HELP/icone/rond_vert.svg" />Up</td>
+          <td>Network XX25N1</td>
+          <td>VMWare</td>
+          <td>5</td>
+          <td>4</td>
+          <td>15</td>
+          <td>30</td>
+          <td class="end"><a href="#" id="action_button1" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
+      </tr>
+
+
+      <tr>
+          <td class="start">
+
+              <label class="container">
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+              </label>
+          </td>
+          <td class="active"><p>Active</p></td>
+          <td class="green"><img src="../HELP/icone/triangle_rouge.svg" />Down</td>
+          <td>Network XX25N1</td>
+          <td>VMWare</td>
+          <td>5</td>
+          <td>4</td>
+          <td>15</td>
+          <td>30</td>
+          <td class="end"><a href="#" id="action_button2" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
+      </tr>
+
+
+      <tr>
+          <td class="start">
+
+              <label class="container">
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+              </label>
+          </td>
+          <td><p>Unknow</p></td>
+          <td>Unknow</td>
+          <td>Network XX25N1</td>
+          <td>VMWare</td>
+          <td>5</td>
+          <td>4</td>
+          <td>15</td>
+          <td>30</td>
+          <td class="end"><a href="#" id="action_button3" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
+      </tr>
+
+
+      <tr>
+        <td class="start">
+
+            <label class="container">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+        </td>
+        <td class="loading">
+          <div class="div_loading">
+            <img src="../HELP/icone/chargement.svg" />Provisioning
+          </div>
+        </td>
       
-      <td></td>
-      <td>Network XX25N1</td>
-      <td>VMWare</td>
-      <td>5</td>
-      <td>4</td>
-      <td>15</td>
-      <td>30</td>
-      <td class="end"><a href="#" id="action_button4" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
-    </tr>
+        
+        <td></td>
+        <td>Network XX25N1</td>
+        <td>VMWare</td>
+        <td>5</td>
+        <td>4</td>
+        <td>15</td>
+        <td>30</td>
+        <td class="end"><a href="#" id="action_button4" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
+      </tr>
 
 
 
-    <tr>
-      <td class="start">
+      <tr>
+        <td class="start">
 
-          <label class="container">
-              <input type="checkbox" checked="checked">
-              <span class="checkmark"></span>
-          </label>
-      </td>
-      <td class="draft"><p>Draft</p></td>
-      <td></td>
-      <td>Network XX25N1</td>
-      <td>Cisco</td>
-      <td>5</td>
-      <td>4</td>
-      <td>15</td>
-      <td>30</td>
-      <td class="end"><a href="#" id="action_button5" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
-    </tr>
-
-
-    <tr>
-      <td class="start">
-
-          <label class="container">
-              <input type="checkbox" checked="checked">
-              <span class="checkmark"></span>
-          </label>
-      </td>
-      <td class="inactive"><p>Inactive</p></td>
-      <td></td>
-      <td>Network XX25N1</td>
-      <td>Fortinet</td>
-      <td>5</td>
-      <td>4</td>
-      <td>15</td>
-      <td>30</td>
-      <td class="end"><a href="#" id="action_button6" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
-    </tr>
-    
-    
-</table>
+            <label class="container">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+        </td>
+        <td class="draft"><p>Draft</p></td>
+        <td></td>
+        <td>Network XX25N1</td>
+        <td>Cisco</td>
+        <td>5</td>
+        <td>4</td>
+        <td>15</td>
+        <td>30</td>
+        <td class="end"><a href="#" id="action_button5" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
+      </tr>
 
 
-<div id="action_panel">
+      <tr>
+        <td class="start">
 
-  <p>See details</p>
+            <label class="container">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+        </td>
+        <td class="inactive"><p>Inactive</p></td>
+        <td></td>
+        <td>Network XX25N1</td>
+        <td>Fortinet</td>
+        <td>5</td>
+        <td>4</td>
+        <td>15</td>
+        <td>30</td>
+        <td class="end"><a href="#" id="action_button6" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
+      </tr>
+      
+      
+  </table>
 
-  <p>Edit the ressource</p>
+
+  <div id="action_panel">
+
+    <p>See details</p>
+
+    <p>Edit the ressource</p>
+
+  </div>
 
 </div>
 

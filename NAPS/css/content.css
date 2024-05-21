@@ -3,7 +3,12 @@
     font-family: Inter, sans-serif;
     background-color: #f2f2f2;
 }*/
- 
+
+
+#content{
+    flex-direction:column;
+}
+
    
 h1{
   padding: 15px 0px 0px 50px;

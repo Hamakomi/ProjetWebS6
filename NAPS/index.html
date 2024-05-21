@@ -3,192 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
   <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
+
+  <link rel="stylesheet" href="../HELP/css/style.css">
   <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
- 
+
   <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
-  <link href="content.css" rel="stylesheet">
+  <link href="css/content.css" rel="stylesheet">
   <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
- 
-  <style>
- 
-    /*
- 
-    #############################################
-          DEBUT STYLE NAVBAR - PAS TOUCHER
-    #############################################
- 
-    */
- 
-    :root {
-      --primary-color: #012c10;
-      --white: #ffffff;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
- 
-    #top-bar {
-      background-color: #012c10;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
- 
-    #bottom-bar
-    {
-      padding: 10px 20px;
-      font-size: 14px;
-      display: flex;
-      align-items: center;
-      background-color: #F6F6F6;
-    }
- 
-    nav {
-      display: flex;
-      gap: 20px;
-    }
- 
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 8px 15px;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
- 
-    @media screen and (min-width: 400px) {
-      #content {
-        margin-left: 3%;
-      }
-    }
- 
-    /* Navbar container */
-    .navbar {
-      overflow: hidden;
-    }
- 
-    /* Links inside the navbar */
-    .navbar a {
-      float: left;
-      font-size: 16px;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
- 
-    /* The dropdown container */
-    .dropdown {
-      float: left;
-      overflow: hidden;
-    }
- 
-    /* Dropdown button */
-    .dropdown .dropbtn {
-      font-size: 16px;
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
- 
-    /* Add a golden background color to navbar links on hover */
-    .navbar a:hover, .dropdown:hover .dropbtn {
-      background-color: goldenrod;
-      color: black;
-    }
- 
- 
-    /* Dropdown content (hidden by default) */
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
- 
-    /* Links inside the dropdown */
-    .dropdown-content a {
-      float: none;
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
- 
-    /* Add a grey background color to dropdown links on hover */
-    .dropdown-content a:hover {
-      background-color: #ddd;
- 
-    }
- 
-    /* Show the dropdown menu on hover */
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
- 
-    .fa-caret-down {
-      color: goldenrod;
-    }
- 
-    .dropdown:hover .fa-caret-down {
-      color: black;
-    }
- 
- 
- 
- 
-    /*
-    #############################################
-          FIN STYLE NAVBAR - NE PAS TOUCHER
-    #############################################
-    */
- 
- 
- 
-    /*
-    #############################################
-        DEBUT STYLE CONTENU - VOTRE SECTION
-    #############################################
-    */
- 
- 
- 
-    /*
-    #############################################
-          FIN STYLE CONTENU - VOTRE SECTION
-    #############################################
-    */
- 
-  </style>
+
 </head>
 <body>
- 
+<script language="Javascript" src="js/script.js"></script>
 <!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
- 
+
 <header>
- 
+
   <div id="top-bar">
     <div class="navbar">
+    <a> <img src="../HELP/icone/icone_site.svg" alt="logo site"> </a>
     <a href="#home">My Network</a>
     <a href="#news">Solutions</a>
     <div class="dropdown">
       <button class="dropbtn">Regions
-        <i class="fa fa-caret-down"></i>
+        <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
       </button>
       <div class="dropdown-content">
         <a href="#">Link 1</a>
@@ -198,7 +37,7 @@
     </div>
       <div class="dropdown">
         <button class="dropbtn">Locations
-          <i class="fa fa-caret-down"></i>
+          <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
         </button>
         <div class="dropdown-content">
           <a href="#">Link 1</a>
@@ -206,44 +45,37 @@
           <a href="#">Link 3</a>
         </div>
       </div>
- 
+
   </div>
   </div>
- 
+
 <div id="bottom-bar">
   <p> Home   >   Networking   >   Flexible </p>
 </div>
 </header>
- 
+
 <!-- FIN HTML NAVBAR - PAS TOUCHER -->
- 
+
 <div id="content">
   <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
-
-
   <h1>Flexible Inventory</h1>
-  <div class="titlenav">
-    <div class="nobutton">
-    <a class="bold_network" href="#">Network</a>
-    <a href="#">Region</a>
-    <a href="#">Site</a>
+  <div  id="titlenav">
+    <div id="nobutton">
+    <a class="buttonlist" id="bold_network" href="#">Network</a>
+    <a class="buttonlist" href="#">Region</a>
+    <a class="buttonlist" href="#">Site</a>
     </div>
-    <button class="add_network">+ Add a new Network</button>
-    
+    <button id="add_network"><img src="../HELP/icone/plus.svg" /> Add a new Network</button>
   </div>
-
-
-  <div class="actionBar">
-    <table>
-      <tr>
-        <td class="first"><button class="provision"><img src="images/play.svg" />Provision</button></td>
-        <td><button class="delete"><img src="images/trash.svg" />Delete</button></td>
-        <td><button class="refresh"><img src="images/turningarrow.svg" />Refresh<p>DD/MM/YYYY at hh:mm:ss</p></button></td>
-        <td class="empty"></td>
-        <td><input class="zone_saisie" type="text" id="prenom_zone_saisie" name="prenom" placeholder="Search for..." required></td>
-        <td class="last"><button><img src="images/filter.svg" />Filter</button></td>
-      </tr>
-  </table>
+ 
+ 
+  <div id="actionBar">
+        <button class="buttons" id="provision"><img src="../HELP/icone/triangle_horizontal.svg" />Provision</button>
+        <button class="buttons" id="delete" disabled ><img src="../HELP/icone/poubelle.svg" />Delete</button>
+        <button class="buttons" id="refresh"><img src="../HELP/icone/refresh.svg" />Refresh<p>DD/MM/YYYY at hh:mm:ss</p></button>
+        <div class="buttons" id="empty"></div>
+        <input class="buttons" id="zone_saisie" type="text" id="prenom_zone_saisie" name="prenom" placeholder="Search for..." required>
+        <button class="buttons" id="filter"><img src="../HELP/icone/tri.svg" />Filter</button>
   </div>
  
  
@@ -253,14 +85,14 @@
     <div class="entete">
     <tr>
         <th></th>
-        <th>Provisioning State <img src="images/tri.png" /></th>
-        <th>Operational status <img src="images/tri.png" /></th>
-        <th>Network name <img src="images/tri.png" /></th>
-        <th>Vendor <img src="images/tri.png" /></th>
-        <th>Regions <img src="images/tri.png" /></th>
-        <th>Gateways <img src="images/tri.png" /></th>
-        <th>Locations <img src="images/tri.png" /></th>
-        <th>Edges <img src="images/tri.png" /></th>
+        <th>Provisioning State <img src="../HELP/icone/fleche_tri.svg" /></th>
+        <th>Operational status <img src="../HELP/icone/fleche_tri.svg" /></th>
+        <th>Network name <img src="../HELP/icone/fleche_tri.svg" /></th>
+        <th>Vendor <img src="../HELP/icone/fleche_tri.svg" /></th>
+        <th>Regions <img src="../HELP/icone/fleche_tri.svg" /></th>
+        <th>Gateways <img src="../HELP/icone/fleche_tri.svg" /></th>
+        <th>Locations <img src="../HELP/icone/fleche_tri.svg" /></th>
+        <th>Edges <img src="../HELP/icone/fleche_tri.svg" /></th>
         <th></th>
     </tr>
 </div>
@@ -273,14 +105,14 @@
             </label>
         </td>
         <td class="active"><p>Active</p></td>
-        <td class="green"><img src="images/yess.png" />Up</td>
+        <td class="green"><img src="../HELP/icone/rond_vert.svg" />Up</td>
         <td>Network XX25N1</td>
         <td>VMWare</td>
         <td>5</td>
         <td>4</td>
         <td>15</td>
         <td>30</td>
-        <td class="end"><img src="images/plus.png" /></td>
+        <td class="end"><a href="#" id="action_button1" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
     </tr>
 
 
@@ -293,14 +125,14 @@
             </label>
         </td>
         <td class="active"><p>Active</p></td>
-        <td class="green"><img src="images/nope.png" />Down</td>
+        <td class="green"><img src="../HELP/icone/triangle_rouge.svg" />Down</td>
         <td>Network XX25N1</td>
         <td>VMWare</td>
         <td>5</td>
         <td>4</td>
         <td>15</td>
         <td>30</td>
-        <td class="end"><img src="images/plus.png" /></td>
+        <td class="end"><a href="#" id="action_button2" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
     </tr>
 
 
@@ -320,7 +152,7 @@
         <td>4</td>
         <td>15</td>
         <td>30</td>
-        <td class="end"><img src="images/plus.png" /></td>
+        <td class="end"><a href="#" id="action_button3" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
     </tr>
 
 
@@ -334,7 +166,7 @@
       </td>
       <td class="loading">
         <div class="div_loading">
-          <img src="images/loading.png" />Provisioning
+          <img src="../HELP/icone/chargement.svg" />Provisioning
         </div>
       </td>
     
@@ -346,7 +178,7 @@
       <td>4</td>
       <td>15</td>
       <td>30</td>
-      <td class="end"><img src="images/plus.png" /></td>
+      <td class="end"><a href="#" id="action_button4" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
     </tr>
 
 
@@ -367,7 +199,7 @@
       <td>4</td>
       <td>15</td>
       <td>30</td>
-      <td class="end"><img src="images/plus.png" /></td>
+      <td class="end"><a href="#" id="action_button5" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
     </tr>
 
 
@@ -387,14 +219,22 @@
       <td>4</td>
       <td>15</td>
       <td>30</td>
-      <td class="end"><img src="images/plus.png" /></td>
+      <td class="end"><a href="#" id="action_button6" onclick="showActionPanel(this)"><img src="../HELP/icone/oeil.svg" /></a></td>
     </tr>
     
     
 </table>
+
+
+<div id="action_panel">
+
+  <p>See details</p>
+
+  <p>Edit the ressource</p>
+
 </div>
 
-
+</div>
   <!-- FIN HTML CONTENU - VOTRE SECTION -->
 </div>
 

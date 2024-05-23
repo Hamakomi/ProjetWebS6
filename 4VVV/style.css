@@ -2,7 +2,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.mainSection {
+.mainsection {
   overflow: auto;
   display : grid;
   grid-gap : 20px;
@@ -20,7 +20,7 @@ body {
   opacity: 0px;
 }
 
-#TitreNClose{
+#titrenclose{
   display: grid;
   grid-template-columns: 90% auto;
   border: solid #CCCCCC 1px;
@@ -50,7 +50,7 @@ body {
   text-align: left;
 }
 
-#CrossGroup{
+#crossgroup{
   display: flex;
   align-items: center;
   padding: 7px 0px 10px 0px;
@@ -58,7 +58,7 @@ body {
   opacity: 0px;
 }
 
-#Close{
+#close{
   gap: 4px;
   opacity: 0px;
   font-size: 16px;
@@ -67,7 +67,7 @@ body {
   text-align: left;
 }
 
-#DeleteNRefresh{
+#deletenrefresh{
   display: grid;
   grid-template-columns: auto 95%;
   border: solid #CCCCCC 1px;
@@ -84,7 +84,7 @@ body {
   opacity: 0px;
 }
 
-#Delete{
+#delete{
   color: #CCCCCC;
   display: flex;
   align-items: center;
@@ -98,12 +98,12 @@ body {
   
 }
 
-#DeleteLabel{
+#deletelabel{
   gap: 4px;
   opacity: 0px;
 }
 
-#Refresh{
+#refresh{
   display: flex;
   align-items: center;
   padding: 7px 0px 10px 10px;
@@ -111,7 +111,7 @@ body {
   opacity: 0px;
 }
 
-#RefreshLabel{
+#refreshlabel{
   gap: 4px;
   opacity: 0px;
 }
@@ -120,7 +120,7 @@ body {
 /*--------------------------------------*/
 /*DEBUT DONNEES*/
 
-#gridInformation{
+#gridinformation{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto auto;
@@ -128,11 +128,11 @@ body {
   margin-right: 45px;
 }
 
-#descriptionCase{
+#descriptioncase{
   grid-column: span 5;
 }
 
-.caseInfo{
+.caseinfo{
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: solid #cccccc;
@@ -142,23 +142,23 @@ body {
   padding-bottom: 30px;
 }
 
-.caseGauche{
+.casegauche{
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
 }
 
-.labelInfo{
+.labelinfo{
   color: #555555;
   font-size: 14px;
 }
 
-.textInfo{
+.textinfo{
   font-size: 16px;
 }
 
-.littletextInfo{
+.littletextinfo{
   font-size: 12px;
 }
 
@@ -172,7 +172,7 @@ body {
   padding-right: 30px;
 }
 
-#gridInformationbis{
+#gridinformationbis{
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(4, 1fr);
@@ -220,9 +220,9 @@ body {
   margin-bottom: 5px;
 }
 
-#descriptionCase{
+/* #descriptioncase{
     grid-column: span 5;
-}
+} */
 
 .tabcontent {
   display: none;
@@ -342,13 +342,13 @@ gap:6px;
 font-size: 16px;
 }
 
-#searchBar{
+#searchbar{
 border: none;
 width: 230px;
 font-size: 16px;
 }
 
-#searchBar::placeholder {
+#searchbar::placeholder {
 color: #555555;
 }
 

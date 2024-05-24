@@ -9,8 +9,11 @@ body *{
 
 }
 
-.table {
+#table_edges, #table_gateway, #table_location {
+    display: none;
+}
 
+.table {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -52,6 +55,16 @@ th img {
 td, th {
     padding: 15px;
     width: 30%;
+}
+
+#table_edges td, #table_edges th{
+    width: 20%;
+    padding: 15px;
+}
+
+#table_gateway td, #table_gateway th{
+    width: 33.33%;
+    padding: 15px;
 }
 
 .table tbody tr{
@@ -96,15 +109,14 @@ thead {
     background-color: var(--degraded);
 }
 
-td:has(.button),
-#button-col {
+td:has(.location_button), #button-col {
     width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.button img {
+.location_button img {
     padding: 0;
     vertical-align: middle;
 }
@@ -327,11 +339,27 @@ td:has(.button),
         gap: 2%;
     }
 
-    .edges, .button, .status {
+    .location_edges, .location_button, .location_status {
         display: none;
     }
 
-    .name {
+    .location_name {
+        width: 100%;
+    }
+
+    .edges_hostname, .edges_serial, .edges_status, .edges_location {
+        display: none;
+    }
+
+    .gateway_region, .gateway_status {
+        display: none;
+    }
+
+    .gateway_name{
+        width: 100%;
+    }
+
+    .edges_name {
         width: 100%;
     }
 

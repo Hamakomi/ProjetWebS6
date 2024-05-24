@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../HELP/css/style.css">
     <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
 
@@ -20,38 +19,53 @@
 
     <!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
 
+
     <header>
 
         <div id="top-bar">
             <div class="navbar">
-                <a href="#home">My Network</a>
-                <a href="#news">Solutions</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Regions
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                <div id="logo-desktop">
+                    <a><img src="icone/icone_site.svg" alt="logo site"></a>
+                    <a href="index.html">My Network</a>
+                    <a href="NAPS/index.html">Solutions (NAPS)</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Regions
+                            <i class="fa fa-caret-down"><img src="icone/fleche_verticale.svg"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="4VVV/index.html">4VVV</a>
+                            <a href="RAND/index.html">RAND</a>
+                            <a href="POKE/index.html">POKE</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Locations
+                            <i class="fa fa-caret-down"><img src="icone/fleche_verticale.svg"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="AZIL/index.html">AZIL</a>
+                            <a href="HELP/index.html">HELP</a>
+                        </div>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Locations
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                <div id="logo-phone">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <img src="icone/icone_site.svg" alt="logo site">
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="4VVV/index.html">4VVV</a>
+                            <a href="RAND/index.html">RAND</a>
+                            <a href="POKE/index.html">POKE</a>
+                        </div>
                     </div>
+                    <a> Home > Networking > Flexible </a>
                 </div>
-
             </div>
         </div>
 
         <div id="bottom-bar">
-            <p> Home > Networking > Flexible > Region Name </p>
+            <p> Home   >   Networking   >   Flexible  >   Region Name </p>
         </div>
     </header>
 
@@ -63,7 +77,7 @@
             <!-- Contenu de la page ici -->
             <div id="header">
                 <h1 id="region_name">
-                    Region Name
+                    Region Name RAND
                 </h1>
                 <div id="close_button">
                     <img src="../HELP/icone/croix.svg" alt="close">
@@ -255,11 +269,13 @@
                         </li>
                     </ul>
                 </div>
-                <input id="search_navbar" placeholder="Search for a product, resour...">
-                <img src="../HELP/icone/loupe.svg" alt="loupe">
+                <div id="search">
+                    <input id="search_navbar" placeholder="Search for a product, resour...">
+                    <img id="img_search" src="../HELP/icone/loupe.svg" alt="loupe">
+                </div>
                 <div id="filter_navbar">
                     <img src="../HELP/icone/filtre.svg" alt="filtre">
-                    <div>Filter</div>
+                    <button>Filter</button>
                 </div>
             </div>
             <div id="inventory_wrapper">
@@ -272,11 +288,11 @@
                             Gateway Name
                             <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
                         </th>
-                        <th>
+                        <th class="region_table">
                             Region
                             <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
                         </th>
-                        <th>
+                        <th class="type_table">
                             Type
                             <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
                         </th>
@@ -287,8 +303,8 @@
                     </tr>
                     <tr>
                         <td>Gateway USA</td>
-                        <td>AMER</td>
-                        <td>Service</td>
+                        <td class="region_table">AMER</td>
+                        <td class="type_table">Service</td>
                         <td>
                             <img src="../HELP/icone/rond_vert.svg" alt="rond_vert">
                             Up
@@ -296,8 +312,8 @@
                     </tr>
                     <tr>
                         <td>Gateway MALAYSIA</td>
-                        <td>APAC</td>
-                        <td>Management</td>
+                        <td class="region_table">APAC</td>
+                        <td class="type_table">Management</td>
                         <td>
                             <img src="../HELP/icone/rond_vert.svg" alt="rond_vert">
                             Up
@@ -305,8 +321,8 @@
                     </tr>
                     <tr>
                         <td>Gateway CHINA</td>
-                        <td>APAC</td>
-                        <td>Management</td>
+                        <td class="region_table">APAC</td>
+                        <td class="type_table">Management</td>
                         <td>
                             <img src="../HELP/icone/rond_vert.svg" alt="rond_vert">
                             Up
@@ -314,8 +330,8 @@
                     </tr>
                     <tr>
                         <td>Gateway SOPHIA</td>
-                        <td>EMEA</td>
-                        <td>Service</td>
+                        <td class="region_table">EMEA</td>
+                        <td class="type_table">Service</td>
                         <td>
                             <img src="../HELP/icone/triangle_rouge.svg" alt="triangle_rouge">
                             Down

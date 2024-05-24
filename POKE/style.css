@@ -10,7 +10,7 @@ body *{
 }
 
 .table {
-    
+
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -39,17 +39,18 @@ body *{
     width: 100%;
 }
 
-.table *{
+.table * {
     border-collapse: collapse;
     gap: 5px;
 }
 
-th img{
+th img {
     padding-left: 10px;
     vertical-align: middle;
 }
 
-td, th{
+td,
+th {
     padding: 15px;
     width: 30%;
 }
@@ -59,7 +60,7 @@ td, th{
     height: 50px;
 }
 
-.table thead{
+.table thead {
     background-color: var(--light-grey);
     text-align: left;
 }
@@ -76,34 +77,35 @@ thead {
     background-color: var(--light-grey);
 }
 
-.status{
+.status {
     padding: 2px 15px 4px 15px;
     font-weight: 700;
     border-radius: 60px;
     width: fit-content;
 }
 
-.status--active{
+.status--active {
     background-color: var(--active);
 }
 
-.status--inactive{
+.status--inactive {
     background-color: var(--inactive);
     color: var(--white);
 }
 
-.status--degraded{
+.status--degraded {
     background-color: var(--degraded);
 }
 
-td:has(.button), #button-col{
+td:has(.button),
+#button-col {
     width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.button img{
+.button img {
     padding: 0;
     vertical-align: middle;
 }
@@ -151,8 +153,9 @@ td:has(.button), #button-col{
 
 #navbar {
     overflow: hidden;
-    margin-top : 40px;
+    margin-top: 40px;
 }
+
 #navbar a:hover {
     cursor: pointer;
 }
@@ -250,9 +253,11 @@ td:has(.button), #button-col{
     vertical-align: middle;
     height: 12px;
 }
+
 .line_select {
     height: 5px;
 }
+
 .line--active {
     background-color: var(--header-color);
 }
@@ -264,7 +269,7 @@ td:has(.button), #button-col{
     flex-direction: row;
 }
 
-#search_container > div {
+#search_container>div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,16 +281,16 @@ td:has(.button), #button-col{
 ::placeholder {
     font-weight: 400;
     font-size: 16px;
-    color : #555555;
+    color: #555555;
 }
 
 #search_bar {
     font-weight: 400;
     font-size: 16px;
-    color : #555555;
+    color: #555555;
     height: 24px;
-    width : 230px;
-    border : none;
+    width: 230px;
+    border: none;
 }
 
 #search_bar:focus {
@@ -308,6 +313,57 @@ td:has(.button), #button-col{
 #filtre {
     cursor: pointer;
 }
+
 #filtre img {
     margin-right: 4px;
+}
+
+@media only screen and (max-width: 480px) {
+    .info {
+        display: block;
+        gap: 2%;
+    }
+
+    .rect {
+        border: solid 2px var(--grey);
+        width: 70%;
+        padding: 30px;
+        margin-bottom: 10px;
+        margin-left: 15%;
+    }
+
+    #navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: block;
+    }
+
+    #navbar li {
+        float: none;
+        width: 100%;
+        border-top: solid 1px var(--grey);
+    }
+
+    #navbar li:last-child {
+        border-bottom: solid 1px var(--grey);
+    }
+
+    #search_container {
+        float: none;
+        height: 55px;
+        display: block;
+        flex-direction: none;
+        margin-top : 20px;
+    }
+
+    #search_container>div {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 16px;
+        margin-left: 25px;
+    }
 }

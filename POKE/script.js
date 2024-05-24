@@ -28,7 +28,6 @@ locationMap.addEventListener("click", function () {
 }
 );
 
-
 function updateSelection(selected) {
     for (let i = 0; i < lines.length; i++) {
         if (lines[i].classList.contains("line--active") && lines[i].id !== selected) {
@@ -48,9 +47,6 @@ function updateSelection(selected) {
         lines[3].classList.add("line--active");
     }
 }
-
-
-
 
 function choixNavbar(nouveauChoix) {
     if (nouveauChoix == "locations" || nouveauChoix == "edges" || nouveauChoix == "gateways" || nouveauChoix == "locationMap") {
@@ -80,4 +76,3 @@ function changeColorStatus() {
 }
 updateSelection(choix);
 changeColorStatus();
-

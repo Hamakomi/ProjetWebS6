@@ -151,8 +151,8 @@ td:has(.button),
 }
 
 #navbar {
-    overflow: hidden;
     margin-top: 40px;
+    display: flex;
 }
 
 #navbar a:hover {
@@ -163,8 +163,7 @@ td:has(.button),
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    display: inline-block;
+    width : auto;
 }
 
 #navbar li {
@@ -268,10 +267,9 @@ td:has(.button),
 }
 
 #search_container {
-    float: right;
-    height: 55px;
     display: flex;
-    flex-direction: row;
+    width: auto;
+    margin-left : auto;
 }
 
 #search_container>div {
@@ -355,6 +353,7 @@ td:has(.button),
         margin-bottom: 10px;
     }
 
+    
     #navbar ul {
         list-style-type: none;
         margin: 0;

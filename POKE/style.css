@@ -333,34 +333,34 @@ td:has(.location_button), #button-col {
     margin-right: 4px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     .info {
         display: block;
         gap: 2%;
     }
 
-    .location_edges, .location_button, .location_status {
+    .location_edges, td:has(.location_button), .location_status {
         display: none;
     }
 
     .location_name {
-        width: 100%;
+        width: 100% !important;
     }
 
     .edges_hostname, .edges_serial, .edges_status, .edges_location {
         display: none;
     }
 
+    .gateway_name{
+        width: 100% !important;
+    }
+
     .gateway_region, .gateway_status {
         display: none;
     }
 
-    .gateway_name{
-        width: 100%;
-    }
-
     .edges_name {
-        width: 100%;
+        width: 100% !important;
     }
 
     .select-entries {

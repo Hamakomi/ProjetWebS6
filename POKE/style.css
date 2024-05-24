@@ -9,7 +9,7 @@ body *{
 
 }
 
-#table_edges, #table_gateway, #table_location {
+#table_edges, #table_gateway, #table_location, #table-navigation {
     display: none;
 }
 
@@ -195,7 +195,7 @@ td:has(.location_button), #button-col {
     background-color: var(--light-grey);
 }
 
-.table-navigation {
+#table-navigation {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
@@ -367,13 +367,19 @@ td:has(.location_button), #button-col {
         display: none;
     }
 
-    .table-navigation{
-        display: block;
+    #table-navigation{
+        display: flex;
+        justify-content: center;
     }
 
-    #top, #bottom{
+    #top{
         padding: 0 5%;
     }
+
+    #bottom{
+        padding: 0 5% 20px 5%;
+    }
+
     .rect {
         border: solid 2px var(--grey);
         width: calc(90% - 60px);

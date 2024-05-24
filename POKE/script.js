@@ -8,6 +8,7 @@ var gateways = document.getElementById("gateways");
 var gateways_table = document.getElementById("table_gateway");
 var locationMap = document.getElementById("location_map");
 var table_title = document.getElementById("table_title");
+var table_nav = document.getElementById("table-navigation");
 
 locations.addEventListener("click", function () {
     choixNavbar("locations");
@@ -42,6 +43,7 @@ function updateSelection(selected) {
         location_table.style.display = "block";
         edges_table.style.display = "none";
         gateways_table.style.display = "none";
+        table_nav.style.display = "flex";
         lines[0].classList.add("line--active");
         table_title.innerText = "Locations Inventory";
     }
@@ -49,6 +51,7 @@ function updateSelection(selected) {
         location_table.style.display = "none";
         edges_table.style.display = "block";
         gateways_table.style.display = "none";
+        table_nav.style.display = "flex";
         lines[1].classList.add("line--active");
         table_title.innerText = "Edges Inventory";
     }
@@ -56,6 +59,7 @@ function updateSelection(selected) {
         location_table.style.display = "none";
         edges_table.style.display = "none";
         gateways_table.style.display = "block";
+        table_nav.style.display = "flex";
         lines[2].classList.add("line--active");
         table_title.innerText = "Gateways Inventory";
     }
@@ -63,6 +67,7 @@ function updateSelection(selected) {
         location_table.style.display = "none";
         edges_table.style.display = "none";
         gateways_table.style.display = "none";
+        table_nav.style.display = "none";
         lines[3].classList.add("line--active");
         table_title.innerText = "Location Map";
     }

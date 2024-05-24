@@ -220,10 +220,6 @@ body {
   margin-bottom: 5px;
 }
 
-/* #descriptioncase{
-    grid-column: span 5;
-} */
-
 .tabcontent {
   display: none;
   margin-left:45px;
@@ -272,8 +268,17 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 20px;
-  text-align:left;
+  text-align: left;
   font-size: 14px;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 15px;
+  font-weight: normal;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
 }
 
 table tr td {
@@ -284,14 +289,9 @@ table tr:nth-child(odd) td {
   background-color: #FFFFFF;
 }
 
-th, td {
-  padding: 15px;
-  font-weight: normal;
-}
-
-
-tr img {
+th img, td img {
   vertical-align: middle;
+  margin-left: 5px; 
 }
 
 .monitoring{
@@ -353,12 +353,27 @@ font-size: 16px;
 color: #555555;
 }
 
+#searchbar:focus {
+  outline: none;
+}
+
+
 .searcharea{
 border-bottom: solid #555555;
 display: flex;
 gap: 20px;
 align-items: center;
 width: 289px;
+}
+
+@media (min-width: 1188px) and (max-width: 1880px) {  
+  .caseinfo{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;;
+    padding-bottom: 10px;
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 @media (max-width: 1188px) {
@@ -374,7 +389,7 @@ width: 289px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 716px) {
   #gridinformationbis{
     grid-template-columns: 1fr;
   }
@@ -385,3 +400,4 @@ width: 289px;
     grid-template-columns: 1fr;
   }
 }
+

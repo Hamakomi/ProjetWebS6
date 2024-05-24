@@ -57,7 +57,7 @@ body {
   font-size: 14px;
   display: flex;
   align-items: center;
-  background-color: var(--light-grey);
+  background-color: var(--white);
 }
 
 nav {

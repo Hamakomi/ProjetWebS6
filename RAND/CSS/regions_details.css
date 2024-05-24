@@ -206,18 +206,6 @@ button{
     height: 30%;
     width: 30%;
 }
-#gateway_navbar{
-    width: 7%;
-}
-#sites_navbar{
-    width: 4%;
-}
-#edges_navbar{
-    width: 5%;
-}
-#map_navbar{
-    width: 58%;
-}
 #search_navbar{
     width: 16%;
     border: none;
@@ -296,3 +284,45 @@ table{
     vertical-align: middle;
     height: 12px;
 }
+
+.line_select {
+    height: 5px;
+}
+.line--active {
+    background-color: var(--header-color);
+}
+
+
+#navbar {
+    overflow: hidden;
+    margin-right: 53%;
+}
+#navbar a:hover {
+    cursor: pointer;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16 px;
+}
+
+#navbar li a:hover {
+    background-color: var(--light-grey);
+}
+

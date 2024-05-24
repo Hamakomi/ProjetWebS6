@@ -23,19 +23,31 @@ function openTab(tabName) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
+    
+    // Sélectionne tous les éléments avec la classe 'tabcontent'
     const tabs = document.querySelectorAll('.tabcontent');
     tabs.forEach(tab => {
+
+        // Sélectionne le premier élément avec la classe 'content' à l'intérieur de chaque 'tabcontent'
         const content = tab.querySelector('.content');
         if (content) {
-            const itemsPerPage = 6;
-            let currentPage = 0;
-            let totalPages;
+
+            // Définition du nombre de lignes par page
+            const nbLignes = 6;
+
+            // Initialise la page sélectionnée à 0 (la première page)
+            let pageSelectionee = 0;
+
+            // Déclaration du nombre total de pages (sera calculé plus tard)
+            let nbPages;
+
+            // Récupère tous les éléments 'tr' (lignes de tableau) dans 'content', en ignorant la première ligne (en-tête)
             const items = Array.from(content.getElementsByTagName('tr')).slice(1);
 
             function showPage(page) {
                 // Fonction pour afficher une page donnée
-                const startIndex = page * itemsPerPage;
-                const endIndex = Math.min(startIndex + itemsPerPage, items.length);
+                const startIndex = page * nbLignes;
+                const endIndex = Math.min(startIndex + nbLignes, items.length);
                 items.forEach((item, index) => {
                     item.style.display = (index >= startIndex && index < endIndex) ? 'table-row' : 'none';
                 });
@@ -44,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             function createPageButtons() {
                 // Fonction pour créer les boutons de pagination
-                totalPages = Math.ceil(items.length / itemsPerPage);
+                nbPages = Math.ceil(items.length / nbLignes);
                 const paginationContainer = document.createElement('div');
                 paginationContainer.classList.add('pagination');
 
@@ -53,22 +65,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 prevButton.textContent = '<';
 
                 prevButton.addEventListener('click', () => {
-                    if (currentPage > 0) {
-                        currentPage--;
-                        showPage(currentPage);
+                    if (pageSelectionee > 0) {
+                        pageSelectionee--;
+                        showPage(pageSelectionee);
                     }
                 });
                 paginationContainer.appendChild(prevButton);
 
                 // Boutons numérotés
-                for (let i = 0; i < totalPages; i++) {
+                for (let i = 0; i < nbPages; i++) {
                     const pageButton = document.createElement('button');
                     pageButton.textContent = i + 1;
                     pageButton.dataset.pageIndex = i;
                     pageButton.addEventListener('click', function() {
                         const pageIndex = parseInt(this.dataset.pageIndex);
-                        currentPage = pageIndex;
-                        showPage(currentPage);
+                        pageSelectionee = pageIndex;
+                        showPage(pageSelectionee);
                     });
                     paginationContainer.appendChild(pageButton);
                 }
@@ -77,9 +89,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 const nextButton = document.createElement('button');
                 nextButton.textContent = '>';
                 nextButton.addEventListener('click', () => {
-                    if (currentPage < totalPages - 1) {
-                        currentPage++;
-                        showPage(currentPage);
+                    if (pageSelectionee < nbPages - 1) {
+                        pageSelectionee++;
+                        showPage(pageSelectionee);
                     }
                 });
                 paginationContainer.appendChild(nextButton);
@@ -91,12 +103,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Fonction pour mettre à jour l'état des boutons de pagination
                 const pageButtons = tab.querySelectorAll('.pagination button');
                 pageButtons.forEach((button, index) => {
-                    button.classList.toggle('active', index === currentPage + 1);
+                    button.classList.toggle('active', index === pageSelectionee + 1);
                 });
 
                 // Bouton précédent
                 const prevButton = tab.querySelector('.pagination button:first-child');
-                if (currentPage === 0) {
+                if (pageSelectionee === 0) {
                     prevButton.style.opacity = '0.5'; // Opacité réduite à 50%
                     prevButton.disabled = true; // Désactiver le bouton
                 } else {
@@ -106,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Bouton suivant
                 const nextButton = tab.querySelector('.pagination button:last-child');
-                if (currentPage === totalPages - 1) {
+                if (pageSelectionee === nbPages - 1) {
                     nextButton.style.opacity = '0.5'; // Opacité réduite à 50%
                     nextButton.disabled = true; // Désactiver le bouton
                 } else {
@@ -115,8 +127,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
 
+            // Création des boutons de pagination
             createPageButtons();
-            showPage(currentPage);
+            // Affichage de la première page au chargement
+            showPage(pageSelectionee);
         }
     });
 });

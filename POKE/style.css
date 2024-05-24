@@ -9,7 +9,7 @@ body *{
 
 }
 
-#table_edges, #table_gateway, #table_location {
+#table_edges, #table_gateway, #table_location, #table-navigation {
     display: none;
 }
 
@@ -195,7 +195,7 @@ td:has(.location_button), #button-col {
     background-color: var(--light-grey);
 }
 
-.table-navigation {
+#table-navigation {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
@@ -280,7 +280,7 @@ td:has(.location_button), #button-col {
 
 #search_container {
     display: flex;
-    width: auto;
+    width : auto;
     margin-left : auto;
 }
 
@@ -333,54 +333,63 @@ td:has(.location_button), #button-col {
     margin-right: 4px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     .info {
         display: block;
         gap: 2%;
     }
 
-    .location_edges, .location_button, .location_status {
+    .location_edges, td:has(.location_button), .location_status {
         display: none;
     }
 
     .location_name {
-        width: 100%;
+        width: 100% !important;
     }
 
     .edges_hostname, .edges_serial, .edges_status, .edges_location {
         display: none;
     }
 
+    .gateway_name{
+        width: 100% !important;
+    }
+
     .gateway_region, .gateway_status {
         display: none;
     }
 
-    .gateway_name{
-        width: 100%;
-    }
-
     .edges_name {
-        width: 100%;
+        width: 100% !important;
     }
 
     .select-entries {
         display: none;
     }
 
-    .table-navigation{
-        display: block;
+    #table-navigation{
+        display: flex;
+        justify-content: center;
     }
 
-    #top, #bottom{
-        padding: 0 5% 0 2%;
+    #top{
+        padding: 0 5%;
     }
+
+    #bottom{
+        padding: 0 5% 20px 5%;
+    }
+
     .rect {
         border: solid 2px var(--grey);
-        width: calc(100% - 60px);
+        width: calc(90% - 60px);
         padding: 30px;
-        margin-bottom: 10px;
+        margin: auto auto 10px auto;
     }
 
+    #navbar {
+        display : block;
+    }
     
     #navbar ul {
         list-style-type: none;
@@ -388,6 +397,8 @@ td:has(.location_button), #button-col {
         padding: 0;
         overflow: hidden;
         display: block;
+        width : 90%;
+        margin : auto;
     }
 
     #navbar li {
@@ -402,10 +413,9 @@ td:has(.location_button), #button-col {
 
     #search_container {
         float: none;
-        height: 55px;
         display: block;
         flex-direction: none;
-        margin-top : 20px;
+        margin-top : 25px;
     }
 
     #search_container>div {

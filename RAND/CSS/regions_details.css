@@ -11,10 +11,7 @@
     justify-content: space-between;
     align-items: center;
 }
-#region_option{
-    display: flex;
-    align-items: center;
-}
+
 /*
 Section pour les différentes informations des regions
 */
@@ -63,10 +60,7 @@ Section pour les id de la navbar de l'inventaire
 #inventory_navbar_wrapper{
     display: flex;
     flex-direction: row;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 2%;
-    padding-bottom: 1%;
+    padding: 2% 1% 1%;
     border-bottom: 1px solid rgb(204, 204, 204);
 }
 
@@ -175,6 +169,8 @@ Section pour la navbar de l'inventaire
     width: 70%;
 }
 #region_option{
+    display: flex;
+    align-items: center;
     border: 1px solid rgb(204, 204, 204);
     border-right: none;
     border-left: none;
@@ -184,6 +180,9 @@ Section pour la navbar de l'inventaire
 button{
     border:none;
     background-color: white;
+}
+button:hover{
+    cursor: pointer;
 }
 #delete_button{
     border-right: 1px solid rgb(204, 204, 204);
@@ -206,10 +205,16 @@ button{
     height: 30%;
     width: 30%;
 }
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #555555;
+}
 #search_navbar{
-    width: 16%;
     border: none;
 }
+
 #filter_navbar{
     margin-left: 2%;
     align-items: center;
@@ -251,6 +256,10 @@ table{
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-right: 4%;
+}
+#close_button button{
+    font-size: 1.1em;
 }
 #network_name{
     text-decoration: underline;
@@ -271,11 +280,11 @@ table{
     border-radius: 5px;
     color: black;
     text-decoration: none;
-    height: 38px;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     text-align: center;
+    border: transparent 2px;
 
 }
 
@@ -319,10 +328,135 @@ table{
     padding: 14px 16px;
     text-decoration: none;
     font-weight: 700;
-    font-size: 16 px;
 }
 
 #navbar li a:hover {
     background-color: var(--light-grey);
 }
 
+#region_name{
+    font-weight: normal;
+}
+
+@media screen and (max-width: 600px){
+    #close_button button{
+        display: none;
+    }
+
+    #close_button{
+        width: 10%;
+    }
+    #close_button img{
+        width: 41px;
+    }
+    #refresh_button{
+        width: 10%;
+        padding-left: calc(100% - 24%);
+    }
+    #refresh_button button{
+        display: none;
+    }
+    #refresh_button img{
+        width: 80%;
+    }
+    #delete_button{
+        width: 10%;
+    }
+    #delete_button img{
+        width: 80%;
+    }
+    #delete_button button{
+        display: none;
+    }
+    #region_option{
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    #region_info_subwrapper{
+        width: 100%;
+    }
+    .region_info{
+        width: 46%;
+    }
+    #region_info_wrapper{
+        flex-direction: column;
+    }
+    .region_info_title{
+        font-size: 1.5em;
+    }
+    .region_info_text{
+        font-size: 1.5em;
+    }
+    .region_info_special{
+        width: 46%;
+        padding-left: 3%;
+    }
+    #region_info_special_wrapper{
+        width: 99%;
+    }
+    .page{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    #region_info_values_wrapper{
+        flex-direction: column;
+    }
+    #region_description{
+        font-size: 1.5em;
+        width:88%;
+    }
+    .info_values{
+        width: 100%;
+    }
+    .info_state img{
+        width: 20%;
+        height: 20%;
+    }
+    .state{
+        font-size: 1.5em;
+    }
+    .info_spec_number {
+        font-size: 2em;
+    }
+    .info_spec_name{
+        font-size: 1.5em;
+    }
+    #inventory_navbar_wrapper{
+        flex-direction: column;
+        width: 95%;
+    }
+
+    #navbar{
+        width: 98%;
+        flex-direction:column;
+    }
+    #navbar a{
+        font-size: 1.3em;
+    }
+    .line_select{
+        width: 100%;
+    }
+    #search{
+        width: 92%;
+    }
+    #search_navbar{
+        width: 100%;
+        font-size: 1.5em;
+    }
+    #filter_navbar{
+        display: none;
+    }
+    .region_table{
+        display: none;
+    }
+    .type_table{
+        display: none;
+    }
+    th,td{
+        font-size: 1.5em;
+    }
+    #pager_wrapper{
+        display: flex;
+        justify-content: center;
+    }
+}

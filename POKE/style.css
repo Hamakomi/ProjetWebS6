@@ -1,6 +1,12 @@
 
-body {
+body *{
     font-family: var(--primary-font) !important;
+}
+
+#top{
+    padding: 0 45px 0 45px;
+    max-width: 100%;
+
 }
 
 .table {
@@ -8,7 +14,9 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    width: 100%; /* Set the width to 100% */
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px var(--grey);
 }
 
 .table table {
@@ -18,19 +26,14 @@ body {
 
 .container {
     width: 100%;
-    margin-right: 3%;
 }
 
 #bottom{
-    width: 100%;
-    margin-right: 6%;
-    margin-bottom: 20px;
+    max-width: 100%;
+    border-top: solid 1px var(--grey);
+    background-color: var(--light-grey);
+    padding: 0 45px 45px 45px;
 }
-
-* {
-    box-sizing: border-box;
-}
-
 
 .tr{
     width: 100%;
@@ -51,7 +54,7 @@ td, th{
     width: 30%;
 }
 
-.table tr{
+.table tbody tr{
     border-top: solid 1px var(--grey);
     height: 50px;
 }
@@ -61,7 +64,15 @@ td, th{
     text-align: left;
 }
 
-tr:nth-child(even) {
+tbody tr:nth-child(even) {
+    background-color: var(--light-grey);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--white);
+}
+
+thead {
     background-color: var(--light-grey);
 }
 

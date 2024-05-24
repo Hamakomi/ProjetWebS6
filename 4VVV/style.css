@@ -220,12 +220,12 @@ body {
   margin-bottom: 5px;
 }
 
-.ronds img{
+.ronds{
   width: 20px;
   height: 21px;
 }
 
-.triangles img{
+.triangles{
   width: 20px;
   height: 19px;
 }
@@ -380,6 +380,12 @@ width: 289px;
   width:20px;
   height: 20px;
 }
+
+.fleches{
+  width: 18px;
+  height: 18px;
+}
+
 
 @media (min-width: 1188px) and (max-width: 1880px) {  
   .caseinfo{

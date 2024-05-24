@@ -220,6 +220,16 @@ body {
   margin-bottom: 5px;
 }
 
+.ronds img{
+  width: 20px;
+  height: 21px;
+}
+
+.triangles img{
+  width: 20px;
+  height: 19px;
+}
+
 .tabcontent {
   display: none;
   margin-left:45px;
@@ -358,12 +368,17 @@ color: #555555;
 }
 
 
-.searcharea{
+#searcharea{
 border-bottom: solid #555555;
 display: flex;
 gap: 20px;
 align-items: center;
 width: 289px;
+}
+
+#searcharea img{
+  width:20px;
+  height: 20px;
 }
 
 @media (min-width: 1188px) and (max-width: 1880px) {  

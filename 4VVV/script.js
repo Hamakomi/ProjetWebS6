@@ -1,12 +1,26 @@
 function openTab(tabName) {
     // Fonction pour ouvrir un onglet spécifique en masquant les autres
-    var i, tabcontent;
+    var i, tabcontent, tablinks;
+
+    // Masquer tous les onglets
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
+
+    // Afficher l'onglet sélectionné
     document.getElementById(tabName).style.display = "block";
+
+    // Enlever la classe 'selectedtablink' de tous les boutons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("selectedtablink");
+    }
+
+    // Ajouter la classe 'selectedtablink' au bouton cliqué
+    event.currentTarget.classList.add("selectedtablink");
 }
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const tabs = document.querySelectorAll('.tabcontent');

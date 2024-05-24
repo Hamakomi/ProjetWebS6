@@ -255,6 +255,7 @@ body {
 
 .selectedtablink{
   border-bottom: solid #CFA40B;
+  border-width: 5px;
 }
 
 .tablink:hover {
@@ -358,4 +359,29 @@ display: flex;
 gap: 20px;
 align-items: center;
 width: 289px;
+}
+
+@media (max-width: 1188px) {
+  #gridinformationbis{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .caseinfo{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  #gridinformationbis{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 387px) {
+  .caseinfo{
+    grid-template-columns: 1fr;
+  }
 }

@@ -294,6 +294,12 @@ table{
     height: 12px;
 }
 
+#current_page {
+    font-weight: 700;
+    border: solid 2px var(--orange);
+    border-radius: 0%;
+}
+
 .line_select {
     height: 5px;
 }

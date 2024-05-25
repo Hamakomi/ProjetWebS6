@@ -339,7 +339,7 @@ td:has(.location_button), #button-col {
         gap: 2%;
     }
 
-    .location_edges, td:has(.location_button), .location_status {
+    .td:has(.location_button), .location_status {
         display: none;
     }
 

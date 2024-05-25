@@ -9,6 +9,8 @@ var gateways_table = document.getElementById("table_gateway");
 var locationMap = document.getElementById("location_map");
 var table_title = document.getElementById("table_title");
 var table_nav = document.getElementById("table-navigation");
+var screen_size = window.innerWidth;
+
 
 locations.addEventListener("click", function () {
     choixNavbar("locations");
@@ -24,6 +26,7 @@ edges.addEventListener("click", function () {
 gateways.addEventListener("click", function () {
     choixNavbar("gateways");
     updateSelection("gateways");
+    updateGatewayRegions();
 }
 );
 
@@ -99,5 +102,66 @@ function changeColorStatus() {
             console.log("error");
     }
 }
+function updateLocationEdges() {
+    let location_edges = document.getElementsByClassName("location_edges");
+    //récupérer les classes status dans l'id tableau_location et les mettre dans un tableau
+    let status = document.getElementById("table_location").getElementsByClassName("status");
+    console.log("status", status);
+    if (screen_size <= 600) {
+        for (let i = 1; i < location_edges.length; i++) {
+            status[i - 1].children[0].innerText = location_edges[i].innerText;
+            location_edges[i].style.display = "none";
+        }
+    }
+    else if (screen_size > 600) {
+        for (let i = 1; i < location_edges.length; i++) {
+            location_edges[i].style.display = "block";
+            if (status[i - 1].classList.contains("status--active")) {
+                status[i - 1].children[0].innerText = "Active";
+            }
+            else if (status[i - 1].classList.contains("status--inactive")) {
+                status[i - 1].children[0].innerText = "Inactive";
+            }
+            else if (status[i - 1].classList.contains("status--degraded")) {
+                status[i - 1].children[0].innerText = "Degraded";
+            }
+        }
+    }
+}
+
+function updateGatewayRegions() {
+    let gateway_region = document.getElementsByClassName("gateway_region");
+
+    let status = document.getElementById("table_gateway").getElementsByClassName("status");
+    if (screen_size <= 600) {
+        for (let i = 1; i < gateway_region.length; i++) {
+            status[i - 1].children[0].innerText = gateway_region[i].innerText;
+            gateway_region[i].style.display = "none";
+        }
+    }
+    else if (screen_size > 600) {
+        for (let i = 1; i < gateway_region.length; i++) {
+            gateway_region[i].style.display = "block";
+            if (status[i - 1].classList.contains("status--active")) {
+                status[i - 1].children[0].innerText = "Active";
+            }
+            else if (status[i - 1].classList.contains("status--inactive")) {
+                status[i - 1].children[0].innerText = "Inactive";
+            }
+            else if (status[i - 1].classList.contains("status--degraded")) {
+                status[i - 1].children[0].innerText = "Degraded";
+            }
+        }
+    }
+}
+
+window.addEventListener("resize", function () {
+    screen_size = window.innerWidth;
+    console.log(screen_size);
+    updateLocationEdges();
+    updateGatewayRegions();
+});
+
 updateSelection(choix);
 changeColorStatus();
+updateLocationEdges();

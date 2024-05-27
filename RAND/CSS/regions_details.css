@@ -84,6 +84,7 @@ Section pour les id de l'inventaire
 #pager_wrapper{
     display: flex;
     justify-content: right;
+    padding-top: 5%;
 }
 
 /*

@@ -431,3 +431,31 @@ td:has(.location_button), #button-col {
         display: none !important;
     }
 }
+
+@media only screen and (max-width: 1000px) and (min-width: 600px){
+
+    #search_container {
+        float: none;
+        height: 55px;
+        flex-direction: none;
+        margin:auto;
+        width: auto;
+    }
+
+    #navbar{
+        display: grid;
+    }
+
+    #navbar ul {
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+        width: auto;
+        overflow: hidden;
+    }
+
+    #search_container > div{
+        margin-left: 0;
+    }
+
+}

@@ -80,7 +80,6 @@ function choixNavbar(nouveauChoix) {
     if (nouveauChoix == "locations" || nouveauChoix == "edges" || nouveauChoix == "gateways" || nouveauChoix == "locationMap") {
         if (choix !== nouveauChoix) {
             choix = nouveauChoix;
-            console.log(choix);
         }
     }
 }
@@ -88,7 +87,6 @@ function choixNavbar(nouveauChoix) {
 function changeColorStatus() {
     let status = document.getElementsByClassName("status");
     for (let i = 0; i < status.length; i++) {
-        console.log(status[i].children[0].innerText);
         if (status[i].children[0].innerText == "Active") {
             status[i].classList.add("status--active");
         }
@@ -98,15 +96,11 @@ function changeColorStatus() {
         else if (status[i].children[0].innerText == "Degraded") {
             status[i].classList.add("status--degraded");
         }
-        else
-            console.log("error");
     }
 }
 function updateLocationEdges() {
     let location_edges = document.getElementsByClassName("location_edges");
-    //récupérer les classes status dans l'id tableau_location et les mettre dans un tableau
     let status = document.getElementById("table_location").getElementsByClassName("status");
-    console.log("status", status);
     if (screen_size <= 600) {
         for (let i = 1; i < location_edges.length; i++) {
             status[i - 1].children[0].innerText = location_edges[i].innerText;
@@ -157,7 +151,6 @@ function updateGatewayRegions() {
 
 window.addEventListener("resize", function () {
     screen_size = window.innerWidth;
-    console.log(screen_size);
     updateLocationEdges();
     updateGatewayRegions();
 });

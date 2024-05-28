@@ -1,15 +1,17 @@
-
-body *{
+body * {
     font-family: var(--primary-font) !important;
 }
 
-#top{
+#top {
     padding: 0 45px 0 45px;
     max-width: 100%;
 
 }
 
-#table_edges, #table_gateway, #table_location, #table-navigation {
+#table_edges,
+#table_gateway,
+#table_location,
+#table-navigation {
     display: none;
 }
 
@@ -31,14 +33,14 @@ body *{
     width: 100%;
 }
 
-#bottom{
+#bottom {
     max-width: 100%;
     border-top: solid 1px var(--grey);
     background-color: var(--light-grey);
     padding: 0 45px 45px 45px;
 }
 
-.tr{
+.tr {
     width: 100%;
 }
 
@@ -52,22 +54,25 @@ th img {
     vertical-align: middle;
 }
 
-td, th {
+td,
+th {
     padding: 15px;
     width: 30%;
 }
 
-#table_edges td, #table_edges th{
+#table_edges td,
+#table_edges th {
     width: 20%;
     padding: 15px;
 }
 
-#table_gateway td, #table_gateway th{
+#table_gateway td,
+#table_gateway th {
     width: 33.33%;
     padding: 15px;
 }
 
-.table tbody tr{
+.table tbody tr {
     border-top: solid 1px var(--grey);
     height: 50px;
 }
@@ -109,7 +114,8 @@ thead {
     background-color: var(--degraded);
 }
 
-td:has(.location_button), #button-col {
+td:has(.location_button),
+#button-col {
     width: 10%;
     display: flex;
     justify-content: center;
@@ -175,7 +181,7 @@ td:has(.location_button), #button-col {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width : auto;
+    width: auto;
 }
 
 #navbar li {
@@ -280,8 +286,8 @@ td:has(.location_button), #button-col {
 
 #search_container {
     display: flex;
-    width : auto;
-    margin-left : auto;
+    width: auto;
+    margin-left: auto;
 }
 
 #search_container>div {
@@ -339,7 +345,8 @@ td:has(.location_button), #button-col {
         gap: 2%;
     }
 
-    .td:has(.location_button), .location_status {
+    .td:has(.location_button),
+    .location_status {
         display: none;
     }
 
@@ -347,15 +354,19 @@ td:has(.location_button), #button-col {
         width: 100% !important;
     }
 
-    .edges_hostname, .edges_serial, .edges_status, .edges_location {
+    .edges_hostname,
+    .edges_serial,
+    .edges_status,
+    .edges_location {
         display: none;
     }
 
-    .gateway_name{
+    .gateway_name {
         width: 100% !important;
     }
 
-    .gateway_region, .gateway_status {
+    .gateway_region,
+    .gateway_status {
         display: none;
     }
 
@@ -367,16 +378,16 @@ td:has(.location_button), #button-col {
         display: none;
     }
 
-    #table-navigation{
+    #table-navigation {
         display: flex;
         justify-content: center;
     }
 
-    #top{
+    #top {
         padding: 0 5%;
     }
 
-    #bottom{
+    #bottom {
         padding: 0 5% 20px 5%;
     }
 
@@ -388,17 +399,17 @@ td:has(.location_button), #button-col {
     }
 
     #navbar {
-        display : block;
+        display: block;
     }
-    
+
     #navbar ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         display: block;
-        width : 90%;
-        margin : auto;
+        width: 90%;
+        margin: auto;
     }
 
     #navbar li {
@@ -415,7 +426,7 @@ td:has(.location_button), #button-col {
         float: none;
         display: block;
         flex-direction: none;
-        margin-top : 25px;
+        margin-top: 25px;
     }
 
     #search_container>div {
@@ -432,17 +443,17 @@ td:has(.location_button), #button-col {
     }
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 600px){
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
 
     #search_container {
         float: none;
         height: 55px;
         flex-direction: none;
-        margin:auto;
+        margin: auto;
         width: auto;
     }
 
-    #navbar{
+    #navbar {
         display: grid;
     }
 
@@ -454,7 +465,7 @@ td:has(.location_button), #button-col {
         overflow: hidden;
     }
 
-    #search_container > div{
+    #search_container>div {
         margin-left: 0;
     }
 

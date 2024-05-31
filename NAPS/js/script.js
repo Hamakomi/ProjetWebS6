@@ -1,3 +1,33 @@
+/* bouton de refresh */
+window.onload = loadLastDate;
+ 
+function loadLastDate() {
+    const lastDate = sessionStorage.getItem('lastDate');
+    if (lastDate) {
+        document.getElementById("date").innerText = lastDate;
+    }
+}
+ 
+function Refresh(e) {
+    const d = new Date();
+    /* formattage des nombres pour avoir deux chiffres */
+    const padZero = (num) => num.toString().padStart(2, '0');
+    const day = padZero(d.getDate());
+    const month = padZero(d.getMonth() + 1);
+    const year = d.getFullYear();
+    const hours = padZero(d.getHours());
+    const minutes = padZero(d.getMinutes());
+    const seconds = padZero(d.getSeconds());
+ 
+    const formattedDate = `${day}/${month}/${year} at ${hours}:${minutes}:${seconds}`;
+    sessionStorage.setItem('lastDate', formattedDate);
+   
+    location.reload();
+}
+
+
+
+
 showActionPanel = function(e) {
     var elementStyle = document.getElementById("action_panel").style;
 
@@ -55,3 +85,4 @@ showFilterPanel = function(e) {
     elementStyle.display = isPanelVisible ? "none" : "flex";
 
 }
+

@@ -14,26 +14,26 @@ showActionPanel = function(e) {
         elementStyle.left = "0px";
     } else {
         // Définir les positions initiales du panneau
-        elementStyle.left = "1300px";
+        elementStyle.left = "87%";
         // En fonction du bouton cliqué, définir la position verticale du panneau
         switch (e.id) {
             case "action_button1":
-                elementStyle.top = "460px";
+                elementStyle.top = "67%";
                 break;
             case "action_button2":
-                elementStyle.top = "550px";
+                elementStyle.top = "79%";
                 break;
             case "action_button3":
-                elementStyle.top = "640px";
+                elementStyle.top = "91.5%";
                 break;
             case "action_button4":
-                elementStyle.top = "730px";
+                elementStyle.top = "104%";
                 break;
             case "action_button5":
-                elementStyle.top = "820px";
+                elementStyle.top = "116.5%";
                 break;
             case "action_button6":
-                elementStyle.top = "910px";
+                elementStyle.top = "128%";
                 break;
             default:
                 elementStyle.top = "460px"; // Valeur par défaut
@@ -42,3 +42,16 @@ showActionPanel = function(e) {
     }
 }
 
+
+
+showFilterPanel = function(e) {
+
+    var elementStyle = document.getElementById("filter_panel").style;
+
+    // Vérifier si le panneau est actuellement affiché ou caché
+    var isPanelVisible = elementStyle.display === "flex";
+
+    // Inverser l'état d'affichage du panneau
+    elementStyle.display = isPanelVisible ? "none" : "flex";
+
+}

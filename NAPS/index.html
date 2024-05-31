@@ -17,6 +17,7 @@
 </head>
 <body>
 <script language="Javascript" src="js/script.js"></script>
+<script language="Javascript" src="js/tablesortingscrip.js"></script>
 <!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
  
 <header>
@@ -77,7 +78,7 @@
         <button class="buttons" id="refresh"><img src="../HELP/icone/refresh.svg" />Refresh<p>DD/MM/YYYY at hh:mm:ss</p></button>
         <div class="buttons" id="empty"></div>
         <input class="buttons" id="zone_saisie" type="text" id="prenom_zone_saisie" name="prenom" placeholder="Search for..."required><img id="loupe" src="../HELP/icone/loupe.svg"/>
-        <button class="buttons" id="filter"><img src="../HELP/icone/tri.svg" />Filter</button>
+        <button class="buttons" id="filter" onclick="showFilterPanel(this)"><img src="../HELP/icone/tri.svg" />Filter</button>
   </div>
 </div>
 <div id="bottom">
@@ -87,14 +88,14 @@
     <div class="entete">
     <tr>
         <th></th>
-        <th>Provisioning State <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Operational status <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Network name <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Vendor <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Regions <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Gateways <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Locations <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" /></th>
-        <th>Edges <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" /></th>
+        <th>Provisioning State <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(1)"/></th>
+        <th>Operational status <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(2)" /></th>
+        <th>Network name <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(3)"/></th>
+        <th>Vendor <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(4)"/></th>
+        <th>Regions <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(5)"/></th>
+        <th>Gateways <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(6)"/></th>
+        <th>Locations <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(7)"/></th>
+        <th>Edges <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(8)"/></th>
         <th></th>
     </tr>
 </div>
@@ -235,8 +236,41 @@
   <p>Edit the ressource</p>
  
 </div>
+
+
+<div id="filter_panel">
  
-</div>
+ 
+ 
+  <div id="close">
+   
+  <p>Close</p>
+   
+  <img src="../HELP/icone/croix.svg" />
+   
+  </div>
+  <p>Provisioning State (0)</p>
+   
+  <label class="container">
+   
+    <input type="checkbox">
+   
+    <span class="checkmark"></span>
+   
+  </label>
+  
+  
+  <p>Edit the ressource</p>
+  
+   
+   
+  </div>
+   
+   
+   
+   
+   
+  </div>
   <!-- FIN HTML CONTENU - VOTRE SECTION -->
 </div>
  

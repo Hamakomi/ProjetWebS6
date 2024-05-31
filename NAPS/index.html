@@ -75,7 +75,7 @@
   <div id="actionBar">
         <button class="buttons" id="provision"><img src="../HELP/icone/triangle_horizontal.svg" />Provision</button>
         <button class="buttons" id="delete" disabled ><img src="../HELP/icone/poubelle.svg" />Delete</button>
-        <button class="buttons" id="refresh"><img src="../HELP/icone/refresh.svg" />Refresh<p>DD/MM/YYYY at hh:mm:ss</p></button>
+        <button class="buttons" id="refresh" onclick="Refresh(this)"><img src="../HELP/icone/refresh.svg" />Refresh<p id="date">DD/MM/YYYY at hh:mm:ss</p></button>
         <div class="buttons" id="empty"></div>
         <input class="buttons" id="zone_saisie" type="text" id="prenom_zone_saisie" name="prenom" placeholder="Search for..."required><img id="loupe" src="../HELP/icone/loupe.svg"/>
         <button class="buttons" id="filter" onclick="showFilterPanel(this)"><img src="../HELP/icone/tri.svg" />Filter</button>

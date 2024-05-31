@@ -249,6 +249,53 @@ h1{
  
 }
 
+#filter_panel{
+ 
+ 
+  background-color: white;
+  border: #f16e00;
+  border-style: solid;
+  border-width: 5px;
+  width: 41%;
+ 
+  z-index: 10;
+  position: absolute;
+ 
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: 0px 0px 3px gray;
+ 
+  font-size:small;
+  letter-spacing: 0.5px;
+ 
+  padding-right: 3px;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+ 
+  bottom: 26.9%;
+  left:56.1%;
+
+
+  flex-direction: column;
+
+  display:none;
+ 
+}
+
+
+#filter_panel #close{
+  padding-left: 90%;
+  display: inline-flex;
+  
+}
+
+#filter_panel #checkbox_filter{
+  display: inline;
+}
+
 /*css relatif au logos*/
 .active p {
     color: black;

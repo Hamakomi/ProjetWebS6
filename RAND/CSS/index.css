@@ -206,7 +206,7 @@ td{
     padding: 0.9%;
     background-color: var(--active);
     text-align: center;
-    width: 50%;
+    width: 60%;
 }
 .provisioning_state_draft{
     border: 2px solid var(--light-grey);
@@ -214,7 +214,7 @@ td{
     padding: 0.9%;
     background-color: var(--light-grey);
     text-align: center;
-    width: 50%;
+    width: 60%;
 }
 .provisioning_state_inactive{
     border: 2px solid black;
@@ -223,7 +223,7 @@ td{
     background-color: black;
     color: var(--white);
     text-align: center;
-    width: 50%;
+    width: 60%;
 }
 #action_navbar_wrapper img{
     cursor: pointer;
@@ -231,7 +231,7 @@ td{
 
 @media screen and (max-width: 600px) {
     #page{
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .table_responsive{
@@ -240,16 +240,24 @@ td{
 
     #action_navbar_wrapper{
         flex-direction: column;
-        font-size: 1.5em;
+        font-size: 1.4em;
 
     }
     #search{
         margin-left: 0;
+        border: none;
+        border-bottom: 1px solid rgb(204, 204, 204);
+    }
+    #refresh_button{
+        border: none;
+    }
+    #action_button{
+        border: none;
     }
     .img_responsive{
         height: 30px;
     }
     #table_wrapper{
-        padding-right: 7%;
+        padding-right: 6%;
     }
 }

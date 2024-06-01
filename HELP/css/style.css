@@ -58,6 +58,7 @@ body {
   display: flex;
   align-items: center;
   background-color: var(--white);
+  margin-left: 3%;
 }
 
 nav {
@@ -73,45 +74,113 @@ nav a {
   transition: background-color 0.3s;
 }
 
-@media only screen and (max-width: 500px) /* AFFICHAGE TELEPHONE */
+#profile
+{
+  display: inline-flex;
+  float:right;
+  font-size: 18px;
+  color: var(--white);
+  text-align: right;
+}
+
+#profile-lastname{
+
+  padding-left: 5px;
+}
+#profile-firstname{
+  padding-left: 15px;
+}
+
+@media only screen and (max-width: 900px){ /* AFFICHAGE DESKTOP */
+  #profile-lastname
+  {
+    display: none;
+  }
+  #profile-firstname
+  {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 901px) { /* AFFICHAGE DESKTOP */
+  #profile-lastname
+  {
+    display: flex;
+  }
+  #profile-firstname
+  {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 610px) /* AFFICHAGE TABLETTE */
 {
   #logo-desktop
   {
     display:none;
   }
   #logo-display {
-    display: flex;
+    display:block;
   }
   #bottom-bar
   {
     display: none;
   }
+
+
 }
 
-@media only screen and (min-width: 501px) /* AFFICHAGE DESKTOP */
+@media screen and (min-width: 611px) /* AFFICHAGE TABLETTE */
 {
   #content {
     display: flex;
     margin-left: 3%;
   }
-  #logo-phone{
+  #logo-tablet{
     display:none;
   }
   #logo-desktop{
-    display:flex;
+    display:block;
   }
 
+}
+
+
+@media screen and (min-width: 546px){ /* AFFICHAGE TELEPHONE */
+  #tablet-text
+  {
+    display: inline-flex;
+  }
+  #phone-text{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 545px){ /* AFFICHAGE TELEPHONE */
+  #tablet-text
+  {
+    display: none;
+  }
+
+  #phone-text{
+
+    margin:auto;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+  }
 }
 
 /* Navbar container */
 .navbar {
   overflow: hidden;
+  width: 100%;
 }
 
 /* Links inside the navbar */
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--white);
   text-align: center;
   padding: 14px 16px;
@@ -126,7 +195,7 @@ nav a {
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 18px;
   border: none;
   outline: none;
   color: var(--white);

@@ -313,13 +313,15 @@ h1{
   
 }
 
+#filter_panel #effacer img{
+  filter: brightness(0) saturate(100%);
+  cursor: pointer;
+}
+
 #first_row_check{
   display: inline-flex;
 
 }
-
-
-
 
 #element_filter {
   padding-right: 15%;

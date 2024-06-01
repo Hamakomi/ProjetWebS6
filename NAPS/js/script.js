@@ -26,6 +26,14 @@ function Refresh(e) {
 }
 
 
+function Close(){
+
+    var elementStyle = document.getElementById("filter_panel").style;
+    elementStyle.display = "none";
+
+}
+
+
 
 
 showActionPanel = function(e) {

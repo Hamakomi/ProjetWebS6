@@ -32,6 +32,8 @@
       document.getElementById(contentId).style.display = 'flex';
       iconElement.classList.add('active');
     }
+
+
   </script>
 
 </head>
@@ -110,7 +112,7 @@
 
 <!-- FIN HTML NAVBAR - PAS TOUCHER -->
 
-<div id="content">
+<div id="content-cockpit">
   <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
   <div id="cockpit">
     <div id="cockpit-header">
@@ -119,35 +121,35 @@
     <div id="cockpit-navbar">
       <div onclick="showContent('overview-content', this)" class="active">
         <img src="icone/oeil.svg" alt="oeil">
-        <p id="icone">Overview</p>
+        <p class="icone">Overview</p>
       </div>
       <div onclick="showContent('availability-content', this)">
         <img src="icone/calendrier.svg" alt="calendrier">
-        <p id="icone">Availability</p>
+        <p class="icone">Availability</p>
       </div>
       <div onclick="showContent('service-content', this)">
         <img src="icone/sonnette.svg" alt="sonnette">
-        <p id="icone">Service</p>
+        <p class="icone">Service</p>
       </div>
       <div onclick="showContent('monitor-content', this)">
         <img src="icone/ecran.svg" alt="ecran">
-        <p id="icone">Monitor</p>
+        <p class="icone">Monitor</p>
       </div>
       <div onclick="showContent('security-content', this)">
         <img src="icone/cadenas.svg" alt="cadenas">
-        <p id="icone">Security</p>
+        <p class="icone">Security</p>
       </div>
       <div onclick="showContent('configure-content', this)">
         <img src="icone/outil.svg" alt="outils">
-        <p id="icone">Configure</p>
+        <p class="icone">Configure</p>
       </div>
       <div onclick="showContent('data-content', this)">
         <img src="icone/data.svg" alt="data">
-        <p id="icone">Data</p>
+        <p class="icone">Data</p>
       </div>
       <div onclick="showContent('billing-content', this)">
         <img src="icone/euro.svg" alt="euro">
-        <p id="icone">Billing</p>
+        <p class="icone">Billing</p>
       </div>
     </div>
     <div id="overview-content">
@@ -177,105 +179,183 @@
       <div id="monitor-header">
         <p>Edge monitoring</p>
       </div>
-      <div id="monitor-table">
-        <table>
-          <tr>
-            <td>
-              <div id="categorie">Name</div>
-              <br>
-              Edge_Biot_1
-            </td>
+      <table id="monitor-table" >
+        <tr class="entete">
+          <td>
+            <div class="categorie">Name</div>
+            <div class="text">Edge_Biot_1</div>
+          </td>
+          <td>
+            <div class="categorie">Hostname</div>
+            <div class="text">Edge_Biot_1</div>
+          </td>
+          <td>
+            <div class="categorie">Attribut</div>
+            <div class="text attribut">Active</div>
+          </td>
+          <td>
+            <div class="categorie">HA Status</div>
+            <div class="text">N/A</div>
+          </td>
+          <td></td>
+          <td><img src="icone/lien.svg" alt="lien"><div class="text">Go to VC Orchestrator</div></td>
+          <td><div class="text" id="menu">View more<img src="icone/fleche_verticale.svg" alt="ouvrir"></div></td>
+        </tr>
+        <tr class="more" id="more1">
+          <td >
+            <div class="text">Overview</div>
+          </td>
+          <td>
+            <div class="text">Edge-510-lte</div>
+          </td>
+          <td colspan="5"></td>
+        </tr>
+        <tr class="more">
+          <td>
+            <div class="text">Link et Overlay tunnels</div>
+          </td>
+          <td>
+            <div class="categorie-info">Links <img src="icone/info.svg" alt="info"></div>
+            <img src="icone/rond_orange.svg" alt="orange">
+          </td>
+          <td>
+            <div class="categorie-info">Overlay tunnels<img id="over" class="bulle"  src="icone/info.svg" alt="info"></div>
+            <img src="icone/rond_orange.svg" alt="orange">
+          </td>
+          <td>
+            <div class="categorie-info">QoE<img id="over1" class="bulle1" src="icone/info.svg" alt="info"></div>
+            <img src="icone/rond_vert.svg" alt="orange">
+          </td>
+          <td colspan="4"></td>
+        </tr>
+        <tr class="more">
+          <td>
+            <div class="text">System</div>
+          </td>
+          <td>
+            <div class="categorie">CPU usage</div>
+            <div class="text">29%</div>
+          </td>
+          <td>
+            <div class="categorie">RAM usage</div>
+            <div class="text">44.</div>
+          </td>
+          <td></td>
+          <td>
+            <div class="categorie">Flows</div>
+            <div class="text">11</div>
+          </td>
+          <td colspan="2"></td>
+        </tr>
+        <tr class="entete">
+          <td>
+            <div class="categorie">Name</div>
+            <div class="text">Edge_Biot_1</div>
+          </td>
+          <td>
+            <div class="categorie">Hostname</div>
+            <div class="text">Edge_Biot_1</div>
+          </td>
+          <td>
+            <div class="categorie">Attribut</div>
+            <div class="text attribut">Active</div>
+          </td>
+          <td>
+            <div class="categorie">HA Status</div>
+            <div class="text">N/A</div>
+          </td>
+          <td></td>
+          <td><img src="icone/lien.svg" alt="lien"><div class="text">Go to VC Orchestrator</div></td>
+          <td><div class="text">View more<img src="icone/fleche_verticale.svg" alt="ouvrir"></div></td>
+        </tr>
+      </table>
 
-            <td>
-              <div id="categorie">Hostname</div>
-              <br>
-              Edge_Biot_1
-            </td>
+      <table id="tunnel" class="infobulle-texte">
+        <tr>
+          <td>GATEWAY</td>
+          <td>peername1</td>
+          <td><img src="icone/rond_vert.svg" alt="vert"></td>
+        </tr>
 
-            <td>
-              <div id="categorie">Attribut</div>
-              <br>
-              Active
-            </td>
+        <tr>
+          <td>BRANCH</td>
+          <td>peername2</td>
+          <td><img src="icone/rond_vert.svg" alt="vert"></td>
+        </tr>
 
-            <td>
-              <div id="categorie">HA Status</div>
-              <br>
-              N/A
-            </td>
-          </tr>
+        <tr>
+          <td>HUB</td>
+          <td>peername3</td>
+          <td><img src="icone/triangle_rouge.svg" alt="rouge"></td>
+        </tr>
 
-          <tr>
-            <td>
-              <div>Overview</div>
-            </td>
+        <tr>
+          <td>GATEWAY</td>
+          <td>peername4</td>
+          <td><img src="icone/triangle_rouge.svg" alt="rouge"></td>
+        </tr>
 
-            <td>
-              <div>Edge-510-lte</div>
-            </td>
-          </tr>
+      </table>
 
-          <tr>
-            <td>
-              <div>Link et Overlay tunnels</div>
-            </td>
+      <table id="qoe" class="infobulle-texte1">
+        <tr>
+          <td>Voice:</td>
+          <td>10</td>
+        </tr>
 
-            <td>
-              <div id="categorie">Links <img src="icone/info.svg" alt="info"></div>
-              <br>
-              <img src="icone/rond_orange.svg" alt="orange">
-            </td>
+        <tr>
+          <td>Video:</td>
+          <td>10</td>
+        </tr>
 
-            <td>
-              <div id="categorie">Overlay tunnels<img src="icone/info.svg" alt="info"></div>
-              <br>
-              <img src="icone/rond_orange.svg" alt="orange">
-            </td>
+        <tr>
+          <td>Trans:</td>
+          <td>10</td>
+        </tr>
 
-            <td>
-              <div id="categorie">QoE<img src="icone/info.svg" alt="info"></div>
-              <br>
-              <img src="icone/rond_vert.svg" alt="orange">
-            </td>
-          </tr>
+        <tr>
+          <td>Average score:</td>
+          <td>10.0</td>
+        </tr>
 
-          <tr>
-            <td>
-              <div>System</div>
-            </td>
+      </table>
 
-            <td>
-              <div>CPU usage</div>
-              <br>
-              29%
-            </td>
-
-            <td>
-              <div>RAM usage</div>
-              <br>
-              44.
-            </td>
-
-            <td>
-
-            </td>
-
-            <td>
-              <div>Flows</div>
-              <br>
-              11
-            </td>
-
-
-          </tr>
-
-        </table>
-
-      </div>
+    </div>
+    <div onclick="showContent('availability-content', this)" id="croix"><img src="icone/croix.svg" alt="rouge">Close</di>
     </div>
   </div>
   <!-- FIN HTML CONTENU - VOTRE SECTION -->
 </div>
+<script>
+  let fleche = document.getElementById("menu");
+  let plus = document.getElementsByClassName("more");
+
+
+  fleche.addEventListener("click", () => {
+    for(let i = 0; i < plus.length; i++){
+      if(getComputedStyle(plus[i]).display !== "none") {
+        plus[i].style.display = "none";
+      }
+      else
+      {
+        plus[i].style.display= "table-row";
+      }}
+
+  });
+
+  let information = document.getElementById("over");
+  let information1 = document.getElementById("over1");
+  let tab = document.getElementById("tunnel");
+  let tab1 = document.getElementById("qoe");
+
+
+  information.addEventListener("mouseover", () => {tab.style.display = "block";});
+  information.addEventListener("mouseout", () => {tab.style.display = "none";});
+
+  information1.addEventListener("mouseover", () => {tab1.style.display = "block";});
+  information1.addEventListener("mouseout", () => {tab1.style.display = "none";});
+
+</script>
 
 </body>
 </html>

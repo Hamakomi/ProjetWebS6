@@ -1,0 +1,136 @@
+body * {
+  font-family: var(--primary-font) !important;
+}
+
+#top-bar {
+  padding: 0 45px;
+  max-width: 100%;
+}
+
+#cockpit-navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+#cockpit-navbar img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#cockpit-navbar p#icone {
+  font-size: 14px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+#cockpit-navbar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cockpit-header p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#overview-content, #monitor-content {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #F4F4F4;
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  align-items: center; /* Center align items */
+}
+
+#overview-content {
+  display: flex; /* Display overview content by default */
+}
+
+#overview-header p, #monitor-header p {
+
+  /* label */
+
+  width: 1320px;
+  height: 28px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+
+  /* Primary/Black */
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+}
+
+#overview-items {
+  display: flex;
+  justify-content: center; /* Center items */
+  flex-wrap: nowrap; /* Do not wrap items */
+  width: 100%;
+}
+
+.overview-item {
+  background-color: #FFFFFF;
+  border: 2px solid #CCCCCC;
+  padding: 20px;
+  width: 20%; /* Adjust the width as needed */
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Slight shadow for a lifted effect */
+}
+
+
+.monitor-title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #CFA40B; /* Adjust this color as needed */
+  margin-bottom: 10px;
+}
+
+
+.croix {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#cockpit-navbar .active {
+  border-bottom: 2px solid #FFA500; /* Orange border for active tab */
+}
+
+#categorie{
+
+  width: 39px;
+  height: 20px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #555555;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+
+

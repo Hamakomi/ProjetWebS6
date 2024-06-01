@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
+
+  <link rel="stylesheet" href="../HELP/css/style.css">
+  <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
+
+  <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
+
+</head>
+<body>
+
+<!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
+
+<header>
+  <div id="top-bar">
+    <div class="navbar">
+      <div id="logo-desktop">
+        <a><img src="../HELP/icone/icone_site.svg" alt="logo site"></a>
+        <a href="../index.html">Index</a>
+        <a href="../NAPS/index.html">NAPS</a>
+        <div class="dropdown">
+          <button class="dropbtn">Liste 1
+            <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../4VVV/index.html">4VVV</a>
+            <a href="../RAND/index.html">RAND1</a>
+            <a href="../RAND/regions_details.html">RAND2</a>
+            <a href="../POKE/index.html">POKE</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Liste 2
+            <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../AZIL/index.html">AZIL</a>
+            <a href="../HELP/index.html">HELP1</a>
+            <a href="../HELP/cockpit.html">HELP2</a>
+          </div>
+        </div>
+      </div>
+      <a id ="profile">
+        <div id = "profile-picture"><img src = "../HELP/icone/profile.svg"></div>
+        <div id = "profile-firstname">FirstName</div>
+        <div id = "profile-lastname">LastName</div>
+      </a>
+      <div id="logo-tablet">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="../HELP/icone/icone_site.svg" alt="logo site">
+          </button>
+          <div class="dropdown-content">
+            <a href="../4VVV/index.html">4VVV</a>
+            <a href="../RAND/index.html">RAND1</a>
+            <a href="../RAND/regions_details.html">RAND2</a>
+            <a href="../POKE/index.html">POKE</a>
+            <a href="../AZIL/index.html">AZIL</a>
+            <a href="../HELP/index.html">HELP1</a>
+            <a href="../HELP/cockpit.html">HELP2</a>
+          </div>
+        </div>
+        <div id = "tablet-text">
+          <a>Home
+            <img src="../HELP/icone/fleche_horizontale.svg" alt=">"></a>
+          <a>Networking
+            <img src="../HELP/icone/fleche_horizontale.svg" alt=">"></a>
+          <a>Flexible
+            <img src="../HELP/icone/fleche_horizontale.svg" alt=">"></a>
+        </div>
+        <div id ="phone-text">
+          Menu
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="bottom-bar">
+    <p>Home  >  Networking  >  Flexible </p>
+  </div>
+</header>
+
+<!-- FIN HTML NAVBAR - PAS TOUCHER -->
+
+<div id="content">
+  <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
+  <div class="mainsection">
+    <div id="entete">
+        <div id="titrenclose">
+            <div id="titre"><label id="titrelabel">Network Name 4VVV</label></div>
+            <div id="crossgroup">
+                <img src = "../HELP/icone/croix.svg" alt = "croix rouge">
+                <span id="close">Close</span>
+            </div>
+        </div>
+        <div id="deletenrefresh">
+            <div id="delete">
+                <img src = "../HELP/icone/poubelle.svg" alt = "poubelle">
+                <span id="deletelabel">Delete</span>
+            </div>
+            <div id="refresh">
+                <img src = "../HELP/icone/refresh.svg" alt = "refresh">
+                <span id="refreshlabel">Refresh</span>
+            </div>
+        </div>
+    </div>
+    <div id="gridinformation">
+
+        <div id="vendor" class="case">
+            <div class="labelinfo">Vendor</div>
+            <div class="textinfo">VMWARE</div>
+        </div>
+        <div id="project" class="case">
+            <div class="labelinfo">Project</div>
+            <div class="textinfo">Name_Project</div>
+        </div>
+        <div id="emstype" class="case">
+            <div class="labelinfo">EMS Type</div>
+            <div class="textinfo">Dedicated</div>
+        </div>
+        <div id="emslocation" class="case">
+            <div class="labelinfo">EMS Location</div>
+            <div class="textinfo">EMEA</div>
+        </div>
+        <div id="provisioningstate" class="case casespe">
+            <div class="labelinfo">Provisoning state</div>
+            <div id="provstatline">
+                <span id="provstat" class="littletextinfo">Active</span>
+            </div>
+        </div>
+        <div id="operationalstatus" class="case casespe">
+            <div class="labelinfo">Operational status</div>
+            <div id="opstatline">
+                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert">
+                <span id="opstat"class="littletextinfo">Up</span>
+            </div>
+        </div>
+        <div id="buildpackage" class="case">
+            <div class="labelinfo">Build Package</div>
+            <div class="textinfo">Premium</div>
+        </div>
+        <div id="runpackage" class="case">
+            <div class="labelinfo">Run Package</div>
+            <div class="textinfo">Premium</div>
+        </div>
+        <div id="defaultlicense" class="case">
+            <div class="labelinfo">Default License Edition</div>
+            <div class="textinfo">Enterprise</div>
+        </div>
+        <div id="vendorsupport" class="case">
+            <div class="labelinfo">Vendor Support Level</div>
+            <div class="textinfo">Production</div>
+        </div>
+        <div id="versionems" class="case">
+            <div class="labelinfo">Version EMS</div>
+            <div class="textinfo">5.2</div>
+        </div>
+        <div id="descriptioncase" class="case">
+            <div class="labelinfo">Description</div>
+            <div class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                 ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                 Duis aute irure dolor in reprehenderit in voluptate velit
+                 esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                 sint occaecat cupidatat non proident, sunt in culpa qui
+                 officia deserunt mollit anim id est laborum.</div>
+        </div>
+
+    </div>
+    <div id="gridinformationbis">
+        <div id="caseRegion" class="caseinfo">
+            <div class="casegauche">
+                <div class="bignumber">5</div>
+                <div>Regions</div>
+            </div>
+            <div class="caseDroite">
+                <div>
+                    <ul class="liststatus">
+                        <li class="elementstatus">
+                            <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                            <span>3 Up</span>
+                        </li>
+                        <li class="elementstatus">
+                            <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                            <span>1 Degrated</span>
+                        </li>
+                        <li class="elementstatus" >
+                            <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                            <span>1 Down</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="caseGateway" class="caseinfo">
+            <div class="casegauche">
+                <div class="bignumber">4</div>
+                <div>Gateways</div>
+            </div>
+            <div class="caseDroite">
+                <div>
+                    <ul class="liststatus">
+                        <li class="elementstatus">
+                            <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                            <span>3 Up</span>
+                        </li>
+                        <li class="elementstatus">
+                            <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                            <span>1 Degrated</span>
+                        </li>
+                        <li class="elementstatus">
+                            <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                            <span>1 Down</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="caseSite" class="caseinfo">
+            <div class="casegauche">
+                <div class="bignumber">15</div>
+                <div>Sites</div>
+            </div>
+            <div class="caseDroite">
+                <div>
+                    <ul class="liststatus">
+                        <li class="elementstatus">
+                            <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                            <span>3 Up</span>
+                        </li>
+                        <li class="elementstatus">
+                            <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                            <span>1 Degrated</span>
+                        </li>
+                        <li class="elementstatus">
+                            <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                            <span>1 Down</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="caseEdge" class="caseinfo">
+            <div class="casegauche">
+                <div class="bignumber">30</div>
+                <div>Edges</div>
+            </div>
+            <div class="caseDroite">
+                <div>
+                    <ul class="liststatus">
+                        <li class="elementstatus">
+                            <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                            <span>3 Up</span>
+                        </li>
+                        <li class="elementstatus">
+                            <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                            <span>1 Degrated</span>
+                        </li>
+                        <li class="elementstatus">
+                            <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                            <span>1 Down</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="list">
+        <div class="tabs">
+            <button class="tablink" onclick="openTab('tab1')">Regions</button>
+            <button class="tablink" onclick="openTab('tab2')">Gateways</button>
+            <button class="tablink" onclick="openTab('tab3')">Sites</button>
+            <button class="tablink" onclick="openTab('tab4')">Edges</button>
+            <button class="tablink" onclick="openTab('tab5')">Map</button>
+            <div class="search">
+                <span id="searcharea">
+                    <input type="text" id="searchbar" placeholder="Search for a product, resources...">
+                    <img src = "../HELP/icone/loupe.svg" alt = "loupe">
+                </span>
+                <button class="filterbutton" onclick="filterResults()">
+                    <img src = "../HELP/icone/filtre.svg" alt = "filtre">
+                    <span>Filter</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="tab">
+        <div id="tab2" class="tabcontent">
+            <h3>Gateways inventory</h3>
+            <article class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Gateway name
+                                <img src = "../HELP/icone/fleche_tri.svg" alt = "tri">
+                            </th>
+                            <th>Region
+                                <img src = "../HELP/icone/fleche_tri.svg" alt = "tri">
+                            </th>
+                            <th>Type
+                                <img src = "../HELP/icone/fleche_tri.svg" alt = "tri">
+                            </th>
+                            <th>Operational Status
+                                <img src = "../HELP/icone/fleche_tri.svg" alt = "tri">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gateway USA</td>
+                            <td>AMER</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway MALAYSIA</td>
+                            <td>APAC</td>
+                            <td>Managment</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                               <span> Down</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway CHINA</td>
+                            <td>APAC</td>
+                            <td>Managment</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_orange.svg" alt = "rong orange" class="ronds">
+                                <span> Degrated</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway SOPHIA</td>
+                            <td>EMEA</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway INDIA</td>
+                            <td>APAC</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway BRAZIL</td>
+                            <td>AMER</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                               <span> Down</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway GERMANY</td>
+                            <td>EMEA</td>
+                            <td>Managment</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                                <span> Degrated</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway JAPAN</td>
+                            <td>APAC</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway UK</td>
+                            <td>EMEA</td>
+                            <td>Managment</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangle">
+                               <span> Down</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway CANADA</td>
+                            <td>AMER</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway AUSTRALIA</td>
+                            <td>APAC</td>
+                            <td>Managment</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                                <span> Degrated</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway FRANCE</td>
+                            <td>EMEA</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway MEXICO</td>
+                            <td>AMER</td>
+                            <td>Managment</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                               <span> Down</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway SINGAPORE</td>
+                            <td>APAC</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway SPAIN</td>
+                            <td>EMEA</td>
+                            <td>Managment</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_orange.svg" alt = "rond vert" class="ronds">
+                                <span> Degrated</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway SOUTH AFRICA</td>
+                            <td>EMEA</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway ARGENTINA</td>
+                            <td>AMER</td>
+                            <td>Managment</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                               <span> Down</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway SOUTH KOREA</td>
+                            <td>APAC</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway UAE</td>
+                            <td>EMEA</td>
+                            <td>Managment</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                                <span> Degrated</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway CHILE</td>
+                            <td>AMER</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                               <span> Down</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway INDONESIA</td>
+                            <td>APAC</td>
+                            <td>Managment</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway EGYPT</td>
+                            <td>EMEA</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                                <span> Degrated</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway ITALY</td>
+                            <td>EMEA</td>
+                            <td>Managment</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "icone chargement" class="triangles">
+                               <span> Down</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway NEW ZEALAND</td>
+                            <td>APAC</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway RUSSIA</td>
+                            <td>EMEA</td>
+                            <td>Managment</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                                <span> Degrated</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gateway TURKEY</td>
+                            <td>EMEA</td>
+                            <td>Service</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangle">
+                               <span> Down</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+
+
+        <div id="tab3" class="tabcontent">
+            <h3>Sites inventory</h3>
+            <article class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Site Name</th>
+                            <th>Edges</th>
+                            <th>Operational Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Site SOPHIA-ANTIPOLIS</td>
+                            <td>2</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond verts" class="ronds">
+                               <span> Up</span>
+                            </td>
+                            <td class="monitoring">Site monitoring
+                                <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Site PARIS</td>
+                            <td>4</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                            <td class="monitoring">Site monitoring
+                                <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Site KUALA LUMPUR</td>
+                            <td>1</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                            <td class="monitoring">Site monitoring
+                                <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Site HONG-KONG</td>
+                            <td>2</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                               <span> Down</span>
+                            </td>
+                            <td class="monitoring">Site monitoring
+                                <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Site WASHINGTON D.C.</td>
+                            <td>1</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                                <span> Degrated</span>
+                            </td>
+                            <td class="monitoring">Site monitoring
+                                <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                            </td>
+                            <tr>
+                                <td>Site LOS ANGELES</td>
+                                <td>1</td>
+                                <td>
+                                    <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                                   <span> Up</span>
+                                </td>
+                                <td class="monitoring">Site monitoring
+                                    <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Site TOKYO</td>
+                                <td>3</td>
+                                <td>
+                                    <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                                   <span> Up</span>
+                                </td>
+                                <td class="monitoring">Site monitoring
+                                    <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Site BERLIN</td>
+                                <td>2</td>
+                                <td>
+                                    <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                                   <span> Down</span>
+                                </td>
+                                <td class="monitoring">Site monitoring
+                                    <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Site SYDNEY</td>
+                                <td>3</td>
+                                <td>
+                                    <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                                    <span> Degrated</span>
+                                </td>
+                                <td class="monitoring">Site monitoring
+                                    <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Site MUMBAI</td>
+                                <td>2</td>
+                                <td>
+                                    <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                                   <span> Up</span>
+                                </td>
+                                <td class="monitoring">Site monitoring
+                                    <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Site TORONTO</td>
+                                <td>4</td>
+                                <td>
+                                    <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                                   <span> Down</span>
+                                </td>
+                                <td class="monitoring">Site monitoring
+                                    <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Site SÃO PAULO</td>
+                                <td>1</td>
+                                <td>
+                                    <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                                   <span> Up</span>
+                                </td>
+                                <td class="monitoring">Site monitoring
+                                    <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Site MOSCOW</td>
+                                <td>2</td>
+                                <td>
+                                    <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                                    <span> Degrated</span>
+                                </td>
+                                <td class="monitoring">Site monitoring
+                                    <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Site CAPE TOWN</td>
+                                <td>3</td>
+                                <td>
+                                    <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                                   <span> Up</span>
+                                </td>
+                                <td class="monitoring">Site monitoring
+                                    <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Site ROME</td>
+                                <td>4</td>
+                                <td>
+                                    <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                                   <span> Down</span>
+                                </td>
+                                <td class="monitoring">Site monitoring
+                                    <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Site SEOUL</td>
+                                <td>1</td>
+                                <td>
+                                    <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                                   <span> Up</span>
+                                </td>
+                                <td class="monitoring">Site monitoring
+                                    <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Site LONDON</td>
+                                <td>3</td>
+                                <td>
+                                    <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                                    <span> Degrated</span>
+                                </td>
+                                <td class="monitoring">Site monitoring
+                                    <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Site BEIJING</td>
+                                <td>2</td>
+                                <td>
+                                    <img src = "../HELP/icone/triangle_rouge.svg" alt = "icone chargement" class="triangles">
+                                   <span> Down</span>
+                                </td>
+                                <td class="monitoring">Site monitoring
+                                    <img src = "../HELP/icone/fleche_horizontale.svg" alt = "fleche" class="fleches">
+                                </td>
+                            </tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+
+
+        <div id="tab4" class="tabcontent">
+            <h3 class="tabletitle">Edge inventory</h3>
+            <article class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Edge Name</th>
+                            <th>Hostname</th>
+                            <th>Serial Number</th>
+                            <th>Site</th>
+                            <th>Operational Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Edge SOPHIA-ANTIPOLIS-1</td>
+                            <td>edge-sophia-antipolis-1</td>
+                            <td>1245-4875-5263</td>
+                            <td>Site SOPHIA-ANTIPOLIS</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge SOPHIA-ANTIPOLIS-2</td>
+                            <td>edge-sophia-antipolis-2</td>
+                            <td>1245-4875-5264</td>
+                            <td>Site SOPHIA-ANTIPOLIS</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge KUALA LUMPUR</td>
+                            <td>edge-kuala-lumpur</td>
+                            <td>2714-3189-5796</td>
+                            <td>Site KUALA LUMPUR</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge HONG-KONG-1</td>
+                            <td>edge-hong-kong-1</td>
+                            <td>1993-2149-6666</td>
+                            <td>Site HONG-KONG</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                               <span> Down</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge HONG-KONG-2</td>
+                            <td>edge-hong-kong-2</td>
+                            <td>1993-2149-6667</td>
+                            <td>Site HONG-KONG</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_orange.svg" alt = "rong orange" class="ronds">
+                                <span> Degrated</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge LOS ANGELES</td>
+                            <td>edge-los-angeles</td>
+                            <td>2003-4610-1515</td>
+                            <td>Site LOS ANGELES</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge PARIS-1</td>
+                            <td>edge-paris-1</td>
+                            <td>1425-8896-5564</td>
+                            <td>Site PARIS</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge PARIS-2</td>
+                            <td>edge-paris-2</td>
+                            <td>1425-8896-5565</td>
+                            <td>Site PARIS</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge TOKYO</td>
+                            <td>edge-tokyo</td>
+                            <td>3110-5849-2244</td>
+                            <td>Site TOKYO</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                                <span> Degrated</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge BERLIN</td>
+                            <td>edge-berlin</td>
+                            <td>2645-7589-1144</td>
+                            <td>Site BERLIN</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                               <span> Down</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge SYDNEY</td>
+                            <td>edge-sydney</td>
+                            <td>2290-7854-3399</td>
+                            <td>Site SYDNEY</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge MUMBAI</td>
+                            <td>edge-mumbai</td>
+                            <td>2883-4510-6712</td>
+                            <td>Site MUMBAI</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge TORONTO</td>
+                            <td>edge-toronto</td>
+                            <td>3509-7844-5623</td>
+                            <td>Site TORONTO</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle" class="triangles">
+                               <span> Down</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge SÃO PAULO</td>
+                            <td>edge-sao-paulo</td>
+                            <td>4107-5682-9941</td>
+                            <td>Site SÃO PAULO</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_orange.svg" alt = "ronds orange" class="ronds">
+                                <span> Degrated</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge MOSCOW</td>
+                            <td>edge-moscow</td>
+                            <td>5208-4455-2271</td>
+                            <td>Site MOSCOW</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge CAPE TOWN</td>
+                            <td>edge-cape-town</td>
+                            <td>6355-4410-8832</td>
+                            <td>Site CAPE TOWN</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge ROME</td>
+                            <td>edge-rome</td>
+                            <td>7466-2189-9945</td>
+                            <td>Site ROME</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                               <span> Down</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge SEOUL</td>
+                            <td>edge-seoul</td>
+                            <td>8722-6633-1108</td>
+                            <td>Site SEOUL</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_orange.svg" alt = "rond orange" class="ronds">
+                                <span> Degrated</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge LONDON</td>
+                            <td>edge-london</td>
+                            <td>9811-3322-7744</td>
+                            <td>Site LONDON</td>
+                            <td>
+                                <img src = "../HELP/icone/rond_vert.svg" alt = "rond vert" class="ronds">
+                               <span> Up</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edge BEIJING</td>
+                            <td>edge-beijing</td>
+                            <td>9999-1100-6655</td>
+                            <td>Site BEIJING</td>
+                            <td>
+                                <img src = "../HELP/icone/triangle_rouge.svg" alt = "triangle rouge" class="triangles">
+                               <span> Down</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+        </div>
+
+    </div>
+</div>
+  <!-- FIN HTML CONTENU - VOTRE SECTION -->
+</div>
+
+</body>
+</html>

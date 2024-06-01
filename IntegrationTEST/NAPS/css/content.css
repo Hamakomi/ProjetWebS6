@@ -1,0 +1,490 @@
+/*Link css*/
+a{
+  text-decoration: none;
+}
+/**********/
+/*main*/
+#content{
+  flex-direction: column;
+}
+/**********/
+/*title*/
+h1{
+  padding: 15px 0px 0px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+/**********/
+  /*menu navigation + add network button*/
+
+  #titlenav{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+
+  #titlenav a{
+    color: black;
+  }
+
+  /*add network button*/
+  #add_network{
+    cursor: pointer;
+    margin-left: 58%;
+    background: black;
+    border-radius: 0px;
+    color: white;
+    font-size: large;
+    width: 250px;
+    height: 50px;
+  }
+ 
+  #add_network:hover{
+    background-color: #404040;
+  }
+  /*menu navigation*/
+ 
+  #menu{
+    display: inline-flex;
+    margin-top: 10px;
+  }
+ 
+  .buttonlist{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 18px;
+    padding-top: 16px;
+  }
+ 
+  .buttonlist:not(#bold_network):hover{
+    background-color: #e6e6e6;
+  }
+ 
+  /*network button*/
+  #bold_network{
+    cursor: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: 45px;
+    font-weight:bold;
+    border-style: solid;
+    border-color: #cfa40b;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-width:thick;
+  }
+/**********/
+  /*action barre*/
+ #actionBar{
+    display: inline-flex;
+    width: 100%;
+  }
+  #actionBar button {
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    padding: 0; 
+    border: none;
+    background: none; 
+    letter-spacing: 0.5px;
+  }
+  #actionBar .buttons {
+    border: 1px solid #ddd;
+  }
+
+  #actionBar .buttons:not(#delete,#empty,#zone_saisie){
+    cursor: pointer;
+  }
+  #actionBar .buttons:not(#delete,#empty,#zone_saisie):hover{
+    background-color: #e6e6e6;
+  }
+
+  #actionBar img:not(#loupe){
+    margin-right: 10px;
+  }
+  
+ #actionBar button p{
+   
+    font-size:small;
+    margin : 0.5em 0;
+   
+ }
+  /*button provision*/
+  #actionBar #provision{
+    border-left:none;
+    width: 45%;
+    height: 64px;
+    padding-left: 3%;
+    padding-right: 1%;
+  }
+  /*delete button*/
+  #actionBar #delete{
+    border-left:none;
+    width: 30%;
+    height: 64px;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  /*refresh button*/
+   #actionBar #refresh{
+    text-align: left;
+    border-left:none;
+    width: 60%;
+    height: 64px;
+    padding-left: 1%;
+  }
+  /*placeholder spacing*/
+ #actionBar #empty{
+    height: 62.5px;
+    width: 160%;
+  }
+  /*zone de saisie*/
+  #actionBar input#zone_saisie {
+    width: 100%;
+    height: 62.5px;
+    padding: 0; 
+    outline : none;
+    padding-left: 10px;
+    font-size: large;
+    border-right: none;;
+  }
+  /*button loupe*/
+  #loupe{
+    cursor: pointer;
+    padding-right: 10px;
+    border-top:1px solid #ddd ;
+    border-bottom: 1px solid #ddd;
+    fill: black;
+  }
+
+  /*button filter*/
+  #actionBar #filter{
+    border-right: none;
+    width: 35%;
+    padding-right: 2%;
+    height: 64px;
+  }
+/**********/
+
+/*tableau*/
+#tableau {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  border-collapse:separate;
+  border-spacing: 0px 8px;
+  background-color: #f4f4f4;
+}
+
+#tableau th, #tableau td {
+  padding: 15px;
+  text-align: left;
+}
+
+#tableau td{
+    background-color: #ffff;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    height: 50px;
+}
+
+#tableau th {
+  font-size:15px;
+  color: #333333;
+  font-weight: lighter;
+  border: none;
+}
+/*sorting button en tête tableau*/
+.sorting_button{
+  cursor: pointer;
+}
+/*1er segment (contient checkbox)*/
+#tableau .start{
+    border-left: 1px solid #ddd;
+} 
+/*dernier segment (contient trois points)*/
+#tableau .end{
+  vertical-align: text-top;
+  padding-right: 26px;
+  border-right:1px solid #ddd;
+}
+
+.troispointsgras{
+  font-family:'Times New Roman';
+  color: black;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+/*css pop up quand trois point appuyé*/ 
+#action_panel{
+ 
+ 
+  background-color: white;
+  border: #f16e00;
+  border-style: solid;
+  border-width: 5px;
+  width: 10%;
+ 
+  z-index: 10;
+  position: absolute;
+ 
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: 0px 0px 3px gray;
+ 
+  font-size:small;
+  letter-spacing: 0.5px;
+ 
+  padding-right: 3px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+ 
+  display: none;
+ 
+}
+
+#filter_panel{
+ 
+ 
+  background-color: white;
+  border: #f16e00;
+  border-style: solid;
+  border-width: 5px;
+  width: 36.9%;
+ 
+  z-index: 10;
+  position: absolute;
+ 
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: 0px 0px 3px gray;
+ 
+  font-size:small;
+  letter-spacing: 0.5px;
+ 
+  padding-right: 3px;
+  
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+ 
+  top: 48.4%;
+  left:62.8%;
+
+
+  flex-direction: column;
+
+  display:none;
+ 
+}
+
+#filter_panel #first_part{
+
+  padding-left: 40px;
+
+}
+
+
+#filter_panel #second_part{
+
+  padding-left: 20px;
+}
+
+
+#filter_panel #close{
+  padding-left: 85%;
+  display: inline-flex;
+  
+}
+
+#filter_panel #close img{
+  cursor: pointer;
+}
+
+#filter_panel #effacer{
+  display: inline-flex;
+  
+}
+
+#filter_panel #effacer img{
+  filter: brightness(0) saturate(100%);
+  cursor: pointer;
+}
+
+#first_row_check{
+  display: inline-flex;
+
+}
+
+#element_filter {
+  padding-right: 15%;
+  display: inline-flex;
+}
+
+#element_filter p{
+  padding-left: 30px;
+}
+
+#element_filter label{
+  margin-top: 6px;
+}
+
+#validate_filter{
+
+  cursor: pointer;
+  
+  background: white;
+  border-radius: 0px;
+  color: black;
+  width: 97%;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size:small;
+  letter-spacing: 0.5px;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+
+/*css relatif au logos*/
+.active p {
+    color: black;
+    background-color:#3DE35A;
+    
+    border-radius: 12px;
+    width: 60px;
+    height: 18px;
+    padding-left: 13px;
+    padding-top: 1px;
+}
+
+.inactive {
+    color: grey;}
+
+
+.green img{
+    padding-right: 6px;
+}
+
+#tableau .div_loading{
+  color: black;
+  background-color:#ecfdef;
+  
+  border-radius: 12px;
+  width: 120px;
+  height: 20px;
+  padding-left: 8px;
+  padding-top: 1px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.div_loading img{
+  padding-top: 4px;
+  padding-right: 8px;
+}
+
+
+.draft p {
+  color: black;
+  background-color:#f4f4f4;
+  
+  border-radius: 12px;
+  width: 50px;
+  height: 18px;
+  padding-left: 16px;
+  padding-top: 1px;
+}
+
+.inactive p {
+  color: white;
+  background-color:black;
+  
+  border-radius: 12px;
+  width: 75px;
+  height: 18px;
+  padding-left: 18px;
+  padding-top: 1px;
+}
+
+/*css check box*/
+/*conteneur*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ 
+/* reset default css */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+ 
+/*custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+ 
+.container:hover input ~ .checkmark {
+  background-color: #e6e6e6;
+}
+ 
+.container input:checked ~ .checkmark {
+  border: 2px solid #F16E00;
+}
+ 
+/* Crée le checkmark */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+ 
+/* affiche le checkmark quand nécessaire */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+ 
+/* style du checkmark */
+.container .checkmark:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-color: #F16E00;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+ 

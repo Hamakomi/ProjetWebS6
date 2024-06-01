@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
+
+  <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
+  <link rel="stylesheet" href="css/cockpit.css">
+  <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
+
+  <!-- AJOUTER LE SCRIPT -->
+  <script>
+    function showContent(contentId, iconElement) {
+      // Hide all content sections
+      var contents = document.querySelectorAll('#overview-content, #monitor-content, #availability-content, #service-content, #security-content, #configure-content, #data-content, #billing-content');
+      contents.forEach(function(content) {
+        content.style.display = 'none';
+      });
+
+      // Remove active class from all icons
+      var icons = document.querySelectorAll('#cockpit-navbar div');
+      icons.forEach(function(icon) {
+        icon.classList.remove('active');
+      });
+
+      // Show the selected content and mark the icon as active
+      document.getElementById(contentId).style.display = 'flex';
+      iconElement.classList.add('active');
+    }
+  </script>
+
+</head>
+<body>
+
+<!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
+
+<header>
+  <div id="top-bar">
+    <div class="navbar">
+      <div id="logo-desktop">
+        <a><img src="../HELP/icone/icone_site.svg" alt="logo site"></a>
+        <a href="../index.html">Index</a>
+        <a href="../NAPS/index.html">NAPS</a>
+        <div class="dropdown">
+          <button class="dropbtn">Liste 1
+            <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../4VVV/index.html">4VVV</a>
+            <a href="../RAND/index.html">RAND1</a>
+            <a href="../RAND/regions_details.html">RAND2</a>
+            <a href="../POKE/index.html">POKE</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Liste 2
+            <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../AZIL/index.html">AZIL</a>
+            <a href="../HELP/index.html">HELP1</a>
+            <a href="../HELP/cockpit.html">HELP2</a>
+          </div>
+        </div>
+      </div>
+      <a id ="profile">
+        <div id = "profile-picture"><img src = "../HELP/icone/profile.svg"></div>
+        <div id = "profile-firstname">FirstName</div>
+        <div id = "profile-lastname">LastName</div>
+      </a>
+      <div id="logo-tablet">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="../HELP/icone/icone_site.svg" alt="logo site">
+          </button>
+          <div class="dropdown-content">
+            <a href="../4VVV/index.html">4VVV</a>
+            <a href="../RAND/index.html">RAND1</a>
+            <a href="../RAND/regions_details.html">RAND2</a>
+            <a href="../POKE/index.html">POKE</a>
+            <a href="../AZIL/index.html">AZIL</a>
+            <a href="../HELP/index.html">HELP1</a>
+            <a href="../HELP/cockpit.html">HELP2</a>
+          </div>
+        </div>
+        <div id = "tablet-text">
+          <a>Home
+            <img src="../HELP/icone/fleche_horizontale.svg" alt=">"></a>
+          <a>Networking
+            <img src="../HELP/icone/fleche_horizontale.svg" alt=">"></a>
+          <a>Flexible
+            <img src="../HELP/icone/fleche_horizontale.svg" alt=">"></a>
+        </div>
+        <div id ="phone-text">
+          Menu
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="bottom-bar">
+    <p>Home  >  Networking  >  Flexible </p>
+  </div>
+</header>
+
+<!-- FIN HTML NAVBAR - PAS TOUCHER -->
+
+<div id="content">
+  <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
+  <div id="cockpit">
+    <div id="cockpit-header">
+      <p>Cockpit</p>
+    </div>
+    <div id="cockpit-navbar">
+      <div onclick="showContent('overview-content', this)" class="active">
+        <img src="icone/oeil.svg" alt="oeil">
+        <p id="icone">Overview</p>
+      </div>
+      <div onclick="showContent('availability-content', this)">
+        <img src="icone/calendrier.svg" alt="calendrier">
+        <p id="icone">Availability</p>
+      </div>
+      <div onclick="showContent('service-content', this)">
+        <img src="icone/sonnette.svg" alt="sonnette">
+        <p id="icone">Service</p>
+      </div>
+      <div onclick="showContent('monitor-content', this)">
+        <img src="icone/ecran.svg" alt="ecran">
+        <p id="icone">Monitor</p>
+      </div>
+      <div onclick="showContent('security-content', this)">
+        <img src="icone/cadenas.svg" alt="cadenas">
+        <p id="icone">Security</p>
+      </div>
+      <div onclick="showContent('configure-content', this)">
+        <img src="icone/outil.svg" alt="outils">
+        <p id="icone">Configure</p>
+      </div>
+      <div onclick="showContent('data-content', this)">
+        <img src="icone/data.svg" alt="data">
+        <p id="icone">Data</p>
+      </div>
+      <div onclick="showContent('billing-content', this)">
+        <img src="icone/euro.svg" alt="euro">
+        <p id="icone">Billing</p>
+      </div>
+    </div>
+    <div id="overview-content">
+      <div id="overview-header">
+        <p>Location Overview</p>
+      </div>
+      <div id="overview-items">
+        <div class="overview-item">
+          <p class="overview-title">1</p>
+          <p class="overview-subtitle">Edge count</p>
+        </div>
+        <div class="overview-item">
+          <p class="overview-title">Single-Edge</p>
+          <p class="overview-subtitle">Edge redundancy</p>
+        </div>
+        <div class="overview-item">
+          <p class="overview-title">Edge510lte</p>
+          <p class="overview-subtitle">Edge Model</p>
+        </div>
+        <div class="overview-item">
+          <p class="overview-title">Down</p>
+          <p class="overview-subtitle">All links Status</p>
+        </div>
+      </div>
+    </div>
+    <div id="monitor-content" style="display: none;">
+      <div id="monitor-header">
+        <p>Edge monitoring</p>
+      </div>
+      <div id="monitor-table">
+        <table>
+          <tr>
+            <td>
+              <div id="categorie">Name</div>
+              <br>
+              Edge_Biot_1
+            </td>
+
+            <td>
+              <div id="categorie">Hostname</div>
+              <br>
+              Edge_Biot_1
+            </td>
+
+            <td>
+              <div id="categorie">Attribut</div>
+              <br>
+              Active
+            </td>
+
+            <td>
+              <div id="categorie">HA Status</div>
+              <br>
+              N/A
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div>Overview</div>
+            </td>
+
+            <td>
+              <div>Edge-510-lte</div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div>Link et Overlay tunnels</div>
+            </td>
+
+            <td>
+              <div id="categorie">Links <img src="icone/info.svg" alt="info"></div>
+              <br>
+              <img src="icone/rond_orange.svg" alt="orange">
+            </td>
+
+            <td>
+              <div id="categorie">Overlay tunnels<img src="icone/info.svg" alt="info"></div>
+              <br>
+              <img src="icone/rond_orange.svg" alt="orange">
+            </td>
+
+            <td>
+              <div id="categorie">QoE<img src="icone/info.svg" alt="info"></div>
+              <br>
+              <img src="icone/rond_vert.svg" alt="orange">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div>System</div>
+            </td>
+
+            <td>
+              <div>CPU usage</div>
+              <br>
+              29%
+            </td>
+
+            <td>
+              <div>RAM usage</div>
+              <br>
+              44.
+            </td>
+
+            <td>
+
+            </td>
+
+            <td>
+              <div>Flows</div>
+              <br>
+              11
+            </td>
+
+
+          </tr>
+
+        </table>
+
+      </div>
+    </div>
+  </div>
+  <!-- FIN HTML CONTENU - VOTRE SECTION -->
+</div>
+
+</body>
+</html>

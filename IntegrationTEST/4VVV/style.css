@@ -1,0 +1,539 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.mainsection {
+  overflow: auto;
+  display : grid;
+  grid-gap : 20px;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  margin-left: 45px;
+}
+
+/*--------------------------------------*/
+/*DEBUT ENTETE*/
+
+#entete{
+  top: 48px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+#titrenclose{
+  display: grid;
+  grid-template-columns: 90% auto;
+  border: solid #CCCCCC 1px;
+  border-left: none;
+  border-right: none;
+  padding: 5px, 45px, 5px, 45px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+#titre{
+  display: flex;
+  align-items: center;
+  padding: 15px 0px 15px 0px;
+  gap: 60px;
+  opacity: 0px;
+  padding-left: 45px;
+}
+
+#titrelabel{
+  padding: 0px 0px 5px 0px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+#crossgroup{
+  display: flex;
+  align-items: center;
+  padding: 7px 0px 10px 0px;
+  gap: 4px;
+  opacity: 0px;
+}
+
+#close{
+  gap: 4px;
+  opacity: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+
+#deletenrefresh{
+  display: grid;
+  grid-template-columns: auto 95%;
+  border: solid #CCCCCC 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  padding: 0px 45px 0px 45px;
+  gap: 0px;
+  justify-content: space-between;
+  opacity: 0px;
+}
+
+#delete{
+  color: #CCCCCC;
+  display: flex;
+  align-items: center;
+  border: solid #CCCCCC 1px;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  padding: 7px 10px 10px 0px;
+  gap: 6px;
+  opacity: 0px;
+  
+}
+
+#deletelabel{
+  gap: 4px;
+  opacity: 0px;
+}
+
+#refresh{
+  display: flex;
+  align-items: center;
+  padding: 7px 0px 10px 10px;
+  gap: 6px;
+  opacity: 0px;
+}
+
+#refreshlabel{
+  gap: 4px;
+  opacity: 0px;
+}
+
+/*FIN ENTETE*/
+/*--------------------------------------*/
+/*DEBUT DONNEES*/
+
+#gridinformation{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto;
+  grid-gap : 30px;
+  margin-right: 45px;
+}
+
+#descriptioncase{
+  grid-column: span 5;
+}
+
+.caseinfo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: solid #cccccc;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.casegauche{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.labelinfo{
+  color: #555555;
+  font-size: 14px;
+}
+
+.textinfo{
+  font-size: 16px;
+}
+
+.littletextinfo{
+  font-size: 12px;
+}
+
+.case{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.casespe{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#gridinformationbis{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-right: 45px;
+}
+
+#provisioningstate, #operationalstatus{
+  border: solid #cccccc;
+}
+
+#opstatline{
+  display: flex;
+}
+
+#opstat{
+  margin-left: 5px;
+}
+
+#provstat{
+  background-color: #3DE35A;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 1px;
+  padding-bottom: 3px;
+  border-radius: 3ch;
+}
+
+.bignumber{
+  font-size: 34px;
+  color: #CFA40B;
+}
+
+.liststatus{
+  list-style: none;
+  padding: 0;
+}
+
+.list{
+  width: 100%;
+}
+
+.elementstatus{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.ronds{
+  width: 20px;
+  height: 21px;
+}
+
+.triangles{
+  width: 20px;
+  height: 19px;
+}
+
+.tabcontent {
+  display: none;
+  margin-left:45px;
+  margin-right:45px;
+}
+
+.tab{
+  border-top: 1px solid #CCCCCC;
+  background: #F4F4F4;
+  padding-bottom: 10px;
+}
+
+.tabletitle{
+  width: Fill (1,295px)px;
+  height: Hug (38px)px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 24px;
+  top: 785px;
+}
+
+.tablink {
+  background-color: white;
+  padding: 7px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.selectedtablink{
+  border-bottom: solid #CFA40B;
+  border-width: 5px;
+}
+
+.tablink:hover {
+  background-color: #ddd;
+}
+
+.tabs {
+  overflow: hidden;
+  margin-right: 45px;
+  margin-top:45px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 14px;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 15px;
+  font-weight: normal;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+table tr td {
+  border-top: 1px solid #CCCCCC;
+}
+
+table tr:nth-child(odd) td {
+  background-color: #FFFFFF;
+}
+
+th img, td img {
+  vertical-align: middle;
+  margin-left: 5px; 
+}
+
+.monitoring{
+  text-align: right;
+}
+.pagination {
+  text-align: right;
+  margin-top: 10px;
+  gap:4px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 1px;
+  border: none;
+  background-color: #F4F4F4;
+}
+
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.pagination button.active {
+  outline: 2px solid #F16E00;
+}
+
+.search{
+  float:right;
+  display: flex;
+  gap:25px;
+}
+
+.filterbutton{
+background-color: white;
+border: none;
+padding: 7px 0px 10px 0px;
+display: flex;
+width: 94px;
+justify-content: center;
+gap:6px;
+font-size: 16px;
+}
+
+#searchbar{
+border: none;
+width: 230px;
+font-size: 16px;
+}
+
+#searchbar::placeholder {
+color: #555555;
+}
+
+#searchbar:focus {
+  outline: none;
+}
+
+
+#searcharea{
+border-bottom: solid #555555;
+display: flex;
+gap: 20px;
+align-items: center;
+width: 289px;
+}
+
+#searcharea img{
+  width:20px;
+  height: 20px;
+}
+
+.fleches{
+  width: 18px;
+  height: 18px;
+}
+
+@media (min-width: 1188px) and (max-width: 1880px) {  
+  .caseinfo{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;;
+    padding-bottom: 10px;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (max-width: 1188px) {
+  #gridinformationbis{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .caseinfo{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 992px){
+  #gridinformation{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #descriptioncase{
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 845px){
+  #deletenrefresh{
+    grid-template-columns: auto auto;
+    justify-content: start;
+    
+  }
+  #refresh{
+    text-align: start;
+  }
+
+  
+}
+
+@media (max-width: 800px){
+  #titrenclose{
+    grid-template-columns: 1fr;
+    
+  }
+
+  #titre{
+    display: flex;
+    align-items: center;
+    justify-items: start;
+    padding-left: 0px;
+  }
+
+  #crossgroup{
+    display: flex;
+    align-items: center;
+    justify-items: start;
+  }
+  
+}
+
+@media (max-width: 716px) {
+  #gridinformationbis{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px){
+  #gridinformation{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #descriptioncase{
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 435px){
+  #gridinformation{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+
+  #descriptioncase{
+    grid-column: span 1;
+    border-bottom: none;
+  }
+
+  .casespe{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .case{
+    border-bottom: solid 1px #555555;
+  }
+}
+
+@media (max-width: 387px) {
+  .caseinfo{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 865px) {
+  .search{
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #tab2 th:nth-child(2),
+  #tab2 td:nth-child(2),
+  #tab2 th:nth-child(3),
+  #tab2 td:nth-child(3),
+  #tab3 th:nth-child(2),
+  #tab3 td:nth-child(2),
+  #tab3 th:nth-child(4),
+  #tab3 td:nth-child(4),
+  #tab4 th:nth-child(2),
+  #tab4 td:nth-child(2),
+  #tab4 th:nth-child(4),
+  #tab4 td:nth-child(4),
+  #tab4 th:nth-child(3),
+  #tab4 td:nth-child(3) {
+    display: none;
+  }
+
+}
+
+@media (max-width: 500px) {
+  td img[src="../HELP/icone/rond_vert.svg"],
+  td img[src="../HELP/icone/rond_orange.svg"] {
+    display: inline-block;
+  }
+  td span {
+    display: none;
+  }
+  .tabcontent {
+    margin:0;
+  }
+
+  .pagination {
+    text-align:justify;
+  }
+}

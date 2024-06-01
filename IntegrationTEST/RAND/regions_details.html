@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
+    <link rel="stylesheet" href="../HELP/css/style.css">
+    <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
+
+    <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
+    <link rel="stylesheet" href="CSS/regions_details.css">
+    <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
+
+</head>
+
+<body>
+
+<!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
+
+<header>
+  <div id="top-bar">
+    <div class="navbar">
+      <div id="logo-desktop">
+        <a><img src="../HELP/icone/icone_site.svg" alt="logo site"></a>
+        <a href="../index.html">Index</a>
+        <a href="../NAPS/index.html">NAPS</a>
+        <div class="dropdown">
+          <button class="dropbtn">Liste 1
+            <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../4VVV/index.html">4VVV</a>
+            <a href="../RAND/index.html">RAND1</a>
+            <a href="../RAND/regions_details.html">RAND2</a>
+            <a href="../POKE/index.html">POKE</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Liste 2
+            <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../AZIL/index.html">AZIL</a>
+            <a href="../HELP/index.html">HELP1</a>
+            <a href="../HELP/cockpit.html">HELP2</a>
+          </div>
+        </div>
+      </div>
+      <a id ="profile">
+        <div id = "profile-picture"><img src = "../HELP/icone/profile.svg"></div>
+        <div id = "profile-firstname">FirstName</div>
+        <div id = "profile-lastname">LastName</div>
+      </a>
+      <div id="logo-tablet">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="../HELP/icone/icone_site.svg" alt="logo site">
+          </button>
+          <div class="dropdown-content">
+            <a href="../4VVV/index.html">4VVV</a>
+            <a href="../RAND/index.html">RAND1</a>
+            <a href="../RAND/regions_details.html">RAND2</a>
+            <a href="../POKE/index.html">POKE</a>
+            <a href="../AZIL/index.html">AZIL</a>
+            <a href="../HELP/index.html">HELP1</a>
+            <a href="../HELP/cockpit.html">HELP2</a>
+          </div>
+        </div>
+        <div id = "tablet-text">
+          <a>Home
+            <img src="../HELP/icone/fleche_horizontale.svg" alt=">"></a>
+          <a>Networking
+            <img src="../HELP/icone/fleche_horizontale.svg" alt=">"></a>
+          <a>Flexible
+            <img src="../HELP/icone/fleche_horizontale.svg" alt=">"></a>
+        </div>
+        <div id ="phone-text">
+          Menu
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="bottom-bar">
+    <p>Home  >  Networking  >  Flexible </p>
+  </div>
+</header>
+
+<!-- FIN HTML NAVBAR - PAS TOUCHER -->
+
+    <div id="content">
+        <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
+        <div class="page">
+            <!-- Contenu de la page ici -->
+            <div id="header">
+                <h1 id="region_name">
+                    Region Name RAND
+                </h1>
+                <div id="close_button">
+                    <img src="../HELP/icone/croix.svg" alt="close">
+                    <button>Close</button>
+                </div>
+            </div>
+            <div id="region_option">
+                <div id="delete_button">
+                    <img src="../HELP/icone/poubelle.svg" alt="delete">
+                    <button>Delete</button>
+                </div>
+                <div id="refresh_button">
+                    <img src="../HELP/icone/refresh.svg" alt="refresh">
+                    <button>Refresh</button>
+                </div>
+            </div>
+            <div id="region_info_wrapper">
+                <div id="region_info_subwrapper">
+                    <dl class="region_info">
+                        <dt class="region_info_title">Vendor:</dt>
+                        <dd class="region_info_text">
+                            VMWARE
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title">Project:</dt>
+                        <dd class="region_info_text">
+                            Name_Project
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title">Network</dt>
+                        <dd class="region_info_text">
+                            <div id="network_name">Network Name</div>
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title">Service Management</dt>
+                        <dd class="region_info_text">
+                            Premium
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title">Location Gateway</dt>
+                        <dd class="region_info_text">
+                            London / Amsterdam
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title">Gateway version</dt>
+                        <dd class="region_info_text">
+                            5.0
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title">Orchestrator</dt>
+                        <dd class="region_info_text">
+                            <img src="../HELP/icone/lien.svg" alt="lien">
+                            Go to VM-Ware
+                        </dd>
+                    </dl>
+                    <dl class="region_info">
+                        <dt class="region_info_title"></dt>
+                        <dd class="region_info_text">
+
+                        </dd>
+                    </dl>
+                </div>
+                <div id="region_info_special_wrapper">
+                    <dl class="region_info_special">
+                        <dt class="region_info_title">Provisioning state:</dt>
+                        <dd class="region_info_text">
+                            <div id="provisioning_state">Active</div>
+                        </dd>
+                    </dl>
+                    <dl class="region_info_special">
+                        <dt class="region_info_title">Operationnal status:</dt>
+                        <dd class="region_info_text">
+                            <img src="../HELP/icone/rond_vert.svg" alt="rond_vert">
+                            Up
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <dl id="region_description">
+                <dt>Description: </dt>
+                <dd id="region_description_text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit,
+                    ante a malesuada eleifend, ligula urna vestibulum purus,
+                    nec mattis nunc est eget lacus. Donec congue arcu velit, ac fermentum eros finibus facilisis.
+                    Curabitur nec est eleifend, laoreet
+                    mi sit amet, hendrerit enim. Quisque consequat aliquet aliquet. Nullam pretium suscipit risus, id
+                    porttitor mi dictum quis.
+                    Quisque id porttitor leo. Praesent sit amet lacus eu tellus vulputate feugiat. Etiam at pharetra
+                    massa. Ut augue lectus, molestie
+                    vitae ante in, mollis feugiat ligula. Fusce hendrerit dolor id pretium feugiat</dd>
+            </dl>
+            <div id="region_info_values_wrapper">
+                <div class="info_values">
+                    <div class="info_spec">
+                        <div class="info_spec_number">
+                            4
+                        </div>
+                        <div class="info_spec_name">
+                            Gateways
+                        </div>
+                    </div>
+                    <div class="info_state">
+                        <div class="state" id="info_gateway_up">
+                            <img src="../HELP/icone/rond_vert.svg" alt="rond_vert">
+                            3 Up
+                        </div>
+                        <div class="state" id="info_gateway_degraded">
+                            <img src="../HELP/icone/rond_orange.svg" alt="rond_orange">
+                            1 Degraded
+                        </div>
+                        <div class="state" id="info_gateway_down">
+                            <img src="../HELP/icone/triangle_rouge.svg" alt="triangle_rouge">
+                            1 Down
+                        </div>
+                    </div>
+                </div>
+                <div class="info_values">
+                    <div class="info_spec">
+                        <div class="info_spec_number">
+                            15
+                        </div>
+                        <div class="info_spec_name">
+                            Sites
+                        </div>
+                    </div>
+                    <div class="info_state">
+                        <div class="state" id="info_sites_up">
+                            <img src="../HELP/icone/rond_vert.svg" alt="rond_vert">
+                            3 Up
+                        </div>
+                        <div class="state" id="info_sites_degraded">
+                            <img src="../HELP/icone/rond_orange.svg" alt="rond_orange">
+                            1 Degraded
+                        </div>
+                        <div class="state" id="info_sites_down">
+                            <img src="../HELP/icone/triangle_rouge.svg" alt="triangle_rouge">
+                            1 Down
+                        </div>
+                    </div>
+                </div>
+                <div class="info_values">
+                    <div class="info_spec">
+                        <div class="info_spec_number">
+                            30
+                        </div>
+                        <div class="info_spec_name">
+                            Edges
+                        </div>
+                    </div>
+                    <div class="info_state">
+                        <div class="state" id="info_edges_up">
+                            <img src="../HELP/icone/rond_vert.svg" alt="rond_vert">
+                            3 Up
+                        </div>
+                        <div class="state" id="info_edges_degraded">
+                            <img src="../HELP/icone/rond_orange.svg" alt="rond_orange">
+                            1 Degraded
+                        </div>
+                        <div class="state" id="info_edges_down">
+                            <img src="../HELP/icone/triangle_rouge.svg" alt="triangle_rouge">
+                            1 Down
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="inventory_navbar_wrapper">
+                <div id="navbar">
+                    <ul>
+                        <li>
+                            <a id="gateways">Gateways</a>
+                            <div class="line_select"></div>
+                        </li>
+                        <li>
+                            <a id="sites">Sites</a>
+                            <div class="line_select"></div>
+                        </li>
+                        <li>
+                            <a id="edges">Edges</a>
+                            <div class="line_select"></div>
+                        </li>
+                        <li>
+                            <a id="map">Map</a>
+                            <div class="line_select"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="search">
+                    <input id="search_navbar" placeholder="Search for a product, resour...">
+                    <img id="img_search" src="../HELP/icone/loupe.svg" alt="loupe">
+                </div>
+                <div id="filter_navbar">
+                    <img src="../HELP/icone/filtre.svg" alt="filtre">
+                    <button>Filter</button>
+                </div>
+            </div>
+            <div id="inventory_wrapper">
+                <div id="inventory_name">
+                    Gateways Inventory
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            Gateway Name
+                            <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
+                        </th>
+                        <th class="region_table">
+                            Region
+                            <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
+                        </th>
+                        <th class="type_table">
+                            Type
+                            <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
+                        </th>
+                        <th>
+                            Operational status
+                            <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Gateway USA</td>
+                        <td class="region_table">AMER</td>
+                        <td class="type_table">Service</td>
+                        <td>
+                            <img src="../HELP/icone/rond_vert.svg" alt="rond_vert">
+                            Up
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gateway MALAYSIA</td>
+                        <td class="region_table">APAC</td>
+                        <td class="type_table">Management</td>
+                        <td>
+                            <img src="../HELP/icone/rond_vert.svg" alt="rond_vert">
+                            Up
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gateway CHINA</td>
+                        <td class="region_table">APAC</td>
+                        <td class="type_table">Management</td>
+                        <td>
+                            <img src="../HELP/icone/rond_vert.svg" alt="rond_vert">
+                            Up
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gateway SOPHIA</td>
+                        <td class="region_table">EMEA</td>
+                        <td class="type_table">Service</td>
+                        <td>
+                            <img src="../HELP/icone/triangle_rouge.svg" alt="triangle_rouge">
+                            Down
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div id="pager_wrapper">
+                <div class="pager">
+                    <a href="#"><img src="../HELP/icone/fleche_horizontale_g.svg" alt=""></a>
+                    <a href="#" id="current_page">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a>...</a>
+                    <a href="#">30</a>
+                    <a href="#"><img src="../HELP/icone/fleche_horizontale.svg" alt=""></a>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- FIN HTML CONTENU - VOTRE SECTION -->
+    </div>
+
+</body>
+<script src="JS/region_details.js"></script>
+
+</html>

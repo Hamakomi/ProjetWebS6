@@ -304,6 +304,10 @@ h1{
   
 }
 
+#filter_panel #close img{
+  cursor: pointer;
+}
+
 #filter_panel #effacer{
   display: inline-flex;
   

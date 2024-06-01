@@ -256,7 +256,7 @@ h1{
   border: #f16e00;
   border-style: solid;
   border-width: 5px;
-  width: 41%;
+  width: 36.9%;
  
   z-index: 10;
   position: absolute;
@@ -270,13 +270,13 @@ h1{
   letter-spacing: 0.5px;
  
   padding-right: 3px;
-  padding-left: 40px;
+  
   padding-top: 10px;
   padding-bottom: 5px;
   margin-bottom: 5px;
  
-  bottom: 26.9%;
-  left:56.1%;
+  top: 48.4%;
+  left:62.8%;
 
 
   flex-direction: column;
@@ -285,16 +285,72 @@ h1{
  
 }
 
+#filter_panel #first_part{
+
+  padding-left: 40px;
+
+}
+
+
+#filter_panel #second_part{
+
+  padding-left: 20px;
+}
+
 
 #filter_panel #close{
-  padding-left: 90%;
+  padding-left: 85%;
   display: inline-flex;
   
 }
 
-#filter_panel #checkbox_filter{
-  display: inline;
+#filter_panel #effacer{
+  display: inline-flex;
+  
 }
+
+#first_row_check{
+  display: inline-flex;
+
+}
+
+
+
+
+#element_filter {
+  padding-right: 15%;
+  display: inline-flex;
+}
+
+#element_filter p{
+  padding-left: 30px;
+}
+
+#element_filter label{
+  margin-top: 6px;
+}
+
+#validate_filter{
+
+  cursor: pointer;
+  
+  background: white;
+  border-radius: 0px;
+  color: black;
+  width: 97%;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size:small;
+  letter-spacing: 0.5px;
+
+  margin-bottom: 20px;
+
+}
+
+
+
 
 /*css relatif au logos*/
 .active p {

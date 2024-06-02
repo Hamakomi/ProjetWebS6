@@ -15,18 +15,18 @@ h1{
   }
 /**********/
   /*menu navigation + add network button*/
-
+ 
   #titlenav{
     width: 100%;
     display: inline-flex;
     align-items: center;
     margin-bottom: 0px;
   }
-
+ 
   #titlenav a{
     color: black;
   }
-
+ 
   /*add network button*/
   #add_network{
     cursor: pointer;
@@ -84,26 +84,26 @@ h1{
     width: 100%;
     height: 100%;
     font-size: large;
-    padding: 0; 
+    padding: 0;
     border: none;
-    background: none; 
+    background: none;
     letter-spacing: 0.5px;
   }
   #actionBar .buttons {
     border: 1px solid #ddd;
   }
-
+ 
   #actionBar .buttons:not(#delete,#empty,#zone_saisie){
     cursor: pointer;
   }
   #actionBar .buttons:not(#delete,#empty,#zone_saisie):hover{
     background-color: #e6e6e6;
   }
-
+ 
   #actionBar img:not(#loupe){
     margin-right: 10px;
   }
-  
+ 
  #actionBar button p{
    
     font-size:small;
@@ -143,7 +143,7 @@ h1{
   #actionBar input#zone_saisie {
     width: 100%;
     height: 62.5px;
-    padding: 0; 
+    padding: 0;
     outline : none;
     padding-left: 10px;
     font-size: large;
@@ -157,7 +157,7 @@ h1{
     border-bottom: 1px solid #ddd;
     fill: black;
   }
-
+ 
   /*button filter*/
   #actionBar #filter{
     border-right: none;
@@ -165,8 +165,10 @@ h1{
     padding-right: 2%;
     height: 64px;
   }
-/**********/
 
+  
+/**********/
+ 
 /*tableau*/
 #tableau {
   padding-left: 50px;
@@ -176,12 +178,12 @@ h1{
   border-spacing: 0px 8px;
   background-color: #f4f4f4;
 }
-
+ 
 #tableau th, #tableau td {
-  padding: 15px;
+  padding: 1%;
   text-align: left;
 }
-
+ 
 #tableau td{
     background-color: #ffff;
     border: 1px solid #ddd;
@@ -189,13 +191,15 @@ h1{
     border-right: none;
     height: 50px;
 }
-
+ 
 #tableau th {
   font-size:15px;
   color: #333333;
   font-weight: lighter;
   border: none;
+  
 }
+
 /*sorting button en tête tableau*/
 .sorting_button{
   cursor: pointer;
@@ -203,22 +207,23 @@ h1{
 /*1er segment (contient checkbox)*/
 #tableau .start{
     border-left: 1px solid #ddd;
-} 
+    padding-right: 25px;
+}
 /*dernier segment (contient trois points)*/
 #tableau .end{
   vertical-align: text-top;
   padding-right: 26px;
   border-right:1px solid #ddd;
 }
-
+ 
 .troispointsgras{
   font-family:'Times New Roman';
   color: black;
   font-weight: bold;
   font-size: xx-large;
 }
-
-/*css pop up quand trois point appuyé*/ 
+ 
+/*css pop up quand trois point appuyé*/
 #action_panel{
  
  
@@ -249,6 +254,22 @@ h1{
  
 }
 
+#action_panel p:hover{
+  background-color: #e6e6e6;
+}
+ 
+
+#action_panel p{
+  cursor: pointer;
+}
+ 
+
+.buttonmore{
+  all:unset;
+  cursor: pointer;
+}
+ 
+ 
 #filter_panel{
  
  
@@ -256,7 +277,7 @@ h1{
   border: #f16e00;
   border-style: solid;
   border-width: 5px;
-  width: 36.9%;
+  width: 470px;
  
   z-index: 10;
   position: absolute;
@@ -270,13 +291,12 @@ h1{
   letter-spacing: 0.5px;
  
   padding-right: 3px;
-  
+
   padding-top: 10px;
   padding-bottom: 5px;
   margin-bottom: 5px;
- 
-  top: 48.4%;
-  left:62.8%;
+
+  right:0%;
 
 
   flex-direction: column;
@@ -285,61 +305,71 @@ h1{
  
 }
 
-#filter_panel #first_part{
 
-  padding-left: 40px;
-
+#ligne{
+  margin-top: 4%;
+  background-color:#cccccc;
+  width:88%;
+  height:1px;
 }
 
 
+ 
+#filter_panel #first_part{
+ 
+  padding-left: 40px;
+ 
+}
+ 
+ 
 #filter_panel #second_part{
-
+ 
   padding-left: 20px;
 }
-
-
+ 
+ 
 #filter_panel #close{
   padding-left: 85%;
   display: inline-flex;
-  
+ 
 }
-
+ 
 #filter_panel #close img{
   cursor: pointer;
 }
-
+ 
 #filter_panel #effacer{
   display: inline-flex;
-  
+ 
 }
-
+ 
 #filter_panel #effacer img{
   filter: brightness(0) saturate(100%);
   cursor: pointer;
 }
-
+ 
 .first_row_check{
   display: inline-flex;
-
+ 
 }
-
+ 
 .element_filter {
   padding-right: 15%;
   display: inline-flex;
 }
-
+ 
 .element_filter p{
   padding-left: 30px;
 }
-
+ 
 .element_filter label{
   margin-top: 6px;
 }
-
+ 
 #validate_filter{
-
+ 
   cursor: pointer;
-  
+ 
   background: white;
   border-radius: 0px;
   color: black;
@@ -347,41 +377,41 @@ h1{
   height: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-
+ 
   font-size:small;
   letter-spacing: 0.5px;
-
+ 
   margin-bottom: 20px;
-
+ 
 }
-
-
-
-
+ 
+ 
+ 
+ 
 /*css relatif au logos*/
 .active p {
     color: black;
     background-color:#3DE35A;
-    
+   
     border-radius: 12px;
     width: 60px;
     height: 18px;
     padding-left: 13px;
     padding-top: 1px;
 }
-
+ 
 .inactive {
     color: grey;}
-
-
+ 
+ 
 .green img{
     padding-right: 6px;
 }
-
+ 
 #tableau .div_loading{
   color: black;
   background-color:#ecfdef;
-  
+ 
   border-radius: 12px;
   width: 120px;
   height: 20px;
@@ -390,35 +420,35 @@ h1{
   display: flex;
   align-items: flex-start;
 }
-
+ 
 .div_loading img{
   padding-top: 4px;
   padding-right: 8px;
 }
-
-
+ 
+ 
 .draft p {
   color: black;
   background-color:#f4f4f4;
-  
+ 
   border-radius: 12px;
   width: 50px;
   height: 18px;
   padding-left: 16px;
   padding-top: 1px;
 }
-
+ 
 .inactive p {
   color: white;
   background-color:black;
-  
+ 
   border-radius: 12px;
   width: 75px;
   height: 18px;
   padding-left: 18px;
   padding-top: 1px;
 }
-
+ 
 /*css check box*/
 /*conteneur*/
 .container {

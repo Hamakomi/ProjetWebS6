@@ -30,7 +30,7 @@ h1{
   /*add network button*/
   #add_network{
     cursor: pointer;
-    margin-left: 58%;
+    margin-left: 57%;
     background: black;
     border-radius: 0px;
     color: white;
@@ -318,21 +318,21 @@ h1{
   cursor: pointer;
 }
 
-#first_row_check{
+.first_row_check{
   display: inline-flex;
 
 }
 
-#element_filter {
+.element_filter {
   padding-right: 15%;
   display: inline-flex;
 }
 
-#element_filter p{
+.element_filter p{
   padding-left: 30px;
 }
 
-#element_filter label{
+.element_filter label{
   margin-top: 6px;
 }
 

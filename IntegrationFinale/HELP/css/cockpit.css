@@ -1,0 +1,298 @@
+body * {
+  font-family: var(--primary-font) !important;
+  box-sizing: border-box;
+}
+#content-cockpit{
+  display: flex;
+}
+
+#top-bar {
+  padding: 0 45px;
+  max-width: 100%;
+}
+
+#cockpit{
+  width: 100%;
+
+}
+
+#cockpit-navbar {
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  isolation: isolate;
+  margin-left: 3%;
+  width: 787px;
+  height: 74px;
+}
+
+#cockpit-navbar img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#cockpit-navbar p.icone {
+  font-size: 14px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+#cockpit-navbar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cockpit-header p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 3%;
+}
+
+#overview-content, #monitor-content {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #F4F4F4;
+  display: none; /* Initially hidden */
+  flex-direction: column;
+
+}
+
+#overview-content {
+  /* Frame 2608434 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 60px 90px;
+  width: 100%;
+  height: 289px;
+
+
+
+  /* Shades of Gray/Gray 2 */
+  background: #F4F4F4;
+  /* Shades of Gray/Gray 4 */
+  border-top: 1px solid #CCCCCC;
+
+
+}
+
+#overview-header p, #monitor-header p {
+
+  /* label */
+
+  width: 100%;
+  height: 28px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+
+  /* Primary/Black */
+  color: #000000;
+
+}
+
+#overview-items {
+  display: flex;
+  justify-content: center; /* Center items */
+  flex-wrap: nowrap; /* Do not wrap items */
+  width: 100%;
+
+
+
+  .overview-item {
+    background-color: #FFFFFF;
+    border: 2px solid #CCCCCC;
+    padding: 10px;
+    width: 20%; /* Adjust the width as needed */
+    margin: 10px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Slight shadow for a lifted effect */
+  }
+
+  .overview-title{
+    font-weight: 700;
+    color: #CFA40B;
+    font-size: 20px;
+  }
+  .overview-subtitle{
+    font-size: 16px;
+  }
+}
+
+
+.monitor-title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #CFA40B; /* Adjust this color as needed */
+  margin-bottom: 10px;
+}
+
+
+#croix {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#cockpit-navbar .active {
+  border-bottom: 5px solid #FFA500; /* Orange border for active tab */
+}
+
+.categorie{
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+
+.text{
+  /* Input text */
+
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  /* Primary/Black */
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+
+#categorie-info{
+  /* Label and icon */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+
+  width: 39px;
+  height: 20px;
+
+  color: #555555;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+
+#monitor-table{
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  border-collapse: collapse;
+
+}
+
+#monitor-content{
+  /* Frame 2608434 */
+
+  box-sizing: border-box;
+  padding: 30px 60px 90px;
+  width: 100%;
+
+
+  /* Shades of Gray/Gray 2 */
+  background: #F4F4F4;
+  /* Shades of Gray/Gray 4 */
+  border-top: 1px solid #CCCCCC;
+
+}
+
+#monitor-table td{
+  border-bottom: 1px solid #CCCCCC;
+  height: 80px;
+}
+
+.entete{
+  background-color: #fff;
+}
+
+.more{
+  display: none;
+}
+
+#tunnel{
+  display: none;
+}
+#qoe{
+  display: none;
+}
+
+.attribut{
+  background-color: #3DE35A;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #000;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.bulle1{
+  position: relative;
+  display: inline-block;
+}
+
+.infobulle-texte1{
+  position: absolute;
+  background-color: #fff;
+  top: 85%;
+  left: 50%;
+  padding: 20px;
+  z-index: 1;
+}
+
+.bulle{
+  position: relative;
+  display: inline-block;
+}
+.infobulle-texte{
+  position: absolute;
+  background-color: #fff;
+  top: 60%;
+  left: 37%;
+  padding: 20px;
+  z-index: 1;
+}

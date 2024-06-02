@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
+
+    <link rel="stylesheet" href="../HELP/css/style.css">
+    <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
+
+    <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
+    <link rel="stylesheet" href="CSS/index.css">
+    <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
+
+</head>
+<body>
+
+<!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
+
+<header>
+  <div id="top-bar">
+    <div class="navbar">
+      <div id="logo-desktop">
+        <a><img src="../HELP/icone/icone_site.svg" alt="logo site"></a>
+        <a href="../index.html">Index</a>
+        <a href="../NAPS/index.html">NAPS</a>
+        <div class="dropdown">
+          <button class="dropbtn">Liste 1
+            <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../4VVV/index.html">4VVV</a>
+            <a href="../RAND/index.html">RAND1</a>
+            <a href="../RAND/regions_details.html">RAND2</a>
+            <a href="../POKE/index.html">POKE</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Liste 2
+            <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../AZIL/index.html">AZIL</a>
+            <a href="../HELP/index.html">HELP1</a>
+            <a href="../HELP/cockpit.html">HELP2</a>
+          </div>
+        </div>
+      </div>
+      <a id="profile">
+        <div id="profile-picture"><img src="../HELP/icone/profile.svg"></div>
+        <div id="profile-firstname">FirstName</div>
+        <div id="profile-lastname">LastName</div>
+      </a>
+      <div id="logo-tablet">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="../HELP/icone/icone_site.svg" alt="logo site">
+          </button>
+          <div class="dropdown-content">
+            <a href="../index.html">Index</a>
+            <a href="../4VVV/index.html">4VVV</a>
+            <a href="../RAND/index.html">RAND1</a>
+            <a href="../RAND/regions_details.html">RAND2</a>
+            <a href="../POKE/index.html">POKE</a>
+            <a href="../AZIL/index.html">AZIL</a>
+            <a href="../HELP/index.html">HELP1</a>
+            <a href="../HELP/cockpit.html">HELP2</a>
+          </div>
+        </div>
+        <div id="tablet-text">
+          <a>Home
+            <img src="../HELP/fleche_horizontale.svg" alt=">"></a>
+          <a>Networking
+            <img src="../HELP/fleche_horizontale.svg" alt=">"></a>
+          <a>Flexible
+            <img src="../HELP/fleche_horizontale.svg" alt=">"></a>
+        </div>
+        <div id="phone-text">
+          Menu
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="bottom-bar">
+    <p>Home  >  Networking  >  Flexible </p>
+  </div>
+</header>
+
+<!-- FIN HTML NAVBAR - PAS TOUCHER -->
+
+<div id="content">
+    <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
+    <div id="page">
+    <div id="header">
+        <h1 id="flexible_inventory">
+            Flexible Inventory RAND
+        </h1>
+    </div>
+    <div id="navbar_wrapper">
+        <div id="navbar">
+            <ul>
+               <li>
+                   <a id="network">Network</a>
+                   <div class="line_select"></div>
+               </li>
+                <li>
+                    <a id="region">Region</a>
+                    <div class="line_select"></div>
+                </li>
+                <li>
+                    <a id="site">Site</a>
+                    <div class="line_select"></div>
+                </li>
+            </ul>
+        </div>
+        <a id="add_region">
+            <img src="../HELP/icone/plus.svg" alt="plus">
+            <div id="add_region_text">
+                Add a new region
+            </div>
+        </a>
+    </div>
+        <div id="action_navbar_wrapper">
+            <div id="action_button">
+                <button>Action</button>
+                <img src="../HELP/icone/fleche_verticale.svg" alt="action" class="img_responsive">
+            </div>
+            <div id="refresh_button">
+                <img src="../HELP/icone/refresh.svg" alt="refresh" class="img_responsive">
+                <button>Refresh</button>
+            </div>
+            <div id="search">
+                <input id="search_navbar" placeholder="Search for ...">
+                <img id="img_search" src="../HELP/icone/loupe.svg" alt="loupe" class="img_responsive">
+            </div>
+            <div id="filter_navbar">
+                <img src="../HELP/icone/tri.svg" alt="tri" class="img_responsive">
+                <button>Filtrer</button>
+            </div>
+        </div>
+    <div id="table_wrapper">
+        <table>
+            <tr>
+                <th>
+                </th>
+                <th>
+                    Provisioning State
+                    <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
+                </th>
+                <th>
+                    Operational Status
+                    <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
+                </th>
+                <th>
+                    Region
+                    <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
+                </th>
+                <th class="table_responsive">
+                    Vendor
+                    <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
+                </th>
+                <th class="table_responsive">
+                    Network
+                    <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
+                </th>
+                <th class="table_responsive">
+                    Gateways
+                    <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
+                </th>
+                <th class="table_responsive">
+                    Locations
+                    <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
+                </th>
+                <th class="table_responsive">
+                    Edges
+                    <img src="../HELP/icone/fleche_tri.svg" alt="fleche_tri">
+                </th>
+                <th>
+
+                </th>
+            </tr>
+            <tr class="tr_table">
+                <td>
+                    <label class="container_check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <div class="provisioning_state_active">Active</div>
+                </td>
+                <td>
+                    <img src="../HELP/icone/rond_vert.svg" alt="status_up">
+                    Up
+                </td>
+                <td>
+                    Region Name
+                </td>
+                <td class="table_responsive">
+                    VMWARE
+                </td>
+                <td class="table_responsive">
+                    Network Name
+                </td>
+                <td class="table_responsive">
+                    4
+                </td>
+                <td class="table_responsive">
+                    30
+                </td>
+                <td class="table_responsive">
+                    15
+                </td>
+                <td class="td_last">
+                    <a class="bold_dot" href="regions_details.html">...</a>
+                </td>
+            </tr>
+            <tr class="tr_table">
+                <td>
+                    <label class="container_check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <div class="provisioning_state_active">Active</div>
+                </td>
+                <td>
+                    <img src="../HELP/icone/rond_orange.svg" alt="status_degraded">
+                    Degraded
+                </td>
+                <td>
+                    Region Name
+                </td>
+                <td class="table_responsive">
+                    VMWARE
+                </td>
+                <td class="table_responsive">
+                    Network Name
+                </td>
+                <td class="table_responsive">
+                    4
+                </td>
+                <td class="table_responsive">
+                    30
+                </td>
+                <td class="table_responsive">
+                    15
+                </td>
+                <td class="td_last">
+                    <a class="bold_dot" href="regions_details.html">...</a>
+                </td>
+            </tr>
+            <tr class="tr_table">
+                <td>
+                    <label class="container_check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <div class="provisioning_state_active">Active</div>
+                </td>
+                <td>
+                    <img src="../HELP/icone/triangle_rouge.svg" alt="status_down">
+                    Down
+                </td>
+                <td>
+                    Region Name
+                </td>
+                <td class="table_responsive">
+                    VMWARE
+                </td>
+                <td class="table_responsive">
+                    Network Name
+                </td>
+                <td class="table_responsive">
+                    4
+                </td>
+                <td class="table_responsive">
+                    30
+                </td>
+                <td class="table_responsive">
+                    15
+                </td>
+                <td class="td_last">
+                    <a class="bold_dot" href="regions_details.html">...</a>
+                </td>
+            </tr>
+            <tr class="tr_table">
+                <td>
+                    <label class="container_check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <div class="provisioning_state_draft">Draft</div>
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    Region Name
+                </td>
+                <td class="table_responsive">
+                    VMWARE
+                </td>
+                <td class="table_responsive">
+                    Network Name
+                </td>
+                <td class="table_responsive">
+                    4
+                </td>
+                <td class="table_responsive">
+                    30
+                </td>
+                <td class="table_responsive">
+                    15
+                </td>
+                <td class="td_last">
+                    <a class="bold_dot" href="regions_details.html">...</a>
+                </td>
+            </tr>
+            <tr class="tr_table">
+                <td>
+                    <label class="container_check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <div class="provisioning_state_inactive">Inactive</div>
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    Region Name
+                </td>
+                <td class="table_responsive">
+                    VMWARE
+                </td>
+                <td class="table_responsive">
+                    Network Name
+                </td>
+                <td class="table_responsive">
+                    4
+                </td>
+                <td class="table_responsive">
+                    30
+                </td>
+                <td class="table_responsive">
+                    15
+                </td>
+                <td class="td_last">
+                    <a class="bold_dot" href="regions_details.html">...</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- FIN HTML CONTENU - VOTRE SECTION -->
+</div>
+</div>
+</body>
+<script src="JS/script.js"></script>
+</html>

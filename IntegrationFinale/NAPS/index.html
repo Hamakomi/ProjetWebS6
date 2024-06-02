@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
+
+  <link rel="stylesheet" href="../HELP/css/style.css">
+  <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
+
+  <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
+  <link href="css/content.css" rel="stylesheet">
+  <link href="css/mediaqueries.css" rel="stylesheet">
+  <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
+
+</head>
+<body>
+<script language="Javascript" src="js/utilitairescript.js"></script>
+<script language="Javascript" src="js/panelsscript.js"></script>
+<script language="Javascript" src="js/tablesortingscrip.js"></script>
+<!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
+
+<header>
+  <div id="top-bar">
+    <div class="navbar">
+      <div id="logo-desktop">
+        <a><img src="../HELP/icone/icone_site.svg" alt="logo site"></a>
+        <a href="../index.html">Index</a>
+        <a href="../NAPS/index.html">NAPS</a>
+        <div class="dropdown">
+          <button class="dropbtn">Liste 1
+            <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../4VVV/index.html">4VVV</a>
+            <a href="../RAND/index.html">RAND1</a>
+            <a href="../RAND/regions_details.html">RAND2</a>
+            <a href="../POKE/index.html">POKE</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Liste 2
+            <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../AZIL/index.html">AZIL</a>
+            <a href="../HELP/index.html">HELP1</a>
+            <a href="../HELP/cockpit.html">HELP2</a>
+          </div>
+        </div>
+      </div>
+      <a id="profile">
+        <div id="profile-picture"><img src="../HELP/icone/profile.svg"></div>
+        <div id="profile-firstname">FirstName</div>
+        <div id="profile-lastname">LastName</div>
+      </a>
+      <div id="logo-tablet">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="../HELP/icone/icone_site.svg" alt="logo site">
+          </button>
+          <div class="dropdown-content">
+            <a href="../index.html">Index</a>
+            <a href="../4VVV/index.html">4VVV</a>
+            <a href="../RAND/index.html">RAND1</a>
+            <a href="../RAND/regions_details.html">RAND2</a>
+            <a href="../POKE/index.html">POKE</a>
+            <a href="../AZIL/index.html">AZIL</a>
+            <a href="../HELP/index.html">HELP1</a>
+            <a href="../HELP/cockpit.html">HELP2</a>
+          </div>
+        </div>
+        <div id="tablet-text">
+          <a>Home
+            <img src="../HELP/fleche_horizontale.svg" alt=">"></a>
+          <a>Networking
+            <img src="../HELP/fleche_horizontale.svg" alt=">"></a>
+          <a>Flexible
+            <img src="../HELP/fleche_horizontale.svg" alt=">"></a>
+        </div>
+        <div id="phone-text">
+          Menu
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="bottom-bar">
+    <p>Home  >  Networking  >  Flexible </p>
+  </div>
+</header>
+
+<!-- FIN HTML NAVBAR - PAS TOUCHER -->
+
+<div id="content">
+  <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
+<div id="top">
+  <h1>Flexible Inventory - NAPS</h1>
+  <div  id="titlenav">
+    <div id="menu">
+    <a class="buttonlist" id="bold_network" href="#">Network</a>
+    <a class="buttonlist" href="#">Region</a>
+    <a class="buttonlist" href="#">Site</a>
+    </div>
+    <button id="add_network"><img src="../HELP/icone/plus.svg" /> Add a new Network</button>
+  </div>
+
+
+  <div id="actionBar">
+        <button class="buttons" id="provision"><img src="../HELP/icone/triangle_horizontal.svg" />Provision</button>
+        <button class="buttons" id="delete" disabled ><img src="../HELP/icone/poubelle.svg" />Delete</button>
+        <button class="buttons" id="refresh" onclick="Refresh()"><img src="../HELP/icone/refresh.svg" />Refresh<p id="date">DD/MM/YYYY at hh:mm:ss</p></button>
+        <div class="buttons" id="empty"></div>
+        <input class="buttons" id="zone_saisie" type="text" id="prenom_zone_saisie" name="prenom" placeholder="Search for..."required><img id="loupe" src="../HELP/icone/loupe.svg"/>
+        <button class="buttons" id="filter" onclick="showFilterPanel(this)"><img src="../HELP/icone/tri.svg" />Filter</button>
+  </div>
+</div>
+<div id="bottom">
+  <table id="tableau">
+
+
+    <div class="entete">
+    <tr>
+        <th></th>
+        <th>Provisioning State <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(1)"/></th>
+        <th>Operational status <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(2)" /></th>
+        <th>Network name <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(3)"/></th>
+        <th>Vendor <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(4)"/></th>
+        <th>Regions <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(5)"/></th>
+        <th>Gateways <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(6)"/></th>
+        <th>Locations <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(7)"/></th>
+        <th>Edges <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(8)"/></th>
+        <th></th>
+    </tr>
+</div>
+    <tr>
+        <td class="start">
+
+            <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </td>
+        <td class="active"><p>Active</p></td>
+        <td class="green"><img src="../HELP/icone/rond_vert.svg" />Up</td>
+        <td>Network XX25N1</td>
+        <td>VMWare</td>
+        <td>5</td>
+        <td>4</td>
+        <td>15</td>
+        <td>30</td>
+        <td class="end"><a href="#" id="action_button1" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></a></td>
+    </tr>
+
+
+    <tr>
+        <td class="start">
+
+            <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </td>
+        <td class="active"><p>Active</p></td>
+        <td class="green"><img src="../HELP/icone/triangle_rouge.svg" />Down</td>
+        <td>Network XX25N1</td>
+        <td>VMWare</td>
+        <td>5</td>
+        <td>4</td>
+        <td>15</td>
+        <td>30</td>
+        <td class="end"><a href="#" id="action_button2" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></a></td>
+    </tr>
+
+
+    <tr>
+        <td class="start">
+
+            <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </td>
+        <td><p>Unknow</p></td>
+        <td>Unknow</td>
+        <td>Network XX25N1</td>
+        <td>VMWare</td>
+        <td>5</td>
+        <td>4</td>
+        <td>15</td>
+        <td>30</td>
+        <td class="end"><a href="#" id="action_button3" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></a></td>
+    </tr>
+
+
+    <tr>
+      <td class="start">
+
+          <label class="container">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+          </label>
+      </td>
+      <td class="loading">
+        <div class="div_loading">
+          <img src="../HELP/icone/chargement.svg" />Provisioning
+        </div>
+      </td>
+
+
+      <td></td>
+      <td>Network XX25N1</td>
+      <td>VMWare</td>
+      <td>5</td>
+      <td>4</td>
+      <td>15</td>
+      <td>30</td>
+      <td class="end"><a href="#" id="action_button4" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></a></td>
+    </tr>
+
+
+
+    <tr>
+      <td class="start">
+
+          <label class="container">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+          </label>
+      </td>
+      <td class="draft"><p>Draft</p></td>
+      <td></td>
+      <td>Network XX25N1</td>
+      <td>Cisco</td>
+      <td>5</td>
+      <td>4</td>
+      <td>15</td>
+      <td>30</td>
+      <td class="end"><a href="#" id="action_button5" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></a></td>
+    </tr>
+
+
+    <tr>
+      <td class="start">
+
+          <label class="container">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+          </label>
+      </td>
+      <td class="inactive"><p>Inactive</p></td>
+      <td></td>
+      <td>Network XX25N1</td>
+      <td>Fortinet</td>
+      <td>5</td>
+      <td>4</td>
+      <td>15</td>
+      <td>30</td>
+      <td class="end"><a href="#" id="action_button6" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></a></td>
+    </tr>
+
+
+</table>
+</div>
+
+<div id="action_panel">
+
+  <p>See details</p>
+
+  <p>Edit the ressource</p>
+
+</div>
+
+
+<div id="filter_panel">
+  <div id="first_part">
+  <div id="close">
+  <img src="../HELP/icone/croix.svg" onclick="Close()"/>
+  <p>Close</p>
+  </div>
+
+  <p id="pPS">Provisioning State (0)</p>
+<div id="provisioning_states">
+<div class="first_row_check">
+<div class="element_filter">
+    <label class="container">
+      <input onchange="updateStatus('provisioning_states','pPS')" type="checkbox">
+      <span class="checkmark"></span>
+  </label>
+<p>Active</p>
+</div>
+<div class="element_filter">
+  <label class="container">
+    <input onchange="updateStatus('provisioning_states','pPS')" type="checkbox">
+    <span class="checkmark"></span>
+</label>
+<p>Inactive</p>
+</div>
+<div class="element_filter">
+  <label class="container">
+    <input onchange="updateStatus('provisioning_states','pPS')" type="checkbox">
+    <span class="checkmark"></span>
+</label>
+<p>Draft</p>
+</div>
+</div>
+<br><br>
+<div class="element_filter">
+<label class="container">
+  <input onchange="updateStatus('provisioning_states','pPS')" type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<p>Provisioning</p>
+</div>
+</div>
+
+
+<p id="pV">Vendors (0)</p>
+<div id="vendors">
+<div class="first_row_check">
+  <div class="element_filter">
+      <label class="container">
+        <input onchange="updateStatus('vendors','pV')" type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+  <p>VMWare</p>
+  </div>
+  <div class="element_filter">
+    <label class="container">
+      <input onchange="updateStatus('vendors','pV')" type="checkbox">
+      <span class="checkmark"></span>
+  </label>
+  <p>Fortinet</p>
+  </div>
+  <div class="element_filter">
+    <label class="container">
+      <input onchange="updateStatus('vendors','pV')"  type="checkbox">
+      <span class="checkmark"></span>
+  </label>
+  <p>Cisco</p>
+  </div>
+  </div>
+</div>
+
+
+<p id="pOP">Operational Status (0)</p>
+<div id="operational_status">
+<div class="first_row_check">
+  <div class="element_filter">
+
+      <label class="container">
+        <input onchange="updateStatus('operational_status','pOP')" type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+  <p>Up</p>
+  </div>
+  <div class="element_filter">
+
+    <label class="container">
+      <input onchange="updateStatus('operational_status','pOP')" type="checkbox">
+      <span class="checkmark"></span>
+  </label>
+  <p>Down</p>
+  </div>
+  <div class="element_filter">
+
+    <label class="container">
+      <input onchange="updateStatus('operational_status','pOP')" type="checkbox">
+      <span class="checkmark"></span>
+  </label>
+  <p>Degraded</p>
+  </div>
+  </div>
+  <br><br>
+  <div class="element_filter">
+    <label class="container">
+      <input onchange="updateStatus('operational_status','pOP')" type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <p>Unknow</p>
+    </div>
+  </div>
+    </div>
+    <div id="second_part">
+    <div onclick="deleteAll()" id="effacer">
+      <img src="../HELP/icone/croix.svg" />
+      <p id="peffacer">Effacer (0)</p>
+    </div>
+    <br>
+    <button onclick="filterTable()" id="validate_filter">Show all results</button>
+  </div>
+  </div>
+
+
+
+
+
+  </div>
+  <!-- FIN HTML CONTENU - VOTRE SECTION -->
+</div>
+
+</body>
+</html>
+

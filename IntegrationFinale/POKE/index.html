@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
+
+    <link rel="stylesheet" href="../HELP/css/style.css">
+
+    <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
+
+    <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
+
+</head>
+
+<body>
+
+<!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
+
+<header>
+  <div id="top-bar">
+    <div class="navbar">
+      <div id="logo-desktop">
+        <a><img src="../HELP/icone/icone_site.svg" alt="logo site"></a>
+        <a href="../index.html">Index</a>
+        <a href="../NAPS/index.html">NAPS</a>
+        <div class="dropdown">
+          <button class="dropbtn">Liste 1
+            <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../4VVV/index.html">4VVV</a>
+            <a href="../RAND/index.html">RAND1</a>
+            <a href="../RAND/regions_details.html">RAND2</a>
+            <a href="../POKE/index.html">POKE</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Liste 2
+            <i class="fa fa-caret-down"><img src="../HELP/icone/fleche_verticale.svg"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../AZIL/index.html">AZIL</a>
+            <a href="../HELP/index.html">HELP1</a>
+            <a href="../HELP/cockpit.html">HELP2</a>
+          </div>
+        </div>
+      </div>
+      <a id="profile">
+        <div id="profile-picture"><img src="../HELP/icone/profile.svg"></div>
+        <div id="profile-firstname">FirstName</div>
+        <div id="profile-lastname">LastName</div>
+      </a>
+      <div id="logo-tablet">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="../HELP/icone/icone_site.svg" alt="logo site">
+          </button>
+          <div class="dropdown-content">
+            <a href="../index.html">Index</a>
+            <a href="../4VVV/index.html">4VVV</a>
+            <a href="../RAND/index.html">RAND1</a>
+            <a href="../RAND/regions_details.html">RAND2</a>
+            <a href="../POKE/index.html">POKE</a>
+            <a href="../AZIL/index.html">AZIL</a>
+            <a href="../HELP/index.html">HELP1</a>
+            <a href="../HELP/cockpit.html">HELP2</a>
+          </div>
+        </div>
+        <div id="tablet-text">
+          <a>Home
+            <img src="../HELP/fleche_horizontale.svg" alt=">"></a>
+          <a>Networking
+            <img src="../HELP/fleche_horizontale.svg" alt=">"></a>
+          <a>Flexible
+            <img src="../HELP/fleche_horizontale.svg" alt=">"></a>
+        </div>
+        <div id="phone-text">
+          Menu
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="bottom-bar">
+    <p>Home  >  Networking  >  Flexible </p>
+  </div>
+</header>
+
+<!-- FIN HTML NAVBAR - PAS TOUCHER -->
+
+    <div id="content">
+        <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
+        <div class="container">
+            <div id="top">
+                <h2>Inventory POKE</h2>
+                <div id="inventory">
+                    <span>Name</span>
+                    <span id="inventory_name">My Business</span>
+                </div>
+                <div class="info">
+                    <div class="rect">
+                        <p class="ininfonum">5</p>
+                        <p class="ininfo">Regions</p>
+                    </div>
+                    <div class="rect">
+                        <p class="ininfonum">4</p>
+                        <p class="ininfo">Gateways</p>
+                    </div>
+                    <div class="rect">
+                        <p class="ininfonum">15</p>
+                        <p class="ininfo">Locations</p>
+                    </div>
+                    <div class=" rect">
+                        <p class="ininfonum">30</p>
+                        <p class="ininfo">Edges</p>
+                    </div>
+                </div>
+
+                <div id="navbar">
+                    <ul>
+                        <li>
+                            <a id="locations">Locations</a>
+                            <div class="line_select"></div>
+                        </li>
+                        <li>
+                            <a id="edges">Edges</a>
+                            <div class="line_select"></div>
+                        </li>
+                        <li>
+                            <a id="gateways">Gateways</a>
+                            <div class="line_select"></div>
+                        </li>
+                        <li>
+                            <a id="location_map">Location Map</a>
+                            <div class="line_select"></div>
+                        </li>
+                    </ul>
+                    <div id="search_container">
+                        <div id="search">
+                            <input id="search_bar" type="text" placeholder="Search for a product, resour...">
+                            <span><img src="../HELP/icone/loupe.svg" alt="sort"></span>
+                        </div>
+                        <div id="filtre">
+                            <img src="../HELP/icone/filtre.svg" alt="sort">
+                            Filter <!-- Icon de filtre et texte-->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="bottom">
+                <h2 id="table_title">Locations inventory</h2>
+                <div class="table" id="table_location">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="location_name">
+                                    Location Name
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                                <th class="location_edges">
+                                    Edges
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                                <th class="location_status">
+                                    Status
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                                <th id="button-col" class="location_button"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="location_name">Location SOPHIA-ANTIPOLIS</td>
+                                <td class="location_edges">2</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="location_button">
+                                        <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="location_name">Location PARIS</td>
+                                <td class="location_edges">4</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Active</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="location_button">
+                                        <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="location_name">Location KUALA LUMPUR</td>
+                                <td class="location_edges">1</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Degraded</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="location_button">
+                                        <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="location_name">Location HONG-KONG</td>
+                                <td class="location_edges">2</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Degraded</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="location_button">
+                                        <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="location_name">Location WASHINGTON D.C.</td>
+                                <td class="location_edges">1</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Inactive</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="location_button">
+                                        <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="location_name">Location LOS ANGELES</td>
+                                <td class="location_edges">1</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Inactive</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="location_button">
+                                        <img src="../HELP/icone/fleche_horizontale.svg" alt=">">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table" id="table_edges">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="edges_name">
+                                    Edge Name
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                                <th class="edges_hostname">
+                                    Hostname
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                                <th class="edges_serial">
+                                    Serial Number
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                                <th class="edges_location">
+                                    Location
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                                <th class="edges_status">
+                                    Status
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="edges_name">Edge SOPHIA-ANTIPOLIS-1</td>
+                                <td class="edges_hostname">edge-sophia-antipolis-1</td>
+                                <td class="edges_serial">1245-4875-5263</td>
+                                <td class="edges_location">Location SOPHIA-ANTIPOLIS</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Active</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edges_name">Edge SOPHIA-ANTIPOLIS-2</td>
+                                <td class="edges_hostname">edge-sophia-antipolis-2</td>
+                                <td class="edges_serial">1245-4875-5263</td>
+                                <td class="edges_location">Location SOPHIA-ANTIPOLIS</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Active</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edges_name">Edge KUALA LUMPUR</td>
+                                <td class="edges_hostname">edge-kuala-lumpur</td>
+                                <td class="edges_serial">1245-4875-5263</td>
+                                <td class="edges_location">Location KUALA LUMPUR</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Active</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edges_name">Edge HONG-KONG-1</td>
+                                <td class="edges_hostname">edge-hong-kong-1</td>
+                                <td class="edges_serial">1245-4875-5263</td>
+                                <td class="edges_location">Location HONG-KONG</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Degraded</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edges_name">Edge HONG-KONG-1</td>
+                                <td class="edges_hostname">edge-hong-kong-1</td>
+                                <td class="edges_serial">1245-4875-5263</td>
+                                <td class="edges_location">Location HONG-KONG</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Degraded</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="edges_name">Edge LOS ANGELES</td>
+                                <td class="edges_hostname">edge-los-angeles</td>
+                                <td class="edges_serial">1245-4875-5263</td>
+                                <td class="edges_location">Location LOS ANGELES</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Inactive</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table" id="table_gateway">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="gateway_name">
+                                    Gateway Name
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                                <th class="gateway_region">
+                                    Region
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                                <th class="gateway_status">
+                                    Status
+                                    <img src="../HELP/icone/fleche_tri.svg" alt="sort">
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="gateway_name">Gateway USA</td>
+                                <td class="gateway_region">AMER</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Active</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gateway_name">Gateway MALAYSIA</td>
+                                <td class="gateway_region">APAC</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Active</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gateway_name">Gateway CHINA</td>
+                                <td class="gateway_region">APAC</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Degraded</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="gateway_name">Gateway SOPHIA</td>
+                                <td class="gateway_region">EMEA</td>
+                                <td>
+                                    <div class="status">
+                                        <span>Inactive</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="table-navigation">
+                    <div class="select-entries">
+                        <select>
+                            <option value="10">Show 10 entries</option>
+                            <option value="25">Show 25 entries</option>
+                            <option value="50">Show 50 entries</option>
+                            <option value="100">Show 100 entries</option>
+                        </select>
+                    </div>
+                    <div class="pager">
+                        <a href="#"><img src="../HELP/icone/fleche_horizontale_g.svg" alt=""></a>
+                        <a href="#" id="current_page">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a>...</a>
+                        <a href="#">30</a>
+                        <a href="#"><img src="../HELP/icone/fleche_horizontale.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FIN HTML CONTENU - VOTRE SECTION -->
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

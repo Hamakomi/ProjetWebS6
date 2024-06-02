@@ -1,0 +1,476 @@
+* {
+    box-sizing: border-box;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    padding-left: 3%;
+    width: 100%;
+    border-top: 1px solid rgb(204, 204, 204);
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+Section pour les différentes informations des regions
+*/
+
+
+#region_info_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+#region_info_subwrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+}
+#region_info_special_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50%;
+    width: 30%;
+}
+#region_description{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+}
+
+/*
+Section pour les différentes valeurs relatives a la region
+*/
+#region_info_values_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20%;
+}
+
+
+/*
+Section pour les id de la navbar de l'inventaire
+*/
+
+#inventory_navbar_wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 2% 1% 1%;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+/*
+Section pour les id de l'inventaire
+*/
+#inventory_wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.8%;
+    background-color: var(--light-grey);
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#inventory_name{
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    padding-bottom: 2%;
+}
+#pager_wrapper{
+    display: flex;
+    justify-content: right;
+    padding-top: 5%;
+}
+
+/*
+Section pour la navbar de l'inventaire
+*/
+.region_info{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+    width: 20%;
+}
+.region_info_special{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(204, 204, 204);
+    padding-left: 6%;
+    margin: 1%;
+    width: 40%;
+    justify-content: center;
+}
+
+.region_info_text{
+    margin-top: 2%;
+    margin-left: 0;
+}
+
+.region_info_title{
+    font-size: 0.85em;
+    color: rgb(85, 85, 85);
+}
+
+.info_values{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    width: 33%;
+}
+.info_spec{
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    padding: 2%;
+    width: 30%;
+    justify-content: center;
+
+}
+.info_spec_number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(203, 161, 11);
+}
+.info_spec_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info_state img{
+    width: 10%;
+    height: 10%;
+}
+#region_description dt{
+    font-size: 0.85em;
+    color: rgb(85, 85, 85);
+}
+#region_description{
+    margin: 10px;
+    padding: 10px;
+    width: 77.5%;
+}
+#region_description dd{
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: justify;
+}
+.info_state{
+    margin-top: 4%;
+    margin-bottom: 3%;
+    width: 70%;
+}
+#region_option{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(204, 204, 204);
+    border-right: none;
+    border-left: none;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+}
+button{
+    border:none;
+    background-color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+#delete_button{
+    border-right: 1px solid rgb(204, 204, 204);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+}
+#refresh_button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 5%;
+    padding-left:1%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+}
+#check_operationnal{
+    height: 30%;
+    width: 30%;
+}
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #555555;
+}
+#search_navbar{
+    border: none;
+}
+
+#filter_navbar{
+    margin-left: 2%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row;
+}
+tr:nth-child(even) {
+    background-color: var(--white);
+}
+th{
+    color: rgb(51, 51, 51);
+    font-weight: normal;
+    text-align: left;
+    padding: 0.9%;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+td{
+    padding: 0.9%;
+    margin: 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+#provisioning_state {
+    border: 2px solid var(--active); /* Couleur verte claire */
+    border-radius: 15px 15px 15px 15px; /* Angles arrondis */
+    padding: 0.9%; /* Ajout de marge intérieure pour l'espace autour du texte */
+    background-color: var(--active);
+    text-align: center;
+    width: 50%;
+}
+.state{
+    margin:5px ;
+}
+#close_button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: 4%;
+}
+#close_button button{
+    font-size: 1.1em;
+}
+#network_name{
+    text-decoration: underline;
+}
+#delete_button button{
+    color: rgb(204,204,204);
+}
+.pager {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    height: 38px;
+}
+
+.pager a {
+    font-family: var(--primary-font) !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    border: transparent 2px;
+
+}
+
+.pager a img {
+    padding: 0;
+    vertical-align: middle;
+    height: 12px;
+}
+
+#current_page {
+    font-weight: 700;
+    border: solid 2px var(--orange);
+    border-radius: 0%;
+}
+
+.line_select {
+    height: 5px;
+}
+.line--active {
+    background-color: var(--header-color);
+}
+
+
+#navbar {
+    overflow: hidden;
+    margin-right: 53%;
+}
+#navbar a:hover {
+    cursor: pointer;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#navbar li a:hover {
+    background-color: var(--light-grey);
+}
+
+#region_name{
+    font-weight: normal;
+}
+
+@media screen and (max-width: 600px){
+    #close_button button{
+        display: none;
+    }
+
+    #close_button{
+        width: 10%;
+    }
+    #close_button img{
+        width: 41px;
+    }
+    #refresh_button{
+        width: 10%;
+        margin-left: auto;
+        margin-right: 5%;
+        justify-content: flex-end;
+    }
+    #refresh_button button{
+        display: none;
+    }
+    #refresh_button img{
+        min-width: 41px;
+    }
+    #delete_button{
+        width: 10%;
+    }
+    #delete_button img{
+        width: 80%;
+    }
+    #delete_button button{
+        display: none;
+    }
+    #region_option{
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    #region_info_subwrapper{
+        width: 100%;
+    }
+    .region_info{
+        width: 46%;
+    }
+    #region_info_wrapper{
+        flex-direction: column;
+    }
+    .region_info_title{
+        font-size: 1.5em;
+    }
+    .region_info_text{
+        font-size: 1.5em;
+    }
+    .region_info_special{
+        width: 46%;
+        padding-left: 3%;
+    }
+    #region_info_special_wrapper{
+        width: 99%;
+    }
+    .page{
+        padding-left: 1%;
+    }
+    #region_info_values_wrapper{
+        flex-direction: column;
+    }
+    #region_description{
+        font-size: 1.5em;
+        width:88%;
+    }
+    .info_values{
+        width: 100%;
+    }
+    .info_state img{
+        width: 20%;
+        height: 20%;
+    }
+    .state{
+        font-size: 1.5em;
+    }
+    .info_spec_number {
+        font-size: 2em;
+    }
+    .info_spec_name{
+        font-size: 1.5em;
+    }
+    #inventory_navbar_wrapper{
+        flex-direction: column;
+        width: 95%;
+    }
+
+    #navbar{
+        width: 98%;
+        flex-direction:column;
+    }
+    #navbar a{
+        font-size: 1.3em;
+    }
+    .line_select{
+        width: 100%;
+    }
+    #search{
+        width: 92%;
+    }
+    #search_navbar{
+        width: 100%;
+        font-size: 1.5em;
+    }
+    #filter_navbar{
+        display: none;
+    }
+    .region_table{
+        display: none;
+    }
+    .type_table{
+        display: none;
+    }
+    th,td{
+        font-size: 1.5em;
+    }
+    #pager_wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    #inventory_wrapper{
+        padding-right: 0;
+    }
+}

@@ -16,7 +16,8 @@
  
 </head>
 <body>
-<script language="Javascript" src="js/script.js"></script>
+<script language="Javascript" src="js/utilitairescript.js"></script>
+<script language="Javascript" src="js/panelsscript.js"></script>
 <script language="Javascript" src="js/tablesortingscrip.js"></script>
 <!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
  
@@ -75,7 +76,7 @@
   <div id="actionBar">
         <button class="buttons" id="provision"><img src="../HELP/icone/triangle_horizontal.svg" />Provision</button>
         <button class="buttons" id="delete" disabled ><img src="../HELP/icone/poubelle.svg" />Delete</button>
-        <button class="buttons" id="refresh" onclick="Refresh(this)"><img src="../HELP/icone/refresh.svg" />Refresh<p id="date">DD/MM/YYYY at hh:mm:ss</p></button>
+        <button class="buttons" id="refresh" onclick="Refresh()"><img src="../HELP/icone/refresh.svg" />Refresh<p id="date">DD/MM/YYYY at hh:mm:ss</p></button>
         <div class="buttons" id="empty"></div>
         <input class="buttons" id="zone_saisie" type="text" id="prenom_zone_saisie" name="prenom" placeholder="Search for..."required><img id="loupe" src="../HELP/icone/loupe.svg"/>
         <button class="buttons" id="filter" onclick="showFilterPanel(this)"><img src="../HELP/icone/tri.svg" />Filter</button>
@@ -239,182 +240,122 @@
 
 
 <div id="filter_panel">
- 
   <div id="first_part">
- 
   <div id="close">
   <img src="../HELP/icone/croix.svg" onclick="Close()"/>
   <p>Close</p>
   </div>
 
-
-  <p>Provisioning State (0)</p>
-
-<div id="first_row_check">
-
-  
-
-<div id="element_filter">
-   
+  <p id="pPS">Provisioning State (0)</p>
+<div id="provisioning_states">
+<div class="first_row_check">
+<div class="element_filter">
     <label class="container">
-      <input type="checkbox">
+      <input onchange="updateStatus('provisioning_states','pPS')" type="checkbox">
       <span class="checkmark"></span>
   </label>
-  
 <p>Active</p>
-
 </div>
-
-<div id="element_filter">
-
+<div class="element_filter">
   <label class="container">
-    <input type="checkbox">
+    <input onchange="updateStatus('provisioning_states','pPS')" type="checkbox">
     <span class="checkmark"></span>
 </label>
-  
 <p>Inactive</p>
-
 </div>
-
-<div id="element_filter">
-
+<div class="element_filter">
   <label class="container">
-    <input type="checkbox">
+    <input onchange="updateStatus('provisioning_states','pPS')" type="checkbox">
     <span class="checkmark"></span>
 </label>
-
-
-  
 <p>Draft</p>
 </div>
-
-
-  
 </div>
 <br><br>
-<div id="element_filter">
-
+<div class="element_filter">
 <label class="container">
-  <input type="checkbox">
+  <input onchange="updateStatus('provisioning_states','pPS')" type="checkbox">
   <span class="checkmark"></span>
 </label>
 <p>Provisioning</p>
-
+</div>
 </div>
 
   
-<p>Vendors (0)</p>
-  
-<div id="first_row_check">
-
-  
-
-  <div id="element_filter">
-     
+<p id="pV">Vendors (0)</p>
+<div id="vendors">
+<div class="first_row_check">
+  <div class="element_filter">
       <label class="container">
-        <input type="checkbox">
+        <input onchange="updateStatus('vendors','pV')" type="checkbox">
         <span class="checkmark"></span>
     </label>
-    
   <p>VMWare</p>
-  
   </div>
-  
-  <div id="element_filter">
-  
+  <div class="element_filter">
     <label class="container">
-      <input type="checkbox">
+      <input onchange="updateStatus('vendors','pV')" type="checkbox">
       <span class="checkmark"></span>
   </label>
-    
   <p>Fortinet</p>
-  
   </div>
-  
-  <div id="element_filter">
-  
+  <div class="element_filter">
     <label class="container">
-      <input type="checkbox">
+      <input onchange="updateStatus('vendors','pV')"  type="checkbox">
       <span class="checkmark"></span>
   </label>
-  
-  
-    
   <p>Cisco</p>
   </div>
-  
-  
-    
   </div>
+</div>
 
 
-<p>Operational Status (0)</p>
-
-<div id="first_row_check">
-
-  
-
-  <div id="element_filter">
+<p id="pOP">Operational Status (0)</p>
+<div id="operational_status">
+<div class="first_row_check">
+  <div class="element_filter">
      
       <label class="container">
-        <input type="checkbox">
+        <input onchange="updateStatus('operational_status','pOP')" type="checkbox">
         <span class="checkmark"></span>
     </label>
-    
   <p>Up</p>
-  
   </div>
-  
-  <div id="element_filter">
+  <div class="element_filter">
   
     <label class="container">
-      <input type="checkbox">
+      <input onchange="updateStatus('operational_status','pOP')" type="checkbox">
       <span class="checkmark"></span>
   </label>
-    
   <p>Down</p>
-  
   </div>
-  
-  <div id="element_filter">
+  <div class="element_filter">
   
     <label class="container">
-      <input type="checkbox">
+      <input onchange="updateStatus('operational_status','pOP')" type="checkbox">
       <span class="checkmark"></span>
   </label>
-  
-  
-    
   <p>Degraded</p>
   </div>
-  
-  
-    
   </div>
   <br><br>
-  <div id="element_filter">
-
+  <div class="element_filter">
     <label class="container">
-      <input type="checkbox">
+      <input onchange="updateStatus('operational_status','pOP')" type="checkbox">
       <span class="checkmark"></span>
     </label>
     <p>Unknow</p>
-    
     </div>
-
+  </div>
     </div>
-
     <div id="second_part">
-
-    <div id="effacer">
+    <div onclick="deleteAll()" id="effacer">
       <img src="../HELP/icone/croix.svg" />
-      <p>Effacer (0)</p>
+      <p id="peffacer">Effacer (0)</p>
     </div>
     <br>
-    <button id="validate_filter">Show all results</button>
-
+    <button onclick="filterTable()" id="validate_filter">Show all results</button>
   </div>
-
   </div>
    
    

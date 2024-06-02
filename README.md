@@ -12,7 +12,7 @@ Projet Web S6 2024 - CIN3 ISEN
   git checkout main
   git sparse-checkout set IntegrationFinale
   ```
-  3) Ouvrez un shell dans le dossier ProjetWebS6/IntegrationFinale, et tapez la commande : ```node server``` pour   démarrer le serveur.
+  3) Ouvrez un shell dans le dossier ```ProjetWebS6/IntegrationFinale```, et tapez la commande : ```node server``` pour   démarrer le serveur.
      Alternativement, ouvrez et lancez le fichier ```server.js``` avec un IDE approprié.
   5) Un message vous confirmant le lancement du serveur local devrait apparaître dans votre terminal ou la console de votre IDE : vous pouvez désormais accéder à l'ensemble du projet depuis votre navigateur à l'adresse http://127.0.0.1:8000
 

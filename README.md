@@ -19,9 +19,11 @@ Projet Web S6 2024 - CIN3 ISEN
 # __Pour naviguer :__
 Pour accéder aux différentes sections du site, utilisez la barre de navigation en haut de votre écran.
 __Chaque section est nommée d'après le groupe qui l'a réalisée.__
+
 ![démoSite](https://github.com/Hamakomi/ProjetWebS6/assets/81290969/2cea4dc1-5e42-4c2d-9566-0fce97c4194a)
 
-Sur petit écran, la navigation se fait en appuyant sur le logo du site en haut à gauche. Un menu déroulant avec l'ensemble des sections apparaît alors.
+__Sur petit écran, la navigation se fait en appuyant sur le logo du site en haut à gauche. Un menu déroulant avec l'ensemble des sections apparaît alors.__
+
 ![démoSite2](https://github.com/Hamakomi/ProjetWebS6/assets/81290969/c708c719-5259-4a71-968f-c74a538194f0)
 
-Certaines sections comme l'AZIL et HELP2 sont liées par leur contenu, mais il est possible d'accéder à elles de façon indépendante par la barre de navigation.
+***Certaines sections comme l'AZIL et HELP2 sont liées par leur contenu, mais il est possible d'accéder à elles de façon indépendante par la barre de navigation.***

@@ -1,3 +1,21 @@
+//fonction de filtrage si la case ne contient pas que du texte
+function extractText(cell) {
+  //element temporaire
+  let tempDiv = document.createElement("div");
+  tempDiv.innerHTML = cell.innerHTML;
+
+  // Supprime les éléments d'image
+  let images = tempDiv.getElementsByTagName("img");
+  while (images.length > 0) {
+    images[0].parentNode.removeChild(images[0]);
+  }
+
+  // Récupère le texte restant
+  return tempDiv.textContent || tempDiv.innerText || "";
+}
+
+
+//fonction de trie croissant décroissant du tableau
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("tableau");
@@ -7,30 +25,33 @@ function sortTable(n) {
   while (switching) {
     switching = false;
     rows = table.rows;
-    /*boucle de comparaison*/
+
     for (i = 1; i < (rows.length - 1); i++) {
       shouldSwitch = false;
       x = rows[i].getElementsByTagName("TD")[n];
       y = rows[i + 1].getElementsByTagName("TD")[n];
+
+      let xText = extractText(x).toLowerCase().trim();
+      let yText = extractText(y).toLowerCase().trim();
+
       if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
+        if (xText > yText) {
+          shouldSwitch = true;
           break;
         }
       } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+        if (xText < yText) {
           shouldSwitch = true;
           break;
         }
       }
     }
-    /*switch les élements tags à switch*/
+
     if (shouldSwitch) {
       rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
       switching = true;
-      switchcount ++;      
+      switchcount++;
     } else {
-      /*passe en desc si déjà asc et que 0 changement on était fait*/
       if (switchcount == 0 && dir == "asc") {
         dir = "desc";
         switching = true;

@@ -1,60 +1,36 @@
 showActionPanel = function(e) {
     var elementStyle = document.getElementById("action_panel").style;
-
     // Vérifier si le panneau est actuellement affiché ou caché
     var isPanelVisible = elementStyle.display === "block";
-
+ 
     // Inverser l'état d'affichage du panneau
     elementStyle.display = isPanelVisible ? "none" : "block";
-
-    // Si le panneau est visible, placer le curseur au-dessus
-    if (isPanelVisible) {
-        // Réinitialiser les positions du panneau
-        elementStyle.top = "0px";
-        elementStyle.left = "0px";
-    } else {
-        // Définir les positions initiales du panneau
-        elementStyle.left = "87%";
-        // En fonction du bouton cliqué, définir la position verticale du panneau
-        switch (e.id) {
-            case "action_button1":
-                elementStyle.top = "67%";
-                break;
-            case "action_button2":
-                elementStyle.top = "79%";
-                break;
-            case "action_button3":
-                elementStyle.top = "91.5%";
-                break;
-            case "action_button4":
-                elementStyle.top = "104%";
-                break;
-            case "action_button5":
-                elementStyle.top = "116.5%";
-                break;
-            case "action_button6":
-                elementStyle.top = "128%";
-                break;
-            default:
-                elementStyle.top = "460px"; // Valeur par défaut
-                break;
-        }
-    }
+        elementStyle.left = "88%";
+        var rect = e.getBoundingClientRect();
+        var elementY = rect.top + window.scrollY;
+        elementStyle.top = elementY + 34 + "px" ;
 }
-
 
 
 showFilterPanel = function(e) {
-
     var elementStyle = document.getElementById("filter_panel").style;
-
-    // Vérifier si le panneau est actuellement affiché ou caché
+    var img = document.querySelector("#filter img");
+ 
+    // Inverser l'état de visibilité du panneau
     var isPanelVisible = elementStyle.display === "flex";
-
-    // Inverser l'état d'affichage du panneau
     elementStyle.display = isPanelVisible ? "none" : "flex";
-
+    var rect = e.getBoundingClientRect();
+    var elementY = rect.top + window.scrollY;
+    elementStyle.top = (elementY + 59) + "px";
+    if (!isPanelVisible) {
+        e.style.color = "#F16E00";
+        img.style.filter = "invert(66%) sepia(65%) saturate(1969%) hue-rotate(336deg) brightness(99%) contrast(92%)";
+    } else {
+        e.style.color = "";
+        img.style.filter = "";
+    }
 }
+ 
 
 // Fonction pour fermer filter panel
 function Close(){

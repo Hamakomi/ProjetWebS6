@@ -1,19 +1,177 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    h1{
+        color:yellow;
+        }
+    #add_network{ 
+        margin-left: 17%; 
+        height: 70px;
+        }
+        #tableau {
+            padding-left: 0px;
+            padding-right: 0px;
+          }
+          #tableau th {
+            font-size:10px;
+          }
+          #tableau td {
+            font-size: 10px;
+        }
+        #tableau .start {
+            padding-right: 25px;
+        }
 
+        #actionBar button p{
+   
+            font-size:10px;
+           
+         }
+         #actionBar .buttons {
+
+            font-size:10px;
+          }
+          .draft p {
+            width: 38px;
+          }
+          
+          .inactive p {
+            width: 52px;
+          }
+
+          .active p {
+            width: 44px;
+        }
+
+        #tableau .div_loading{
+            width: 90px;
+          }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    h1{
+        color:blue;
+        }
+    #add_network{ 
+        margin-left: 27%; 
+        height: 70px;
+        }
+        #tableau {
+            padding-left: 0px;
+            padding-right: 0px;
+          }
+          #tableau th {
+            font-size:10px;
+          }
+          #tableau td {
+            font-size: 10px;
+        }
 
+        #actionBar button p{
+   
+            font-size:10px;
+           
+         }
+         #actionBar .buttons {
+
+            font-size:10px;
+          }
+          .draft p {
+            width: 50px;
+          }
+          
+          .inactive p {
+            width: 52px;
+          }
+
+          .active p {
+            width: 44px;
+        }
+
+        #tableau .div_loading{
+            width: 90px;
+          }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    h1{
+        color:red;
+        }
+    #add_network{ 
+        margin-left: 37%; 
+        height: 50px;
+        }
+        #tableau {
+            padding-left: 50px;
+            padding-right: 50px;
+          }
+          #tableau th {
+            font-size:15px;
+          }
+          #tableau td {
+            font-size: 15px;
+        }
+        #actionBar button p{
+   
+            font-size:10px;
+           
+         }
+         #actionBar .buttons {
 
+            font-size:15px;
+          }
+
+          .draft p {
+            width: 50px;
+          }
+          
+          .inactive p {
+            width: 70px;
+          }
+
+          .active p {
+            width: 55px;
+        }
+
+        #tableau .div_loading{
+            width: 120px;
+          }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    h1{
+        color:black;
+        }
+
+    #add_network{ 
+        margin-left: 57%; 
+        }
+        #actionBar button p{
+   
+            font-size:small;
+           
+         }
+         #actionBar .buttons {
+ 
+            font-size:20px;
+          }
+          draft p {
+            width: 50px;
+          }
+          
+          .inactive p {
+            width: 75px;
+          }
+
+          .active p {
+            width: 60px;
+        }
+
+        #tableau .div_loading{
+            width: 120px;
+          }
+       
 
 }

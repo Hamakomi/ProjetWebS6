@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 #page{
     display: flex;
     flex-direction: column;
@@ -259,5 +262,22 @@ td{
     }
     #table_wrapper{
         padding-right: 6%;
+    }
+    #action_button img{
+        width: 30px;
+    }
+    #action_navbar_wrapper div{
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #navbar_wrapper {
+        flex-direction: column;
+    }
+    #add_region {
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 }

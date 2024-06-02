@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 .page{
     display: flex;
     flex-direction: column;
@@ -197,7 +200,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 4%;
+    width: 5%;
     padding-left:1%;
     padding-top: 0.1%;
     padding-bottom: 0.1%;
@@ -358,13 +361,15 @@ table{
     }
     #refresh_button{
         width: 10%;
-        padding-left: calc(100% - 24%);
+        margin-left: auto;
+        margin-right: 5%;
+        justify-content: flex-end;
     }
     #refresh_button button{
         display: none;
     }
     #refresh_button img{
-        width: 80%;
+        min-width: 41px;
     }
     #delete_button{
         width: 10%;
@@ -403,7 +408,6 @@ table{
     }
     .page{
         padding-left: 1%;
-        padding-right: 1%;
     }
     #region_info_values_wrapper{
         flex-direction: column;
@@ -465,5 +469,8 @@ table{
     #pager_wrapper{
         display: flex;
         justify-content: center;
+    }
+    #inventory_wrapper{
+        padding-right: 0;
     }
 }

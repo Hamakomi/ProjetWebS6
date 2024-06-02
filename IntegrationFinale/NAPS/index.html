@@ -105,8 +105,8 @@
     </div>
     <button id="add_network"><img src="../HELP/icone/plus.svg" /> Add a new Network</button>
   </div>
-
-
+ 
+ 
   <div id="actionBar">
         <button class="buttons" id="provision"><img src="../HELP/icone/triangle_horizontal.svg" />Provision</button>
         <button class="buttons" id="delete" disabled ><img src="../HELP/icone/poubelle.svg" />Delete</button>
@@ -118,13 +118,13 @@
 </div>
 <div id="bottom">
   <table id="tableau">
-
-
+ 
+ 
     <div class="entete">
     <tr>
         <th></th>
-        <th>Provisioning State <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(1)"/></th>
-        <th>Operational status <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(2)" /></th>
+        <th class="problematic">Provisioning State<img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(1)"/></th>
+        <th class="problematic">Operational status<img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(2)" /></th>
         <th>Network name <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(3)"/></th>
         <th>Vendor <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(4)"/></th>
         <th>Regions <img class="sorting_button" src="../HELP/icone/fleche_tri.svg" onclick="sortTable(5)"/></th>
@@ -135,141 +135,141 @@
     </tr>
 </div>
     <tr>
-        <td class="start">
-
-            <label class="container">
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
-        </td>
-        <td class="active"><p>Active</p></td>
-        <td class="green"><img src="../HELP/icone/rond_vert.svg" />Up</td>
-        <td>Network XX25N1</td>
-        <td>VMWare</td>
-        <td>5</td>
-        <td>4</td>
-        <td>15</td>
-        <td>30</td>
-        <td class="end"><a href="#" id="action_button1" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></a></td>
-    </tr>
-
-
-    <tr>
-        <td class="start">
-
-            <label class="container">
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
-        </td>
-        <td class="active"><p>Active</p></td>
-        <td class="green"><img src="../HELP/icone/triangle_rouge.svg" />Down</td>
-        <td>Network XX25N1</td>
-        <td>VMWare</td>
-        <td>5</td>
-        <td>4</td>
-        <td>15</td>
-        <td>30</td>
-        <td class="end"><a href="#" id="action_button2" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></a></td>
-    </tr>
-
-
-    <tr>
-        <td class="start">
-
-            <label class="container">
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
-        </td>
-        <td><p>Unknow</p></td>
-        <td>Unknow</td>
-        <td>Network XX25N1</td>
-        <td>VMWare</td>
-        <td>5</td>
-        <td>4</td>
-        <td>15</td>
-        <td>30</td>
-        <td class="end"><a href="#" id="action_button3" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></a></td>
-    </tr>
-
-
-    <tr>
       <td class="start">
-
-          <label class="container">
-              <input type="checkbox">
-              <span class="checkmark"></span>
-          </label>
-      </td>
-      <td class="loading">
-        <div class="div_loading">
-          <img src="../HELP/icone/chargement.svg" />Provisioning
-        </div>
-      </td>
-
-
-      <td></td>
-      <td>Network XX25N1</td>
-      <td>VMWare</td>
-      <td>5</td>
-      <td>4</td>
-      <td>15</td>
-      <td>30</td>
-      <td class="end"><a href="#" id="action_button4" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></a></td>
-    </tr>
+ 
+        <label class="container">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+    </td>
+    <td class="active"><p>Active</p></td>
+    <td class="green"><img src="../HELP/icone/rond_vert.svg" />Up</td>
+    <td>Network XX25N1</td>
+    <td>VMWare</td>
+    <td>5</td>
+    <td>4</td>
+    <td>15</td>
+    <td>30</td>
+    <td class="end"><button class="buttonmore" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></button></td>
+</tr>
 
 
+<tr>
+    <td class="start">
 
-    <tr>
-      <td class="start">
-
-          <label class="container">
-              <input type="checkbox">
-              <span class="checkmark"></span>
-          </label>
-      </td>
-      <td class="draft"><p>Draft</p></td>
-      <td></td>
-      <td>Network XX25N1</td>
-      <td>Cisco</td>
-      <td>5</td>
-      <td>4</td>
-      <td>15</td>
-      <td>30</td>
-      <td class="end"><a href="#" id="action_button5" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></a></td>
-    </tr>
-
-
-    <tr>
-      <td class="start">
-
-          <label class="container">
-              <input type="checkbox">
-              <span class="checkmark"></span>
-          </label>
-      </td>
-      <td class="inactive"><p>Inactive</p></td>
-      <td></td>
-      <td>Network XX25N1</td>
-      <td>Fortinet</td>
-      <td>5</td>
-      <td>4</td>
-      <td>15</td>
-      <td>30</td>
-      <td class="end"><a href="#" id="action_button6" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></a></td>
-    </tr>
+        <label class="container">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+    </td>
+    <td class="active"><p>Active</p></td>
+    <td class="green"><img src="../HELP/icone/triangle_rouge.svg" />Down</td>
+    <td>Network XX25N1</td>
+    <td>VMWare</td>
+    <td>5</td>
+    <td>4</td>
+    <td>15</td>
+    <td>30</td>
+    <td class="end"><button  class="buttonmore" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></button></td>
+</tr>
 
 
+<tr>
+    <td class="start">
+
+        <label class="container">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+    </td>
+    <td><p>Unknow</p></td>
+    <td>Unknow</td>
+    <td>Network XX25N1</td>
+    <td>VMWare</td>
+    <td>5</td>
+    <td>4</td>
+    <td>15</td>
+    <td>30</td>
+    <td class="end"><button class="buttonmore" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></button></td>
+</tr>
+
+
+<tr>
+  <td class="start">
+
+      <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+      </label>
+  </td>
+  <td class="loading">
+    <div class="div_loading">
+      <img src="../HELP/icone/chargement.svg" />Provisioning
+    </div>
+  </td>
+
+ 
+  <td></td>
+  <td>Network XX25N1</td>
+  <td>VMWare</td>
+  <td>5</td>
+  <td>4</td>
+  <td>15</td>
+  <td>30</td>
+  <td class="end"><button class="buttonmore" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></button></td>
+</tr>
+
+
+
+<tr>
+  <td class="start">
+
+      <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+      </label>
+  </td>
+  <td class="draft"><p>Draft</p></td>
+  <td></td>
+  <td>Network XX25N1</td>
+  <td>Cisco</td>
+  <td>5</td>
+  <td>4</td>
+  <td>15</td>
+  <td>30</td>
+  <td class="end"><button class="buttonmore" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></button></td>
+</tr>
+
+
+<tr>
+  <td class="start">
+
+      <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+      </label>
+  </td>
+  <td class="inactive"><p>Inactive</p></td>
+  <td></td>
+  <td>Network XX25N1</td>
+  <td>Fortinet</td>
+  <td>5</td>
+  <td>4</td>
+  <td>15</td>
+  <td>30</td>
+  <td class="end"><button class="buttonmore" onclick="showActionPanel(this)"><span class="troispointsgras">...</span></button></td>
+</tr>
+   
+   
 </table>
 </div>
-
+ 
 <div id="action_panel">
-
+ 
   <p>See details</p>
-
+ 
   <p>Edit the ressource</p>
-
+ 
 </div>
 
 
@@ -315,6 +315,7 @@
 </div>
 </div>
 
+<div id="ligne"></div>  
 
 <p id="pV">Vendors (0)</p>
 <div id="vendors">
@@ -343,12 +344,14 @@
   </div>
 </div>
 
+<div id="ligne"></div>
+
 
 <p id="pOP">Operational Status (0)</p>
 <div id="operational_status">
 <div class="first_row_check">
   <div class="element_filter">
-
+     
       <label class="container">
         <input onchange="updateStatus('operational_status','pOP')" type="checkbox">
         <span class="checkmark"></span>
@@ -356,7 +359,7 @@
   <p>Up</p>
   </div>
   <div class="element_filter">
-
+  
     <label class="container">
       <input onchange="updateStatus('operational_status','pOP')" type="checkbox">
       <span class="checkmark"></span>
@@ -364,7 +367,7 @@
   <p>Down</p>
   </div>
   <div class="element_filter">
-
+  
     <label class="container">
       <input onchange="updateStatus('operational_status','pOP')" type="checkbox">
       <span class="checkmark"></span>
@@ -381,6 +384,9 @@
     <p>Unknow</p>
     </div>
   </div>
+
+  <div id="ligne"></div>
+
     </div>
     <div id="second_part">
     <div onclick="deleteAll()" id="effacer">
@@ -391,11 +397,11 @@
     <button onclick="filterTable()" id="validate_filter">Show all results</button>
   </div>
   </div>
-
-
-
-
-
+   
+   
+   
+   
+   
   </div>
   <!-- FIN HTML CONTENU - VOTRE SECTION -->
 </div>
